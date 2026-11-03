@@ -26,6 +26,7 @@ Ghidul e scris pentru cine administrează site-ul, nu pentru programatori. Toate
 16. [Culori, fonturi, pagini legale](#16-culori-fonturi-pagini-legale)
 17. [Probleme frecvente](#17-probleme-frecvente)
 18. [Pentru programatori: testare locală](#18-pentru-programatori-testare-locală)
+19. [Lucru în paralel: site de test pe subdomeniu](#19-lucru-în-paralel-site-de-test-pe-subdomeniu)
 
 ---
 
@@ -437,3 +438,25 @@ Utilitare:
 - `python3 tools/construire-zip.py` — creează arhiva de urcat (fără `config.php`, date sau cache).
 
 Actualizarea librăriilor PHP (opțional): în `dist/public_html/app/`, `composer update --no-dev` (platforma e fixată pe PHP 8.0 pentru compatibilitate).
+
+---
+
+## 19. Lucru în paralel: site de test pe subdomeniu
+
+Pagina „work in progress” rămâne pe `philadelphia-nivelles.be`, iar site-ul nou se construiește pe **nou.philadelphia-nivelles.be**, protejat cu parolă.
+
+1. cPanel → **Domains** (sau **Subdomains**) → **Create a new domain**: `nou.philadelphia-nivelles.be`. Debifați „Share document root” și puneți ca folder `/home/CONT/nou.philadelphia-nivelles.be` (în afara `public_html`).
+2. Urcați zip-ul în `/home/CONT/` și dezarhivați. Mutați **conținutul** folderului `public_html` din zip în `nou.philadelphia-nivelles.be/` (nu în `public_html`, unde e pagina WIP). `philadelphia-private/` rămâne în `/home/CONT/`.
+3. În `config.php`: `'site_url' => 'https://nou.philadelphia-nivelles.be',` și `'payment_mode' => 'test',`.
+4. **SSL/TLS Status** → Run AutoSSL (include și subdomeniul).
+5. Parolă: cPanel → **Directory Privacy** → folderul `nou.philadelphia-nivelles.be` → bifați „Password protect” → creați un utilizator. Webhook-urile Stripe/Mollie rămân accesibile (regula e deja în `.htaccess`).
+6. Webhook Stripe de test: `https://nou.philadelphia-nivelles.be/webhook-stripe.php`.
+
+**La lansare:**
+1. Faceți o copie a paginii WIP (File Manager → selectați conținutul `public_html` → *Compress*).
+2. Goliți `public_html` și copiați acolo tot conținutul din `nou.philadelphia-nivelles.be/` (inclusiv `.htaccess`).
+3. Scoateți parola: Directory Privacy pe `public_html` trebuie să fie dezactivat (verificați că `.htaccess` nu conține linii `AuthType`/`require valid-user`).
+4. `config.php`: `'site_url' => 'https://philadelphia-nivelles.be',`, cheile live, `'payment_mode' => 'live',`.
+5. În Stripe (Live), webhook-ul cu adresa `https://philadelphia-nivelles.be/webhook-stripe.php`.
+6. Ștergeți `philadelphia-private/data/dons.json` dacă nu vreți ca donațiile de test să apară în bară.
+7. Opțional: redirecționați `nou.` spre domeniul principal (cPanel → Redirects) sau ștergeți subdomeniul.

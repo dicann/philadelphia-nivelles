@@ -52,5 +52,11 @@ AddDefaultCharset UTF-8
     ExpiresByType video/mp4 "access plus 1 month"
 </IfModule>
 
+# Les webhooks de paiement doivent rester accessibles à Stripe / Mollie,
+# même si le site est protégé par mot de passe (cPanel > Directory Privacy) pendant les travaux.
+<FilesMatch "^webhook-(stripe|mollie)\.php$">
+    Require all granted
+</FilesMatch>
+
 AddType font/woff2 .woff2
 AddType application/manifest+json .webmanifest
