@@ -1,0 +1,7 @@
+# Fichiers propres à chaque installation (jamais dans Git)
+dist/philadelphia-private/config.php
+dist/philadelphia-private/data/*
+!dist/philadelphia-private/data/.htaccess
+dist/public_html/cache/thumbs/*
+!dist/public_html/cache/thumbs/.gitkeep
+*.zip

@@ -1,0 +1,56 @@
+# ------------------------------------------------------------------
+#  Église Philadelphia Nivelles — configuration Apache
+# ------------------------------------------------------------------
+
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Forcer HTTPS (à activer quand le certificat SSL est en place — cPanel > SSL/TLS Status) :
+    # RewriteCond %{HTTPS} !=on
+    # RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Dossiers internes : jamais accessibles depuis le web
+    RewriteRule ^(app|content/pages)(/|$) - [F,L]
+    RewriteRule (^|/)\.(?!well-known) - [F,L]
+    RewriteRule ^robots\.txt$ index.php [L]
+    RewriteRule \.(md|json|txt|log|lock)$ - [F,L,NC]
+
+    # Fichiers et dossiers réels : servis tels quels
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Tout le reste : index.php (pages /fr/..., /ro/..., sitemap.xml, qr-virement.svg)
+    RewriteRule ^ index.php [L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# Cache navigateur pour les fichiers statiques
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType video/mp4 "access plus 1 month"
+</IfModule>
+
+AddType font/woff2 .woff2
+AddType application/manifest+json .webmanifest

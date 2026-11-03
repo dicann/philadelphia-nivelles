@@ -1,0 +1,26 @@
+---
+titre: Mentions légales
+---
+# Éditeur du site
+
+**[À COMPLÉTER : nom exact de l'ASBL]**
+Siège social : [À COMPLÉTER : adresse du siège social]
+Numéro d'entreprise (BCE) : [À COMPLÉTER : numéro d'entreprise BCE]
+E-mail : [À COMPLÉTER : adresse e-mail]
+Responsable de la publication : [À COMPLÉTER : nom et fonction]
+
+# Hébergement
+
+[À COMPLÉTER : nom de l'hébergeur, adresse et site web de l'hébergeur]
+
+# Propriété intellectuelle
+
+Les textes, photos, vidéos et le logo présents sur ce site appartiennent à l'association ou sont utilisés avec l'accord de leurs auteurs. Toute reproduction nécessite une autorisation préalable.
+
+# Dons en ligne
+
+Les paiements en ligne sont traités par un prestataire de paiement spécialisé (Stripe ou Mollie). L'association n'a jamais accès à vos données de carte ou de compte bancaire.
+
+# Responsabilité
+
+Nous faisons de notre mieux pour que les informations publiées soient exactes et à jour. Si vous constatez une erreur, merci de nous la signaler via la page Contact.

@@ -1,0 +1,9 @@
+{
+  "_LISEZ-MOI": "Collez ici des liens YouTube ou Vimeo. Copiez un bloc { ... } pour ajouter une vidéo, en séparant les blocs par une virgule. La première vidéo de la liste s'affiche aussi sur la page d'accueil. Les fichiers MP4 déposés dans uploads/video/ s'ajoutent automatiquement (une image du même nom, ex. culte.jpg pour culte.mp4, sert d'aperçu).",
+  "videos": [
+    {
+      "titre": { "fr": "[À COMPLÉTER : titre de la vidéo]", "ro": "[À COMPLÉTER : titlul video-ului]" },
+      "lien": ""
+    }
+  ]
+}

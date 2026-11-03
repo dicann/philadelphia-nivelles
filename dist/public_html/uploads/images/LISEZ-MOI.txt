@@ -1,0 +1,13 @@
+IMAGES DES PAGES
+================
+Déposez ici les photos des pages, avec EXACTEMENT les noms indiqués dans content/site.json
+(ex. accueil.jpg pour la grande image d'accueil). Une photo .png ou .webp du même nom fonctionne aussi.
+Tant qu'une photo manque, le site affiche une image neutre « Photo à venir » avec le nom du fichier attendu.
+
+accueil.jpg        grande image d'accueil (paysage, au moins 1920 px de large)
+accueil.mp4        (facultatif) vidéo de fond de l'accueil, muette, courte (< 10 Mo)
+bloc-histoire.jpg  bloc-projet.jpg  bloc-aider.jpg     les 3 blocs de l'accueil
+histoire-1.jpg ... histoire-4.jpg                       chronologie (Notre histoire)
+batiment.jpg                                            le bâtiment (Notre histoire)
+communaute.jpg  activite-enfants.jpg  activite-jeunes.jpg  activite-familles.jpg
+etape-1-avant.jpg  etape-1-apres.jpg  (idem pour etape-2, etape-3)   page Le projet

@@ -1,0 +1,230 @@
+{
+  "_LISEZ-MOI": "Fichier de contenu principal. Modifiez uniquement le texte ENTRE guillemets. Gardez les virgules et les accolades. Chaque texte existe en deux langues : \"fr\" (français) et \"ro\" (roumain). Après modification, rechargez le site : si une erreur de syntaxe apparaît, le site vous l'indiquera. Les mentions [À COMPLÉTER : ...] sont surlignées en jaune sur le site jusqu'à ce que vous les remplaciez.",
+
+  "site": {
+    "nom": "Église Philadelphia Nivelles",
+    "nom_court": "Philadelphia",
+    "description": {
+      "fr": "Église évangélique de tradition pentecôtiste à Nivelles. Soutenez les travaux de notre bâtiment, une ancienne église : don en ligne, virement, prière ou bénévolat.",
+      "ro": "Biserică penticostală în Nivelles, Belgia. Susține lucrările la clădirea noastră, o biserică veche: donație online, virament, rugăciune sau voluntariat."
+    }
+  },
+
+  "association": {
+    "nom_legal": "[À COMPLÉTER : nom exact de l'ASBL]",
+    "numero_entreprise": "[À COMPLÉTER : numéro d'entreprise BCE]",
+    "siege_social": "[À COMPLÉTER : adresse du siège social]"
+  },
+
+  "contact": {
+    "adresse": "[À COMPLÉTER : rue et numéro]",
+    "code_postal": "1400",
+    "ville": "Nivelles",
+    "pays": { "fr": "Belgique", "ro": "Belgia" },
+    "gsm": "[À COMPLÉTER : numéro de GSM]",
+    "gsm_nom": { "fr": "[À COMPLÉTER : nom de la personne de contact]", "ro": "[À COMPLÉTER : numele persoanei de contact]" },
+    "email": "[À COMPLÉTER : adresse e-mail]",
+    "carte": {
+      "_aide": "Coordonnées GPS de l'église (clic droit sur la carte dans openstreetmap.org > « Afficher l'adresse »). Laissez null tant que ce n'est pas rempli.",
+      "latitude": null,
+      "longitude": null
+    },
+    "facebook": "",
+    "youtube": "",
+    "instagram": ""
+  },
+
+  "campagne": {
+    "_aide": "objectif : montant total visé en euros (nombre sans guillemets, ex. 150000). montant_hors_ligne : dons reçus par virement ou en espèces, ajoutés aux dons en ligne. montant_force : si vous mettez un nombre ici, il REMPLACE le calcul automatique (laisser null sinon).",
+    "objectif": null,
+    "montant_hors_ligne": 0,
+    "montant_force": null,
+    "afficher_nombre_dons": true
+  },
+
+  "accueil": {
+    "hero_titre": { "fr": "Une vieille église, une communauté vivante", "ro": "O biserică veche, o comunitate vie" },
+    "hero_texte": {
+      "fr": "L'Église Philadelphia se réunit à Nivelles dans une ancienne église. Pour que ce lieu reste ouvert, sûr et accueillant, le bâtiment a besoin de travaux. Votre aide compte.",
+      "ro": "Biserica Philadelphia se adună în Nivelles, într-o clădire de biserică veche. Ca acest loc să rămână deschis, sigur și primitor, clădirea are nevoie de lucrări. Ajutorul tău contează."
+    },
+    "hero_image": "uploads/images/accueil.jpg",
+    "hero_video": "uploads/images/accueil.mp4",
+    "blocs": {
+      "histoire": {
+        "titre": { "fr": "L'histoire", "ro": "Povestea" },
+        "texte": { "fr": "Un bâtiment chargé d'histoire, devenu la maison de notre communauté.", "ro": "O clădire cu istorie, devenită casa comunității noastre." },
+        "image": "uploads/images/bloc-histoire.jpg"
+      },
+      "projet": {
+        "titre": { "fr": "Le projet", "ro": "Proiectul" },
+        "texte": { "fr": "Les travaux nécessaires, étape par étape, avec le budget et l'avancement de chacune.", "ro": "Lucrările necesare, etapă cu etapă, cu bugetul și stadiul fiecăreia." },
+        "image": "uploads/images/bloc-projet.jpg"
+      },
+      "aider": {
+        "titre": { "fr": "Comment aider", "ro": "Cum poți ajuta" },
+        "texte": { "fr": "Un don, une prière, un coup de main ou des matériaux : chaque aide compte.", "ro": "O donație, o rugăciune, o mână de ajutor sau materiale: orice ajutor contează." },
+        "image": "uploads/images/bloc-aider.jpg"
+      }
+    },
+    "video_titre": { "fr": "En images", "ro": "În imagini" },
+    "video_texte": { "fr": "[À COMPLÉTER : une phrase pour présenter la vidéo]", "ro": "[À COMPLÉTER : o frază care prezintă video-ul]" }
+  },
+
+  "histoire": {
+    "intro": {
+      "fr": "Notre communauté se réunit dans une église construite bien avant nous. Voici les grandes étapes de ce bâtiment et la façon dont il est devenu notre maison.",
+      "ro": "Comunitatea noastră se adună într-o biserică ridicată cu mult înaintea noastră. Iată principalele etape din viața acestei clădiri și cum a devenit casa noastră."
+    },
+    "chronologie": [
+      {
+        "periode": { "fr": "[À COMPLÉTER : année]", "ro": "[À COMPLÉTER : anul]" },
+        "titre": { "fr": "Construction de l'église", "ro": "Construirea bisericii" },
+        "texte": { "fr": "[À COMPLÉTER : qui a construit l'église, pour quelle paroisse ou congrégation, dans quel contexte]", "ro": "[À COMPLÉTER : cine a construit biserica, pentru ce parohie sau comunitate, în ce context]" },
+        "image": "uploads/images/histoire-1.jpg"
+      },
+      {
+        "periode": { "fr": "[À COMPLÉTER : période]", "ro": "[À COMPLÉTER : perioada]" },
+        "titre": { "fr": "[À COMPLÉTER : événement marquant]", "ro": "[À COMPLÉTER : eveniment important]" },
+        "texte": { "fr": "[À COMPLÉTER : agrandissement, transformation, fermeture, changement d'usage…]", "ro": "[À COMPLÉTER : extindere, transformare, închidere, schimbare de destinație…]" },
+        "image": "uploads/images/histoire-2.jpg"
+      },
+      {
+        "periode": { "fr": "[À COMPLÉTER : année]", "ro": "[À COMPLÉTER : anul]" },
+        "titre": { "fr": "Arrivée de la communauté Philadelphia", "ro": "Venirea comunității Philadelphia" },
+        "texte": { "fr": "[À COMPLÉTER : comment la communauté a trouvé le bâtiment, dans quelles conditions elle s'y est installée (achat, location, convention…)]", "ro": "[À COMPLÉTER : cum a găsit comunitatea clădirea și în ce condiții s-a mutat aici (cumpărare, închiriere, convenție…)]" },
+        "image": "uploads/images/histoire-3.jpg"
+      },
+      {
+        "periode": { "fr": "Aujourd'hui", "ro": "Astăzi" },
+        "titre": { "fr": "Un lieu à préserver", "ro": "Un loc de păstrat" },
+        "texte": { "fr": "Le bâtiment accueille les cultes et les activités de la communauté. [À COMPLÉTER : état actuel du bâtiment, problèmes constatés]", "ro": "Clădirea găzduiește slujbele și activitățile comunității. [À COMPLÉTER : starea actuală a clădirii, problemele constatate]" },
+        "image": "uploads/images/histoire-4.jpg"
+      }
+    ],
+    "architecture_titre": { "fr": "Le bâtiment", "ro": "Clădirea" },
+    "architecture_texte": {
+      "fr": "[À COMPLÉTER : style architectural, matériaux (pierre, brique, charpente…), éléments remarquables (vitraux, orgue, clocher…), éventuel statut de protection du patrimoine]",
+      "ro": "[À COMPLÉTER : stilul arhitectural, materialele (piatră, cărămidă, șarpantă…), elementele deosebite (vitralii, orgă, clopotniță…), eventualul statut de monument]"
+    },
+    "architecture_image": "uploads/images/batiment.jpg"
+  },
+
+  "communaute": {
+    "intro": {
+      "fr": "L'Église Philadelphia est une église chrétienne évangélique de tradition pentecôtiste. La communauté est en grande partie d'origine roumaine. Chacun est le bienvenu, quelle que soit sa langue ou son histoire.",
+      "ro": "Biserica Philadelphia este o biserică creștină penticostală. Comunitatea este în mare parte românească. Oricine este binevenit, indiferent de limbă sau de drumul pe care l-a parcurs."
+    },
+    "langues_cultes": { "fr": "[À COMPLÉTER : langue(s) des cultes, ex. roumain avec traduction en français ?]", "ro": "[À COMPLÉTER : limba/limbile slujbelor]" },
+    "image": "uploads/images/communaute.jpg",
+    "croyances_titre": { "fr": "Ce que nous croyons", "ro": "Ce credem" },
+    "croyances": [
+      { "fr": "[À COMPLÉTER : point 1 de la confession de foi — à faire valider par les responsables]", "ro": "[À COMPLÉTER : punctul 1 din mărturisirea de credință — de validat de conducerea bisericii]" },
+      { "fr": "[À COMPLÉTER : point 2]", "ro": "[À COMPLÉTER : punctul 2]" },
+      { "fr": "[À COMPLÉTER : point 3]", "ro": "[À COMPLÉTER : punctul 3]" }
+    ],
+    "affiliation": { "fr": "[À COMPLÉTER : union ou fédération d'églises à laquelle l'église est rattachée, le cas échéant]", "ro": "[À COMPLÉTER : uniunea sau federația de biserici din care face parte biserica, dacă e cazul]" },
+    "horaires": [
+      { "jour": { "fr": "Dimanche", "ro": "Duminică" }, "heure": "[À COMPLÉTER : heure]", "libelle": { "fr": "Culte", "ro": "Serviciu divin" } },
+      { "jour": { "fr": "[À COMPLÉTER : jour]", "ro": "[À COMPLÉTER : ziua]" }, "heure": "[À COMPLÉTER : heure]", "libelle": { "fr": "[À COMPLÉTER : réunion de prière, étude biblique…]", "ro": "[À COMPLÉTER : seară de rugăciune, studiu biblic…]" } }
+    ],
+    "activites": [
+      {
+        "titre": { "fr": "Enfants", "ro": "Copii" },
+        "texte": { "fr": "[À COMPLÉTER : école du dimanche, âges, horaires]", "ro": "[À COMPLÉTER : școala duminicală, vârste, program]" },
+        "image": "uploads/images/activite-enfants.jpg"
+      },
+      {
+        "titre": { "fr": "Jeunes", "ro": "Tineret" },
+        "texte": { "fr": "[À COMPLÉTER : rencontres des jeunes, fréquence]", "ro": "[À COMPLÉTER : întâlnirile tinerilor, frecvență]" },
+        "image": "uploads/images/activite-jeunes.jpg"
+      },
+      {
+        "titre": { "fr": "Familles", "ro": "Familii" },
+        "texte": { "fr": "[À COMPLÉTER : activités pour les familles, chorale, groupes…]", "ro": "[À COMPLÉTER : activități pentru familii, cor, grupe…]" },
+        "image": "uploads/images/activite-familles.jpg"
+      }
+    ]
+  },
+
+  "projet": {
+    "intro": {
+      "fr": "[À COMPLÉTER : en quelques phrases, ce qui doit être fait et pourquoi (sécurité, toiture, chauffage, accessibilité…)]",
+      "ro": "[À COMPLÉTER : în câteva fraze, ce trebuie făcut și de ce (siguranță, acoperiș, încălzire, accesibilitate…)]"
+    },
+    "_aide_etapes": "statut : \"a_venir\", \"en_cours\" ou \"termine\". budget : nombre en euros sans guillemets (ou null). id : code court sans espace, ne pas le changer après le lancement (il sert à relier les dons à l'étape). Images avant/après : déposez les photos aux chemins indiqués.",
+    "etapes": [
+      {
+        "id": "etape-1",
+        "titre": { "fr": "[À COMPLÉTER : titre de l'étape 1]", "ro": "[À COMPLÉTER : titlul etapei 1]" },
+        "description": { "fr": "[À COMPLÉTER : description des travaux]", "ro": "[À COMPLÉTER : descrierea lucrărilor]" },
+        "budget": null,
+        "statut": "a_venir",
+        "image_avant": "uploads/images/etape-1-avant.jpg",
+        "image_apres": "uploads/images/etape-1-apres.jpg"
+      },
+      {
+        "id": "etape-2",
+        "titre": { "fr": "[À COMPLÉTER : titre de l'étape 2]", "ro": "[À COMPLÉTER : titlul etapei 2]" },
+        "description": { "fr": "[À COMPLÉTER : description des travaux]", "ro": "[À COMPLÉTER : descrierea lucrărilor]" },
+        "budget": null,
+        "statut": "a_venir",
+        "image_avant": "uploads/images/etape-2-avant.jpg",
+        "image_apres": "uploads/images/etape-2-apres.jpg"
+      },
+      {
+        "id": "etape-3",
+        "titre": { "fr": "[À COMPLÉTER : titre de l'étape 3]", "ro": "[À COMPLÉTER : titlul etapei 3]" },
+        "description": { "fr": "[À COMPLÉTER : description des travaux]", "ro": "[À COMPLÉTER : descrierea lucrărilor]" },
+        "budget": null,
+        "statut": "a_venir",
+        "image_avant": "uploads/images/etape-3-avant.jpg",
+        "image_apres": "uploads/images/etape-3-apres.jpg"
+      }
+    ]
+  },
+
+  "don": {
+    "intro": {
+      "fr": "Chaque don, quel que soit son montant, aide à financer les travaux. Vous pouvez donner en ligne (Bancontact, carte, domiciliation) ou par virement.",
+      "ro": "Fiecare donație, indiferent de sumă, ajută la finanțarea lucrărilor. Poți dona online (Bancontact, card, debit direct SEPA) sau prin virament bancar."
+    },
+    "montants": [25, 50, 100, 250],
+    "virement": {
+      "beneficiaire": "[À COMPLÉTER : titulaire du compte]",
+      "iban": "[À COMPLÉTER : IBAN]",
+      "bic": "[À COMPLÉTER : BIC]",
+      "communication": { "fr": "[À COMPLÉTER : communication, ex. « Don travaux »]", "ro": "[À COMPLÉTER : comunicare, ex. „Don travaux”]" }
+    },
+    "fiscalite": {
+      "_aide": "NE PAS publier de mention sur l'attestation fiscale tant que l'ASBL n'a pas confirmé avoir l'agrément (SPF Finances). Mettez afficher à false pour masquer ce bloc.",
+      "afficher": true,
+      "texte": {
+        "fr": "[À VÉRIFIER : l'association peut-elle délivrer des attestations fiscales ? Ne rien publier à ce sujet avant confirmation. Si ce n'est pas le cas, masquez ce bloc.]",
+        "ro": "[À VÉRIFIER : poate asociația elibera atestate fiscale pentru deducere? Nu publicați nimic despre asta înainte de confirmare. Dacă nu, ascundeți acest bloc.]"
+      }
+    },
+    "autres_aides": [
+      {
+        "icone": "priere",
+        "titre": { "fr": "Prier", "ro": "Rugăciune" },
+        "texte": { "fr": "Portez le projet, les ouvriers et la communauté dans la prière.", "ro": "Poartă în rugăciune proiectul, pe cei care lucrează și comunitatea." }
+      },
+      {
+        "icone": "benevolat",
+        "titre": { "fr": "Donner de son temps", "ro": "Voluntariat" },
+        "texte": { "fr": "Vous avez des compétences (maçonnerie, électricité, menuiserie, nettoyage, administratif) ou simplement des bras ? Prenez contact.", "ro": "Ai cunoștințe de zidărie, electricitate, tâmplărie, curățenie, administrație sau pur și simplu vrei să ajuți? Ia legătura cu noi." }
+      },
+      {
+        "icone": "materiaux",
+        "titre": { "fr": "Offrir des matériaux", "ro": "Materiale" },
+        "texte": { "fr": "Matériaux de construction, outillage, location de matériel : contactez-nous avant toute livraison pour vérifier les besoins.", "ro": "Materiale de construcție, scule, închiriere de utilaje: contactează-ne înainte de orice livrare, ca să verificăm ce e nevoie." }
+      },
+      {
+        "icone": "entreprise",
+        "titre": { "fr": "Entreprises", "ro": "Firme" },
+        "texte": { "fr": "Mécénat, travaux à prix réduit, don en nature : parlons d'un partenariat adapté à votre entreprise.", "ro": "Sponsorizare, lucrări la preț redus, donații în natură: hai să discutăm un parteneriat potrivit firmei tale." }
+      }
+    ]
+  }
+}

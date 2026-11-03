@@ -1,0 +1,16 @@
+{
+    "name": "philadelphia-nivelles/site",
+    "description": "Site de collecte de fonds - Eglise Philadelphia Nivelles",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.0",
+        "stripe/stripe-php": "^17.0",
+        "chillerlan/php-qrcode": "^5.0"
+    },
+    "config": {
+        "platform": { "php": "8.0.30" },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

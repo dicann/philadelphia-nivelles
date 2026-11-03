@@ -1,0 +1,10 @@
+GALERIE
+=======
+Chaque dossier = un album. Exemple :  2025-03 Travaux toiture/
+Déposez les photos (.jpg, .png, .webp) dans le dossier : elles apparaissent automatiquement sur la page Galerie.
+Les albums sont classés du plus récent au plus ancien : commencez le nom du dossier par l'année et le mois.
+Facultatif : un fichier album.txt dans le dossier
+  ligne 1 = titre en français
+  ligne 2 = titre en roumain
+Le nom du fichier photo sert de légende (ex. « facade-nord.jpg » -> « Facade nord »).
+Supprimez le dossier « 2026-11 Exemple (à supprimer) » quand vous avez vos vraies photos.

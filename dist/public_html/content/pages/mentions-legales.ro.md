@@ -1,0 +1,26 @@
+---
+titre: Mențiuni legale
+---
+# Editorul site-ului
+
+**[À COMPLÉTER : nom exact de l'ASBL]**
+Sediul social: [À COMPLÉTER : adresse du siège social]
+Număr de întreprindere (BCE): [À COMPLÉTER : numéro d'entreprise BCE]
+E-mail: [À COMPLÉTER : adresse e-mail]
+Responsabil de publicare: [À COMPLÉTER : nume și funcție]
+
+# Găzduire
+
+[À COMPLÉTER : numele firmei de găzduire, adresa și site-ul ei]
+
+# Proprietate intelectuală
+
+Textele, fotografiile, video-urile și logo-ul de pe acest site aparțin asociației sau sunt folosite cu acordul autorilor. Orice reproducere necesită acord prealabil.
+
+# Donații online
+
+Plățile online sunt procesate de un furnizor specializat (Stripe sau Mollie). Asociația nu are niciodată acces la datele cardului sau ale contului tău bancar.
+
+# Răspundere
+
+Facem tot posibilul ca informațiile publicate să fie corecte și actuale. Dacă observi o greșeală, te rugăm să ne anunți prin pagina Contact.
