@@ -2,10 +2,10 @@
 /** Une vidéo : YouTube (mode confidentialité), Vimeo (dnt) ou fichier MP4. Chargée au clic. Variable : $v */
 $titre = t($v['titre']) ?: __('videos');
 ?>
-<figure class="video">
+<figure class="video<?= !empty($v['vertical']) ? ' video-vertical' : '' ?>">
 <?php if ($v['type'] === 'fichier'): ?>
   <video controls preload="none" playsinline<?= $v['poster'] ? ' poster="' . e(Media::url($v['poster'], 960)) . '"' : '' ?>>
-    <source src="<?= e(base_path() . $v['src']) ?>" type="video/mp4">
+    <source src="<?= e(base_path() . implode('/', array_map('rawurlencode', explode('/', $v['src'])))) ?>" type="video/mp4">
   </video>
 <?php else:
   $provider = $v['type'] === 'youtube' ? 'YouTube' : 'Vimeo';

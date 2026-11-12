@@ -1,9 +1,30 @@
 {
-  "_LISEZ-MOI": "Collez ici des liens YouTube ou Vimeo. Copiez un bloc { ... } pour ajouter une vidéo, en séparant les blocs par une virgule. La première vidéo de la liste s'affiche aussi sur la page d'accueil. Les fichiers MP4 déposés dans uploads/video/ s'ajoutent automatiquement (une image du même nom, ex. culte.jpg pour culte.mp4, sert d'aperçu).",
+  "_LISEZ-MOI": "Liste des vidéos. Pour un lien YouTube ou Vimeo : \"lien\". Pour un fichier MP4 déposé dans uploads/video/ : \"fichier\" (une image du même nom, ex. clip.jpg pour clip.mp4, sert d'aperçu). \"vertical\": true pour une vidéo filmée en hauteur. La première vidéo s'affiche aussi sur la page d'accueil. Les MP4 non listés ici s'ajoutent quand même automatiquement.",
   "videos": [
     {
-      "titre": { "fr": "[À COMPLÉTER : titre de la vidéo]", "ro": "[À COMPLÉTER : titlul video-ului]" },
-      "lien": ""
+      "titre": { "fr": "Le chevet et la grande rosace, vus depuis la nacelle", "ro": "Absida și rozeta mare, văzute din nacelă" },
+      "fichier": "uploads/video/1-le-chevet-vu-de-la-nacelle.mp4",
+      "vertical": true
+    },
+    {
+      "titre": { "fr": "Travaux sur les murs hauts", "ro": "Lucrări pe zidurile înalte" },
+      "fichier": "uploads/video/2-travaux-sur-les-murs-hauts.mp4",
+      "vertical": true
+    },
+    {
+      "titre": { "fr": "Les toitures restaurées", "ro": "Acoperișurile restaurate" },
+      "fichier": "uploads/video/3-les-toitures-restaurees.mp4",
+      "vertical": true
+    },
+    {
+      "titre": { "fr": "Le clocher", "ro": "Turnul" },
+      "fichier": "uploads/video/4-le-clocher.mp4",
+      "vertical": true
+    },
+    {
+      "titre": { "fr": "Nivelles au coucher du soleil", "ro": "Nivelles la apus" },
+      "fichier": "uploads/video/5-nivelles-au-coucher-du-soleil.mp4",
+      "vertical": true
     }
   ]
 }

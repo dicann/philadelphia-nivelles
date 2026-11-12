@@ -112,7 +112,22 @@ final class Content
     {
         $out = [];
         $data = self::readJson(ROOT . '/content/videos.json', false);
+        $listed = [];
         foreach ($data['videos'] ?? [] as $v) {
+            $file = trim((string) ($v['fichier'] ?? ''));
+            if ($file !== '') {
+                $file = ltrim(str_replace('\\', '/', $file), '/');
+                if (!str_contains($file, '..') && str_starts_with($file, 'uploads/video/') && is_file(ROOT . '/' . $file)) {
+                    $base = preg_replace('/\.[^.]+$/', '', $file);
+                    $poster = null;
+                    foreach (['jpg', 'jpeg', 'png', 'webp'] as $ext) {
+                        if (is_file(ROOT . "/$base.$ext")) { $poster = "$base.$ext"; break; }
+                    }
+                    $out[] = ['type' => 'fichier', 'src' => $file, 'poster' => $poster, 'titre' => $v['titre'] ?? '', 'vertical' => !empty($v['vertical'])];
+                    $listed[] = $file;
+                }
+                continue;
+            }
             $url = trim((string) ($v['lien'] ?? ''));
             if ($url === '') {
                 continue;
@@ -129,6 +144,9 @@ final class Content
             $files = glob($dir . '/*.{mp4,MP4,webm,WEBM}', GLOB_BRACE) ?: [];
             natcasesort($files);
             foreach ($files as $f) {
+                if (in_array('uploads/video/' . basename($f), $listed, true)) {
+                    continue;
+                }
                 $base = pathinfo($f, PATHINFO_FILENAME);
                 $poster = null;
                 foreach (['jpg', 'jpeg', 'png', 'webp'] as $ext) {
