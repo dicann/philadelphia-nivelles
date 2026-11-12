@@ -5,7 +5,7 @@ Această pagină explică ce date personale prelucrăm, de ce și ce drepturi ai
 
 # Operatorul de date
 
-ASBL CERP – Centrul Evanghelic Român Philadelphia, [À COMPLÉTER : adresse du siège social], număr de întreprindere [À COMPLÉTER : numéro BCE].
+ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia), Rue Stéphanie 107, 1020 Laeken (Bruxelles), număr de întreprindere [À COMPLÉTER : numéro BCE].
 Pentru orice întrebare despre datele tale: [À COMPLÉTER : adresse e-mail].
 
 # Ce date și de ce?

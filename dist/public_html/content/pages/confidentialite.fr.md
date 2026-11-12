@@ -5,7 +5,7 @@ Cette page explique quelles données personnelles nous traitons, pourquoi, et qu
 
 # Responsable du traitement
 
-ASBL CERP – Centrul Evanghelic Român Philadelphia, [À COMPLÉTER : adresse du siège social], numéro d'entreprise [À COMPLÉTER : numéro BCE].
+ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia), Rue Stéphanie 107, 1020 Laeken (Bruxelles), numéro d'entreprise [À COMPLÉTER : numéro BCE].
 Contact pour toute question sur vos données : [À COMPLÉTER : adresse e-mail].
 
 # Quelles données et pourquoi ?

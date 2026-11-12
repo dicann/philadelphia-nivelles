@@ -11,14 +11,14 @@
   },
 
   "association": {
-    "nom_legal": "ASBL CERP – Centrul Evanghelic Român Philadelphia",
+    "nom_legal": "ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia)",
     "numero_entreprise": "[À COMPLÉTER : numéro d'entreprise BCE]",
-    "siege_social": "[À COMPLÉTER : adresse du siège social]",
+    "siege_social": "Rue Stéphanie 107, 1020 Laeken (Bruxelles)",
     "responsable_publication": "Petre Bodan"
   },
 
   "contact": {
-    "adresse": "Parvis Notre-Dame [À COMPLÉTER : numéro]",
+    "adresse": "Parvis Notre-Dame",
     "code_postal": "1400",
     "ville": "Nivelles",
     "pays": { "fr": "Belgique", "ro": "Belgia" },
@@ -84,9 +84,9 @@
     },
     "chronologie": [
       {
-        "periode": { "fr": "XIIe siècle", "ro": "Secolul al XII-lea" },
+        "periode": { "fr": "Moyen Âge", "ro": "Evul Mediu" },
         "titre": { "fr": "L'hôpital du Saint-Sépulcre", "ro": "Spitalul Saint-Sépulcre" },
-        "texte": { "fr": "La paroisse Notre-Dame a longtemps été la seule de Nivelles. Dans la seconde moitié du XIIe siècle, un hôpital est fondé, successeur de l'ancien hôpital de l'abbaye de Nivelles.", "ro": "Parohia Notre-Dame a fost multă vreme singura din Nivelles. În a doua jumătate a secolului al XII-lea a fost înființat un spital, urmașul vechiului spital al abației din Nivelles." },
+        "texte": { "fr": "Dès la fondation de l'abbaye de Nivelles par sainte Gertrude et sa mère sainte Ide, la ville possède un hôpital. La paroisse Notre-Dame est alors la seule de Nivelles. Au Moyen Âge, l'hôpital du Saint-Sépulcre est fondé hors des remparts, au faubourg de Namur, dans la continuité de l'ancien hôpital de l'abbaye.", "ro": "Încă de la întemeierea abației din Nivelles de către sfânta Gertrude și mama ei, sfânta Ida, orașul are un spital. Parohia Notre-Dame este pe atunci singura din Nivelles. În Evul Mediu, spitalul Saint-Sépulcre este înființat în afara zidurilor orașului, în cartierul dinspre Namur, ca urmaș al vechiului spital al abației." },
         "image": "uploads/images/histoire-1.jpg"
       },
       {
@@ -96,15 +96,15 @@
         "image": "uploads/images/histoire-2.jpg"
       },
       {
-        "periode": { "fr": "1887–1911", "ro": "1887–1911" },
+        "periode": { "fr": "1885–1911", "ro": "1885–1911" },
         "titre": { "fr": "Une nouvelle église", "ro": "O biserică nouă" },
-        "texte": { "fr": "Un nouvel édifice est construit entre 1887 et 1891, sur décret royal, d'après les plans de l'architecte local Charles Licot, connu aussi pour ses travaux à l'abbaye de Villers-la-Ville. Le porche est ajouté en 1909 et la tour en 1911.", "ro": "Între 1887 și 1891 se ridică o clădire nouă, în baza unui decret regal, după planurile arhitectului local Charles Licot, cunoscut și pentru lucrările de la abația Villers-la-Ville. Pridvorul este construit în 1909, iar turnul în 1911." },
+        "texte": { "fr": "L'ancienne église est vétuste et devenue trop petite : le quartier grandit vite autour des gares de Nivelles-Nord (1854) et Nivelles-Est (1874). En 1885, la fabrique d'église décide de bâtir un nouveau sanctuaire, sur d'anciennes prairies marécageuses entre le Curat et Quartaimont, où les Aclots venaient patiner l'hiver. L'église du Saint-Sépulcre et Saint-Paul est construite entre 1887 et 1891, sur décret royal, d'après les plans de l'architecte local Charles Licot, connu aussi pour ses travaux à l'abbaye de Villers-la-Ville. Le porche est ajouté en 1909 et la tour en 1911.", "ro": "Vechea biserică este degradată și a devenit prea mică: cartierul crește repede în jurul gărilor Nivelles-Nord (1854) și Nivelles-Est (1874). În 1885, consiliul bisericii hotărăște construirea unui nou lăcaș, pe niște foste pajiști mlăștinoase dintre Curat și Quartaimont, unde localnicii veneau iarna la patinaj. Biserica Saint-Sépulcre și Saint-Paul se ridică între 1887 și 1891, în baza unui decret regal, după planurile arhitectului local Charles Licot, cunoscut și pentru lucrările de la abația Villers-la-Ville. Pridvorul este construit în 1909, iar turnul în 1911." },
         "image": "uploads/images/histoire-3.jpg"
       },
       {
         "periode": { "fr": "2019–2022", "ro": "2019–2022" },
         "titre": { "fr": "Fermeture et désacralisation", "ro": "Închiderea și desacralizarea" },
-        "texte": { "fr": "De graves problèmes de stabilité et de sécurité, signalés notamment par un rapport des pompiers en 2019, entraînent la fermeture de l'église au culte. Faute de moyens pour la restaurer, l'Église catholique la désacralise et la met en vente. La démolition du bâtiment a même été envisagée.", "ro": "Probleme grave de stabilitate și siguranță, semnalate inclusiv printr-un raport al pompierilor în 2019, duc la închiderea bisericii. Biserica Catolică nu mai are fondurile necesare pentru restaurare, așa că o desacralizează și o scoate la vânzare. S-a luat în calcul chiar demolarea clădirii." },
+        "texte": { "fr": "La stabilité du bâtiment inquiète depuis les années 1970-1980. En juillet 2019, un rapport des pompiers relève de graves problèmes : stabilité du clocher, chutes de pierres, installation électrique non conforme, risque de propagation d'incendie. La Ville ordonne la fermeture de l'église. Une étude d'architecte estime les travaux à plus de deux millions d'euros, un budget que ni la fabrique d'église ni la commune ne peuvent assumer. En mai 2021, l'archevêque de Malines-Bruxelles décide la désaffectation, officialisée en 2022 : l'église peut être vendue, à condition de préserver son architecture, ses vitraux et un usage respectueux de son histoire.", "ro": "Stabilitatea clădirii îngrijora încă din anii 1970–1980. În iulie 2019, un raport al pompierilor semnalează probleme grave: stabilitatea clopotniței, căderi de pietre, instalație electrică neconformă, risc de propagare a incendiilor. Primăria dispune închiderea bisericii. Un studiu de arhitectură estimează lucrările la peste două milioane de euro, buget pe care nici consiliul bisericii, nici primăria nu și-l pot permite. În mai 2021, arhiepiscopul de Malines-Bruxelles hotărăște dezafectarea, oficializată în 2022: biserica poate fi vândută, cu condiția păstrării arhitecturii, a vitraliilor și a unei folosiri care respectă istoria locului." },
         "image": "uploads/images/histoire-4.jpg"
       },
       {
@@ -116,14 +116,14 @@
       {
         "periode": { "fr": "Aujourd'hui", "ro": "Astăzi" },
         "titre": { "fr": "Le chantier", "ro": "Șantierul" },
-        "texte": { "fr": "Le permis d'urbanisme a été accordé par la Ville. La toiture, la cave et les enduits intérieurs sont terminés ; l'isolation et les installations techniques sont en cours. L'essentiel du travail et des matériaux est offert par les membres de l'église et leurs proches.", "ro": "Primăria a aprobat permisul de urbanism. Acoperișul, beciul și tencuielile interioare sunt gata; izolația și instalațiile sunt în lucru. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică și ale apropiaților lor." },
+        "texte": { "fr": "En février 2025, notre demande de permis pour transformer l'église et aménager ses abords (parvis et parkings) a été soumise à enquête publique ; le permis a ensuite été accordé. La toiture, la cave et les enduits intérieurs sont terminés ; l'isolation et les installations techniques sont en cours. L'essentiel du travail et des matériaux est offert par les membres de l'église et leurs proches.", "ro": "În februarie 2025, cererea noastră de permis pentru transformarea bisericii și amenajarea împrejurimilor (parvis și parcări) a fost supusă anchetei publice; permisul a fost apoi aprobat. Acoperișul, beciul și tencuielile interioare sunt gata; izolația și instalațiile sunt în lucru. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică și ale apropiaților lor." },
         "image": "uploads/images/histoire-6.jpg"
       }
     ],
     "architecture_titre": { "fr": "Le bâtiment", "ro": "Clădirea" },
     "architecture_texte": {
-      "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche date de 1909 et la tour de 1911. [À COMPLÉTER : style architectural, matériaux, éléments remarquables (vitraux, orgue…)]",
-      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul datează din 1909, iar turnul din 1911. [À COMPLÉTER : stilul arhitectural, materialele, elementele deosebite (vitralii, orgă…)]"
+      "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche date de 1909 et la tour de 1911. Ses vitraux et ses rosaces font partie du patrimoine que nous nous sommes engagés à préserver. [À COMPLÉTER : style architectural, matériaux]",
+      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul datează din 1909, iar turnul din 1911. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm. [À COMPLÉTER : stilul arhitectural, materialele]"
     },
     "architecture_image": "uploads/images/batiment.jpg"
   },

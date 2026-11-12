@@ -5,15 +5,14 @@ Ce a rămas apare pe site **surlignat cu galben** (`[À COMPLÉTER : ...]`). Lis
 
 ## Date administrative
 - [ ] Numărul de întreprindere (BCE) al ASBL — `content/site.json` și paginile legale
-- [ ] Adresa sediului social al ASBL (dacă e alta decât a bisericii)
-- [ ] **Numărul** clădirii pe Parvis Notre-Dame
+- [ ] Confirmare: sediul ASBL e Rue Stéphanie 107, 1020 Laeken? (preluat din anunțul primăriei, unde apare ca „bureaux”)
 - [ ] Coordonatele GPS ale bisericii (pentru hartă)
 - [ ] Adresa de e-mail (în curs de creare) — pe site și în `config.php` (`contact_to`)
 - [ ] Linkurile paginilor Facebook și Instagram (`contact.facebook`, `contact.instagram`)
 
 ## Istorie
 - [ ] Anul în care biserica a fost cumpărată
-- [ ] Arhitectura: stil, materiale, elemente deosebite (vitralii, orgă…)
+- [ ] Arhitectura: stil și materiale (vitraliile și rozetele sunt deja menționate)
 
 ## Comunitate
 - [ ] Mărturisirea de credință: 3–5 puncte scurte, validate de conducere

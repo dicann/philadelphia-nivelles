@@ -3,8 +3,8 @@ titre: Mențiuni legale
 ---
 # Editorul site-ului
 
-**ASBL CERP – Centrul Evanghelic Român Philadelphia**
-Sediul social: [À COMPLÉTER : adresse du siège social]
+**ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia)**
+Sediul social: Rue Stéphanie 107, 1020 Laeken (Bruxelles)
 Număr de întreprindere (BCE): [À COMPLÉTER : numéro d'entreprise BCE]
 E-mail: [À COMPLÉTER : adresse e-mail]
 Responsabil de publicare: Petre Bodan, responsabilul bisericii
