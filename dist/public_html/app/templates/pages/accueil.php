@@ -66,6 +66,7 @@ ob_start();
   </div>
 </section>
 
+<?php if (Content::newsEnabled()): ?>
 <section class="section" aria-labelledby="t-actus">
   <div class="wrap">
     <div class="section-head">
@@ -79,6 +80,7 @@ ob_start();
     <?php endif; ?>
   </div>
 </section>
+<?php endif; ?>
 
 <section class="section section-stone cta-band">
   <div class="wrap narrow center">

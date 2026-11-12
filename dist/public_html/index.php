@@ -75,7 +75,10 @@ foreach (Content::ROUTES as $key => $slugs) {
 
 // Détail d'une actualité : /fr/actualites/mon-article
 $newsPrefix = Content::ROUTES['actualites'][$idx] . '/';
-if ($page === null && str_starts_with($rest, $newsPrefix)) {
+if ($page === 'actualites' && !Content::newsEnabled()) {
+    not_found($lang);
+}
+if ($page === null && str_starts_with($rest, $newsPrefix) && Content::newsEnabled()) {
     $item = Content::newsItem(substr($rest, strlen($newsPrefix)));
     if ($item) {
         echo render('pages/actualite', ['item' => $item]);

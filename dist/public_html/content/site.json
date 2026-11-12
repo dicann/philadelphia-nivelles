@@ -12,6 +12,8 @@
 
   "_aide_menu": "Pages affichées dans le menu du haut, dans l'ordre. Pages possibles : accueil, histoire, communaute, projet, galerie, actualites, contact.",
   "menu": ["accueil", "histoire", "communaute", "projet", "galerie", "contact"],
+  "_aide_actualites": "true = les actualités sont visibles (page Actualités + bloc sur l'accueil). false = tout est masqué. Pensez aussi à ajouter \"actualites\" dans le menu ci-dessus.",
+  "actualites_actives": false,
 
   "association": {
     "nom_legal": "ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia)",

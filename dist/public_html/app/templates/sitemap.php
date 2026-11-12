@@ -1,10 +1,13 @@
 <?php
-$pages = ['accueil', 'histoire', 'communaute', 'projet', 'don', 'galerie', 'actualites', 'contact', 'mentions', 'confidentialite'];
+$pages = ['accueil', 'histoire', 'communaute', 'projet', 'don', 'galerie', 'contact', 'mentions', 'confidentialite'];
+if (Content::newsEnabled()) {
+    $pages[] = 'actualites';
+}
 $entries = [];
 foreach ($pages as $p) {
     $entries[] = ['fr' => abs_url($p, 'fr'), 'ro' => abs_url($p, 'ro'), 'lastmod' => null];
 }
-foreach (Content::news() as $n) {
+foreach (Content::newsEnabled() ? Content::news() : [] as $n) {
     $entries[] = ['fr' => abs_url('actualites', 'fr', '/' . $n['slug']), 'ro' => abs_url('actualites', 'ro', '/' . $n['slug']), 'lastmod' => $n['date']];
 }
 echo '<?xml version="1.0" encoding="UTF-8"?>', "\n";

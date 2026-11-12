@@ -203,6 +203,12 @@ final class Content
         return $items;
     }
 
+    /** Les actualités sont-elles activées dans site.json ? */
+    public static function newsEnabled(): bool
+    {
+        return (bool) self::get('actualites_actives', true);
+    }
+
     public static function newsItem(string $slug): ?array
     {
         foreach (self::news() as $n) {
