@@ -56,11 +56,12 @@
   },
 
   "campagne": {
-    "_aide": "objectif : montant total visé en euros (nombre sans guillemets). montant_hors_ligne : montant déjà réuni en dehors du site (investissements, virements, dons aux cultes, Payconiq), ajouté aux dons en ligne. montant_force : si vous mettez un nombre ici, il REMPLACE le calcul automatique (laisser null sinon). libelle_montant : texte affiché à côté du montant.",
+    "_aide": "objectif : montant à réunir avec cette campagne, en euros (nombre sans guillemets). montant_hors_ligne : dons reçus pour la campagne en dehors du site (virements, dons aux cultes, Payconiq), ajoutés aux dons en ligne. montant_force : si vous mettez un nombre ici, il REMPLACE le calcul automatique (laisser null sinon). deja_investi : montant déjà investi avant la campagne, affiché à part (il ne compte pas dans la barre).",
     "objectif": 1500000,
-    "montant_hors_ligne": 850000,
+    "montant_hors_ligne": 0,
     "montant_force": null,
-    "libelle_montant": { "fr": "déjà investis", "ro": "deja investiți" },
+    "deja_investi": 850000,
+    "libelle_montant": { "fr": "collectés", "ro": "strânși" },
     "afficher_nombre_dons": true
   },
 
@@ -204,8 +205,8 @@
 
   "projet": {
     "intro": {
-      "fr": "Nous estimons le coût total de la restauration à environ 1,5 million d'euros. Environ 850 000 € ont déjà été investis : achat, frais de notaire, remboursements de crédit et travaux réalisés. Les plans de l'architecte sont approuvés et le permis d'urbanisme est accordé : les travaux peuvent continuer. L'essentiel du travail et des matériaux est offert par les membres de l'église. Nous travaillons avec la Ville de Nivelles pour la restauration et préparons avec nos voisins un plan de circulation pour le quartier. Le chiffrage détaillé des prochaines étapes est en cours.",
-      "ro": "Estimăm suma totală necesară pentru restaurare la aproximativ 1,5 milioane de euro. Până acum s-au investit aproximativ 850.000 €: prețul de cumpărare, taxele notariale, ratele creditului și lucrările deja făcute. Planurile arhitecturale sunt aprobate, iar autorizația de construire a fost acordată, așa că lucrările pot continua. Cea mai mare parte a muncii și a materialelor provine din donațiile fraților din biserică. Colaborăm cu primăria pentru restaurare și lucrăm împreună cu vecinii la un plan de circulație pentru cartier. Calculul detaliat al etapelor următoare este în curs."
+      "fr": "Environ 850 000 € ont déjà été investis : achat, frais de notaire, remboursements de crédit et travaux réalisés. Pour terminer la restauration, il faut encore environ 1,5 million d'euros : c'est l'objectif de cette campagne. Les plans de l'architecte sont approuvés et le permis d'urbanisme est accordé : les travaux peuvent continuer. L'essentiel du travail et des matériaux est offert par les membres de l'église. Nous travaillons avec la Ville de Nivelles pour la restauration et préparons avec nos voisins un plan de circulation pour le quartier. Le chiffrage détaillé des prochaines étapes est en cours.",
+      "ro": "Până acum s-au investit aproximativ 850.000 €: prețul de cumpărare, taxele notariale, ratele creditului și lucrările deja făcute. Pentru finalizarea restaurării mai este nevoie de aproximativ 1,5 milioane de euro: acesta este obiectivul campaniei. Planurile arhitecturale sunt aprobate, iar autorizația de construire a fost acordată, așa că lucrările pot continua. Cea mai mare parte a muncii și a materialelor provine din donațiile fraților din biserică. Colaborăm cu primăria pentru restaurare și lucrăm împreună cu vecinii la un plan de circulație pentru cartier. Calculul detaliat al etapelor următoare este în curs."
     },
     "plan_image": "uploads/images/plan.jpg",
     "plan_titre": { "fr": "Les plans approuvés", "ro": "Planurile aprobate" },

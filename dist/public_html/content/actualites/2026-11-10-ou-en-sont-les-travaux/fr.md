@@ -18,6 +18,6 @@ Le chantier avance grâce au travail des membres de l'église et aux matériaux 
 - **Isolation** : la toiture est presque entièrement isolée par l'intérieur ; les plafonds en plaques de plâtre sont préparés.
 - **Électricité et égouts** : passage au triphasé 80 A, deux nouveaux raccordements à l'égout, canalisation intérieure terminée.
 
-Le permis d'urbanisme a été accordé : les travaux peuvent continuer. Environ 850 000 € ont déjà été investis sur un total estimé à 1,5 million d'euros.
+Le permis d'urbanisme a été accordé : les travaux peuvent continuer. Environ 850 000 € ont déjà été investis ; il faut encore environ 1,5 million d'euros pour terminer la restauration.
 
 Vous pouvez nous aider par un don, en venant travailler sur le chantier ou en offrant des matériaux.

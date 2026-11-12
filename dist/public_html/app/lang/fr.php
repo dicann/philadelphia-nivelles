@@ -33,6 +33,9 @@ return [
 
     // Progression
     'collecte' => 'collectés',
+    'objectif_campagne' => 'Objectif de la campagne',
+    'deja_investi' => 'Déjà investi par la communauté',
+    'premiers_dons' => 'Soyez parmi les premiers à donner !',
     'objectif' => 'Objectif',
     'objectif_a_definir' => '[À COMPLÉTER : objectif de la campagne dans content/site.json]',
     'nb_dons' => '%d dons en ligne',

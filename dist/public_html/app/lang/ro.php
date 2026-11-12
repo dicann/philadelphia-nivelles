@@ -30,6 +30,9 @@ return [
     'mois' => ['ianuarie', 'februarie', 'martie', 'aprilie', 'mai', 'iunie', 'iulie', 'august', 'septembrie', 'octombrie', 'noiembrie', 'decembrie'],
 
     'collecte' => 'strânși',
+    'objectif_campagne' => 'Obiectivul campaniei',
+    'deja_investi' => 'Deja investit de comunitate',
+    'premiers_dons' => 'Fii printre primii care donează!',
     'objectif' => 'Obiectiv',
     'objectif_a_definir' => '[À COMPLÉTER : obiectivul campaniei în content/site.json]',
     'nb_dons' => '%d donații online',
