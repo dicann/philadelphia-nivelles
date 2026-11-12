@@ -5,7 +5,7 @@ Cette page explique quelles données personnelles nous traitons, pourquoi, et qu
 
 # Responsable du traitement
 
-ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia), Rue Stéphanie 107, 1020 Laeken (Bruxelles).
+ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia), Rue Stéphanie 107, 1020 Laeken (Bruxelles), numéro d'entreprise 1024.526.965.
 Contact pour toute question sur vos données : info@philadelphia-nivelles.be.
 
 # Quelles données et pourquoi ?

@@ -155,7 +155,7 @@ $testMode = Payments::enabled() && !Config::isLive();
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>© <?= date('Y') ?> <?= tx(Content::get('association.nom_legal')) ?> — <?= e(__('tous_droits')) ?></p>
+    <p>© <?= date('Y') ?> <?= tx(Content::get('association.nom_legal')) ?><?php if ($bce = Content::get('association.numero_entreprise')): ?> · BCE <?= e($bce) ?><?php endif; ?> — <?= e(__('tous_droits')) ?></p>
     <p><a href="<?= url('mentions') ?>"><?= e(__('nav_mentions')) ?></a> · <a href="<?= url('confidentialite') ?>"><?= e(__('nav_confidentialite')) ?></a></p>
   </div>
 </footer>

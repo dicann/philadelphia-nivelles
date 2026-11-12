@@ -4,7 +4,7 @@ Răspunsurile din chestionarul „Întrebări pentru site-ul Philadelphia Nivell
 Ce a rămas apare pe site **surlignat cu galben** (`[À COMPLÉTER : ...]`). Listă tehnică, cu numerele liniilor: `php tools/lister-placeholders.php`.
 
 ## Date administrative
-- [ ] Numărul de întreprindere (BCE) al ASBL — de confirmat (posibil 1024.526.965, vezi kbopub.economie.fgov.be)
+
 - [ ] Confirmare: sediul ASBL e Rue Stéphanie 107, 1020 Laeken? (preluat din anunțul primăriei, unde apare ca „bureaux”)
 - [ ] Coordonatele GPS ale bisericii (pentru hartă)
 - [ ] Instagram, când va exista (`contact.instagram`)
