@@ -349,6 +349,20 @@ legend, .field label { display: block; font-weight: 600; margin-bottom: .45rem; 
 .plan-figure img { width: 100%; height: auto; max-height: 460px; object-fit: contain; }
 .timeline-media-empty { display: none; }
 @media (min-width: 900px) { .timeline-media-empty { display: block; } }
+.beliefs { position: relative; overflow: hidden; }
+.beliefs::before { content: ""; position: absolute; left: 50%; top: -120px; width: 560px; height: 560px; transform: translateX(-50%); background: radial-gradient(circle, rgba(226,167,100,.16), transparent 65%); pointer-events: none; }
+.belief-list { position: relative; list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.belief { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2.4rem 1.2rem 1.6rem;
+  background: linear-gradient(180deg, var(--paper), var(--white)); border: 1px solid var(--stone-dark);
+  border-radius: 50% 50% var(--r) var(--r) / 86px 86px var(--r) var(--r); padding-top: 2.8rem; box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; }
+.belief:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(15,38,34,.14); }
+.belief::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: -1px; height: 3px; background: var(--gold); border-radius: 3px; }
+.belief-icon { display: inline-flex; align-items: center; justify-content: center; width: 66px; height: 66px; border-radius: 50%; background: var(--green); color: var(--cream); box-shadow: 0 0 0 5px var(--paper), 0 0 0 6px rgba(226,167,100,.6); }
+.belief-icon .icon { width: 32px; height: 32px; }
+.belief-num { font-family: var(--font-body); font-weight: 600; font-variant-numeric: lining-nums; color: var(--gold-dark); letter-spacing: .25em; font-size: .8rem; margin: 1rem 0 .45rem; }
+.belief p { margin: 0; font-family: var(--font-display); font-size: 1.28rem; line-height: 1.35; color: var(--green-dark); }
+@media (max-width: 600px) { .belief { width: 100%; max-width: 330px; margin: 0 auto; } }
+.schedule-wrap { max-width: 720px; }
 .photo-credit { font-size: .85rem; font-style: italic; color: var(--muted); margin-top: -.3rem; }
 .notice-place { margin: 0; }
 .notice-place p { margin: 0 0 .3rem; }

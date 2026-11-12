@@ -52,6 +52,7 @@ return [
     'communaute_titre' => 'Notre communauté',
     'communaute_chapo' => 'Qui nous sommes, ce que nous croyons et quand nous nous retrouvons.',
     'qui_sommes_nous' => 'Qui sommes-nous ?',
+    'foi_kicker' => 'Notre foi',
     'horaires' => 'Horaires',
     'activites' => 'Activités',
     'bienvenue_visite' => 'Vous souhaitez nous rendre visite ? Vous êtes le bienvenu à chaque culte.',

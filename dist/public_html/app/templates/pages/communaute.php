@@ -30,16 +30,25 @@ include APP . '/templates/partials/page-head.php';
 </section>
 <?php endif; ?>
 
+<section class="section section-paper beliefs" aria-labelledby="t-croyances">
+  <div class="wrap">
+    <p class="kicker center"><?= e(__('foi_kicker')) ?></p>
+    <h2 id="t-croyances" class="center"><?= tx(t($cm['croyances_titre'])) ?></h2>
+    <ol class="belief-list">
+      <?php $icons = ['bible', 'trinite', 'croix', 'colombe', 'coupe'];
+      foreach (array_values($cm['croyances']) as $i => $item): ?>
+      <li class="belief">
+        <span class="belief-icon"><?= icon($item['icone'] ?? ($icons[$i] ?? 'croix')) ?></span>
+        <span class="belief-num" aria-hidden="true"><?= str_pad((string) ($i + 1), 2, '0', STR_PAD_LEFT) ?></span>
+        <p><?= tx(t($item)) ?></p>
+      </li>
+      <?php endforeach; ?>
+    </ol>
+  </div>
+</section>
+
 <section class="section section-stone">
-  <div class="wrap grid-2">
-    <div>
-      <h2><?= tx(t($cm['croyances_titre'])) ?></h2>
-      <ul class="list-check">
-        <?php foreach ($cm['croyances'] as $item): ?>
-          <li><?= icon('check') ?><span><?= tx(t($item)) ?></span></li>
-        <?php endforeach; ?>
-      </ul>
-    </div>
+  <div class="wrap schedule-wrap">
     <div class="schedule">
       <h2><?= e(__('horaires')) ?></h2>
       <dl>
