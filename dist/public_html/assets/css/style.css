@@ -362,7 +362,24 @@ legend, .field label { display: block; font-weight: 600; margin-bottom: .45rem; 
 .belief-num { font-family: var(--font-body); font-weight: 600; font-variant-numeric: lining-nums; color: var(--gold-dark); letter-spacing: .25em; font-size: .8rem; margin: 1rem 0 .45rem; }
 .belief p { margin: 0; font-family: var(--font-display); font-size: 1.28rem; line-height: 1.35; color: var(--green-dark); }
 @media (max-width: 600px) { .belief { width: 100%; max-width: 330px; margin: 0 auto; } }
-.schedule-wrap { max-width: 720px; }
+.week { list-style: none; margin: 2.2rem 0 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); }
+.day { display: flex; flex-direction: column; gap: .55rem; padding: 1.4rem 1.3rem 1.3rem; background: var(--white); border: 1px solid var(--stone-dark); border-top: 4px solid var(--gold); border-radius: var(--r); box-shadow: var(--shadow); }
+.day-name { font-family: var(--font-display); font-weight: 600; font-size: 1.6rem; line-height: 1.1; color: var(--green-dark); }
+.day-time { display: inline-flex; align-items: center; gap: .4rem; align-self: flex-start; padding: .3rem .7rem; border-radius: 99px; background: var(--green-light); color: var(--green-dark); font-weight: 600; font-size: .95rem; font-variant-numeric: lining-nums; }
+.day-time .icon { width: 1em; height: 1em; color: var(--gold-dark); }
+.day-what { color: var(--ink); }
+.day-main { background: radial-gradient(ellipse at 50% 0%, rgba(226,167,100,.22), transparent 65%), var(--green); border-color: var(--green); color: var(--cream); }
+.day-main .day-name { color: var(--cream); }
+.day-main .day-time { background: var(--gold); color: var(--green-deep); }
+.day-main .day-time .icon { color: var(--green-deep); }
+.day-main .day-what { color: var(--cream); }
+@media (min-width: 900px) { .week { grid-template-columns: 1.3fr 1fr 1fr; } .day-main { grid-row: span 2; justify-content: center; padding: 2rem; } .day-main .day-name { font-size: 2.4rem; } .day-main .day-time { font-size: 1.05rem; } .day-main .day-what { font-size: 1.15rem; } }
+.place-band { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.4rem; margin-top: 1.6rem; padding: 1.2rem 1.4rem; background: var(--green-deep); color: var(--cream); border-radius: var(--r); box-shadow: var(--shadow); }
+.place-icon { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: rgba(243,234,216,.1); color: var(--gold-light); flex: none; }
+.place-icon .icon { width: 26px; height: 26px; }
+.place-text { display: flex; flex-direction: column; gap: .15rem; flex: 1 1 260px; }
+.place-text strong { font-family: var(--font-display); font-size: 1.35rem; color: var(--cream); }
+.place-text span { color: rgba(243,234,216,.85); }
 .photo-credit { font-size: .85rem; font-style: italic; color: var(--muted); margin-top: -.3rem; }
 .notice-place { margin: 0; }
 .notice-place p { margin: 0 0 .3rem; }

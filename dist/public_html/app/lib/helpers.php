@@ -190,7 +190,7 @@ function worship_place(): ?array
 /** Lien OpenStreetMap vers une adresse (sans coordonnées GPS). */
 function osm_search(string $address): string
 {
-    return 'https://www.openstreetmap.org/search?query=' . rawurlencode($address . ', Belgique');
+    return 'https://www.google.com/maps/dir/?api=1&destination=' . rawurlencode($address . ', Belgique');
 }
 
 /** Numéros de téléphone de site.json (contact.telephones). */

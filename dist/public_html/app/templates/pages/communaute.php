@@ -48,26 +48,33 @@ include APP . '/templates/partials/page-head.php';
 </section>
 
 <section class="section section-stone">
-  <div class="wrap schedule-wrap">
-    <div class="schedule">
-      <h2><?= e(__('horaires')) ?></h2>
-      <dl>
-        <?php foreach ($cm['horaires'] as $row): ?>
-        <div class="schedule-row">
-          <dt><?= icon('clock') ?><?= tx(t($row['jour'])) ?></dt>
-          <dd><strong><?= tx(t($row['heure'])) ?></strong> — <?= tx(t($row['libelle'])) ?></dd>
-        </div>
-        <?php endforeach; ?>
-      </dl>
-      <?php if ($wp = worship_place()): $wpa = $wp['adresse'] . ', ' . $wp['code_postal'] . ' ' . $wp['ville']; ?>
-        <div class="notice notice-place">
-          <p><strong><?= tx(t($wp['titre'])) ?></strong></p>
-          <p class="schedule-address"><?= icon('pin') ?><span><?= e($wpa) ?> — <a href="<?= e(osm_search($wpa)) ?>" rel="noopener" target="_blank"><?= e(__('itineraire')) ?> ↗</a></span></p>
-        </div>
-      <?php else: ?>
-        <p class="schedule-address"><?= icon('pin') ?><span><?= tx($c['adresse']) ?>, <?= e($c['code_postal'] . ' ' . $c['ville']) ?></span></p>
-      <?php endif; ?>
+  <div class="wrap">
+    <p class="kicker center"><?= e(__('nous_rejoindre')) ?></p>
+    <h2 class="center"><?= e(__('horaires')) ?></h2>
+    <ul class="week">
+      <?php foreach ($cm['horaires'] as $i => $row): ?>
+      <li class="day<?= $i === 0 ? ' day-main' : '' ?>">
+        <span class="day-name"><?= tx(t($row['jour'])) ?></span>
+        <span class="day-time"><?= icon('clock') ?><?= tx(t($row['heure'])) ?></span>
+        <span class="day-what"><?= tx(t($row['libelle'])) ?></span>
+      </li>
+      <?php endforeach; ?>
+    </ul>
+    <?php if ($wp = worship_place()): $wpa = $wp['adresse'] . ', ' . $wp['code_postal'] . ' ' . $wp['ville']; ?>
+    <div class="place-band">
+      <span class="place-icon"><?= icon('pin') ?></span>
+      <div class="place-text">
+        <strong><?= tx(t($wp['titre'])) ?></strong>
+        <span><?= e($wpa) ?></span>
+      </div>
+      <a class="btn btn-gold btn-sm" href="<?= e(osm_search($wpa)) ?>" rel="noopener" target="_blank"><?= e(__('itineraire')) ?> ↗</a>
     </div>
+    <?php else: ?>
+    <div class="place-band">
+      <span class="place-icon"><?= icon('pin') ?></span>
+      <div class="place-text"><strong><?= tx($c['adresse']) ?></strong><span><?= e($c['code_postal'] . ' ' . $c['ville']) ?></span></div>
+    </div>
+    <?php endif; ?>
   </div>
 </section>
 

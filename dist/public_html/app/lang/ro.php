@@ -47,6 +47,7 @@ return [
     'communaute_chapo' => 'Cine suntem, ce credem și când ne întâlnim.',
     'qui_sommes_nous' => 'Cine suntem?',
     'foi_kicker' => 'Credința noastră',
+    'nous_rejoindre' => 'Te așteptăm',
     'horaires' => 'Program',
     'activites' => 'Activități',
     'bienvenue_visite' => 'Vrei să ne vizitezi? Ești binevenit la orice slujbă.',
