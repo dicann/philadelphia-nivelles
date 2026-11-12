@@ -27,6 +27,7 @@ Ghidul e scris pentru cine administrează site-ul, nu pentru programatori. Toate
 17. [Probleme frecvente](#17-probleme-frecvente)
 18. [Pentru programatori: testare locală](#18-pentru-programatori-testare-locală)
 19. [Lucru în paralel: site de test pe subdomeniu](#19-lucru-în-paralel-site-de-test-pe-subdomeniu)
+20. [Setări adăugate după prima versiune](#20-setări-adăugate-după-prima-versiune)
 
 ---
 
@@ -443,7 +444,7 @@ Actualizarea librăriilor PHP (opțional): în `dist/public_html/app/`, `compose
 
 ## 19. Lucru în paralel: site de test pe subdomeniu
 
-Pagina „work in progress” rămâne pe `philadelphia-nivelles.be`, iar site-ul nou se construiește pe **nou.philadelphia-nivelles.be**, protejat cu parolă.
+Pagina „work in progress” rămâne pe `philadelphia-nivelles.be`, iar site-ul nou se construiește pe un subdomeniu de test (ex. **work.philadelphia-nivelles.be**), protejat cu parolă.
 
 1. cPanel → **Domains** (sau **Subdomains**) → **Create a new domain**: `nou.philadelphia-nivelles.be`. Debifați „Share document root” și puneți ca folder `/home/CONT/nou.philadelphia-nivelles.be` (în afara `public_html`).
 2. Urcați zip-ul în `/home/CONT/` și dezarhivați. Mutați **conținutul** folderului `public_html` din zip în `nou.philadelphia-nivelles.be/` (nu în `public_html`, unde e pagina WIP). `philadelphia-private/` rămâne în `/home/CONT/`.
@@ -460,3 +461,28 @@ Pagina „work in progress” rămâne pe `philadelphia-nivelles.be`, iar site-u
 5. În Stripe (Live), webhook-ul cu adresa `https://philadelphia-nivelles.be/webhook-stripe.php`.
 6. Ștergeți `philadelphia-private/data/dons.json` dacă nu vreți ca donațiile de test să apară în bară.
 7. Opțional: redirecționați `nou.` spre domeniul principal (cPanel → Redirects) sau ștergeți subdomeniul.
+
+---
+
+## 20. Setări adăugate după prima versiune
+
+Toate se fac în `public_html/content/site.json` (sau în `content/videos.json` pentru video):
+
+| Setare | Ce face |
+|---|---|
+| `"menu": [...]` | paginile din meniul de sus, în ordine (`accueil`, `histoire`, `communaute`, `projet`, `galerie`, `actualites`, `contact`) |
+| `"actualites_actives": false` | ascunde complet noutățile (prima pagină + pagina Actualités). Pune `true` ca să le arăți (și adaugă `"actualites"` în `menu`). |
+| `contact.lieu_cultes` | adresa slujbelor pe durata lucrărilor (Genappe). `"afficher": false` când slujbele revin în biserică. |
+| `contact.telephones` | lista numerelor afișate (nume + număr) |
+| `contact.carte.google_recherche` / `google_lien` | harta Google de la „Plan d'accès” (se încarcă doar la clic) și linkul „Ouvrir dans Google Maps” |
+| `campagne.libelle_montant` | textul de lângă suma din bara de progres (acum „déjà investis”) |
+| `projet.etapes[].curseur` | `false` = pozele avant/après stau una lângă alta (când nu sunt făcute din același unghi); altfel apare cursorul de comparație |
+| `projet.plan_image` | planul arhitectului afișat pe pagina Proiect |
+| `histoire.chronologie[].legende` | legenda și sursa sub poza unei etape din istorie |
+| `don.payconiq` | blocul Payconiq; urcă codul QR ca `uploads/images/payconiq.png` |
+
+**Video din fișiere** (`content/videos.json`): pe lângă linkuri YouTube/Vimeo (`"lien"`), poți lista fișiere MP4 din `uploads/video/` cu `"fichier"`, titlu FR/RO și `"vertical": true` pentru filmări verticale de telefon. O imagine cu același nume (`clip.jpg` pentru `clip.mp4`) servește ca previzualizare. Comprimați video-urile înainte (ideal sub 10 MB).
+
+**Previzualizare la distribuire (WhatsApp, Facebook)**: imaginile `assets/img/og-image-fr.jpg` și `og-image-ro.jpg` (1200×630). Funcționează doar pe site-ul public (fără parolă) și cu `site_url` corect în `config.php`.
+
+**Actualizarea site-ului pe server**: încarci `1-site.zip` și îl dezarhivezi peste cel existent. Fișierele șterse sau redenumite în versiunea nouă **rămân pe server** până le ștergi manual din File Manager.
