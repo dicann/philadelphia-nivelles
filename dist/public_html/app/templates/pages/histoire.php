@@ -19,6 +19,7 @@ include APP . '/templates/partials/page-head.php';
           <p class="timeline-date"><?= tx(t($step['periode'])) ?></p>
           <h2 class="h3"><?= tx(t($step['titre'])) ?></h2>
           <p><?= tx(t($step['texte'])) ?></p>
+          <?php if (!empty($step['legende']) && Media::find($step['image'] ?? null)): ?><p class="photo-credit"><?= tx(t($step['legende'])) ?></p><?php endif; ?>
         </div>
       </li>
       <?php endforeach; ?>
@@ -32,6 +33,7 @@ include APP . '/templates/partials/page-head.php';
     <div>
       <h2><?= tx(t($h['architecture_titre'])) ?></h2>
       <p><?= tx(t($h['architecture_texte'])) ?></p>
+      <?php if (!empty($h['architecture_legende']) && Media::find($h['architecture_image'] ?? null)): ?><p class="photo-credit"><?= tx(t($h['architecture_legende'])) ?></p><?php endif; ?>
       <a class="btn btn-green" href="<?= url('projet') ?>"><?= e(__('nav_projet')) ?> <?= icon('arrow') ?></a>
     </div>
   </div>

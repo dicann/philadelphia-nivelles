@@ -101,13 +101,15 @@
         "periode": { "fr": "1231", "ro": "1231" },
         "titre": { "fr": "Naissance de la paroisse", "ro": "Nașterea parohiei" },
         "texte": { "fr": "L'église de l'hôpital devient église paroissiale : c'est la naissance de la paroisse du Saint-Sépulcre. Au XIXe siècle, après le Concordat, les paroisses de Nivelles sont réorganisées, aux côtés de la collégiale Sainte-Gertrude et des églises Saint-Nicolas et Saint-Jean.", "ro": "Biserica spitalului devine biserică parohială: așa se naște parohia Saint-Sépulcre. În secolul al XIX-lea, după Concordat, parohiile din Nivelles sunt reorganizate, alături de biserica colegială Sainte-Gertrude și de bisericile Saint-Nicolas și Saint-Jean." },
-        "image": "uploads/images/histoire-2.jpg"
+        "image": "uploads/images/histoire-2.jpg",
+        "legende": { "fr": "L'ancienne église du Saint-Sépulcre (photo d'archive, Rif tout dju n° 357, 1993).", "ro": "Vechea biserică Saint-Sépulcre (fotografie de arhivă, Rif tout dju nr. 357, 1993)." }
       },
       {
         "periode": { "fr": "1885–1911", "ro": "1885–1911" },
         "titre": { "fr": "Une nouvelle église", "ro": "O biserică nouă" },
         "texte": { "fr": "L'ancienne église est vétuste et devenue trop petite : le quartier grandit vite autour des gares de Nivelles-Nord (1854) et Nivelles-Est (1874). En 1885, la fabrique d'église décide de bâtir un nouveau sanctuaire, sur d'anciennes prairies marécageuses entre le Curat et Quartaimont, où les Aclots venaient patiner l'hiver. L'église du Saint-Sépulcre et Saint-Paul est construite entre 1887 et 1891, sur décret royal, d'après les plans de l'architecte local Charles Licot, connu aussi pour ses travaux à l'abbaye de Villers-la-Ville. Le porche est ajouté en 1909 et la tour en 1911.", "ro": "Vechea biserică este degradată și a devenit prea mică: cartierul crește repede în jurul gărilor Nivelles-Nord (1854) și Nivelles-Est (1874). În 1885, consiliul bisericii hotărăște construirea unui nou lăcaș, pe niște foste pajiști mlăștinoase dintre Curat și Quartaimont, unde localnicii veneau iarna la patinaj. Biserica Saint-Sépulcre și Saint-Paul se ridică între 1887 și 1891, în baza unui decret regal, după planurile arhitectului local Charles Licot, cunoscut și pentru lucrările de la abația Villers-la-Ville. Pridvorul este construit în 1909, iar turnul în 1911." },
-        "image": "uploads/images/histoire-3.jpg"
+        "image": "uploads/images/histoire-3.jpg",
+        "legende": { "fr": "La nouvelle église au milieu des prairies, avant la construction de la tour (photo d'archive, Rif tout dju n° 357, 1993).", "ro": "Biserica nouă, în mijlocul pajiștilor, înainte de construirea turnului (fotografie de arhivă, Rif tout dju nr. 357, 1993)." }
       },
       {
         "periode": { "fr": "2019–2022", "ro": "2019–2022" },
@@ -130,10 +132,11 @@
     ],
     "architecture_titre": { "fr": "Le bâtiment", "ro": "Clădirea" },
     "architecture_texte": {
-      "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche date de 1909 et la tour de 1911. Ses vitraux et ses rosaces font partie du patrimoine que nous nous sommes engagés à préserver. [À COMPLÉTER : style architectural, matériaux]",
-      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul datează din 1909, iar turnul din 1911. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm. [À COMPLÉTER : stilul arhitectural, materialele]"
+      "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche date de 1909 et la tour de 1911. Bâtie en briques, rehaussée de bandeaux clairs, elle se distingue par ses grandes rosaces, ses arcs en plein cintre et la galerie d'arcades de sa façade. Ses vitraux et ses rosaces font partie du patrimoine que nous nous sommes engagés à préserver.",
+      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul datează din 1909, iar turnul din 1911. Construită din cărămidă, cu brâuri de culoare deschisă, se remarcă prin rozetele mari, arcadele semicirculare și galeria de arcade de pe fațadă. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm."
     },
-    "architecture_image": "uploads/images/batiment.jpg"
+    "architecture_image": "uploads/images/batiment.jpg",
+    "architecture_legende": { "fr": "Carte postale ancienne : « Nivelles. L'Église Notre-Dame », avec la tour ajoutée en 1911.", "ro": "Carte poștală veche: „Nivelles. L'Église Notre-Dame”, cu turnul adăugat în 1911." }
   },
 
   "communaute": {
