@@ -74,6 +74,18 @@ return [
     // Adresse d'EXPÉDITION : doit être une adresse de VOTRE domaine (ex. site@philadelphia-nivelles.be),
     // sinon les messages risquent d'arriver en spam. Créez-la dans cPanel > Comptes de messagerie.
     'mail_from'  => 'site@philadelphia-nivelles.be', // à créer dans cPanel > Comptes de messagerie
+    // Envoi par SMTP (recommandé : beaucoup d'hébergeurs bloquent la fonction mail() de PHP).
+    // Utilisez le compte e-mail créé dans cPanel (cPanel > Comptes de messagerie > Connect Devices
+    // indique le serveur et le port). Laissez 'pass' vide pour utiliser mail() à la place.
+    'smtp' => [
+        'host'   => 'mail.philadelphia-nivelles.be',  // « Serveur sortant » indiqué par cPanel
+        'port'   => 465,                               // 465 avec 'ssl', ou 587 avec 'tls'
+        'secure' => 'ssl',
+        'user'   => 'info@philadelphia-nivelles.be',   // adresse e-mail complète
+        'pass'   => '',                                // mot de passe de cette adresse e-mail
+        // Mettez false seulement si l'erreur parle de certificat (nom de serveur différent du certificat).
+        'verify_cert' => true,
+    ],
     // Garder aussi une copie des messages dans philadelphia-private/data/ (utile si l'e-mail se perd).
     'contact_keep_copy' => true,
 

@@ -9,7 +9,7 @@ define('ROOT', dirname(__DIR__));          // = public_html
 define('APP', __DIR__);                    // = public_html/app
 
 require APP . '/vendor/autoload.php';
-foreach (['Config', 'Content', 'Markdown', 'Media', 'Gallery', 'Donations', 'Epc', 'Payments', 'Contact'] as $lib) {
+foreach (['Config', 'Content', 'Markdown', 'Media', 'Gallery', 'Donations', 'Epc', 'Payments', 'Smtp', 'Contact'] as $lib) {
     require_once APP . '/lib/' . $lib . '.php';
 }
 require_once APP . '/lib/helpers.php';

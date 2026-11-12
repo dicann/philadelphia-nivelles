@@ -371,6 +371,8 @@ Imediat ce **IBAN-ul este valid** și beneficiarul completat, pe pagina „Faire
 
 ---
 
+**Dacă mesajele nu pleacă** („Le message n'a pas pu être envoyé”): multe hostinguri blochează funcția `mail()` din PHP. Completează în `config.php` secțiunea `'smtp'` cu contul info@ (server, port și parolă: cPanel → Email Accounts → info@ → **Connect Devices**). Cu `'debug' => true`, sub mesajul de eroare apare motivul exact.
+
 ## 15. Registrul donațiilor
 
 `philadelphia-private/data/dons.json` conține donațiile confirmate de webhook: id, sumă, unică/lunară, etapă, nume și e-mail (doar dacă nu e anonimă), dată, statut (`confirme`, `en_attente` pentru SEPA în curs, `echoue`). Doar cele `confirme` intră în bară.

@@ -33,6 +33,7 @@ final class Config
             'methods_monthly' => ['bancontact', 'creditcard'],
             'api_base' => 'https://api.mollie.com/v2',
         ],
+        'smtp' => ['host' => '', 'port' => 465, 'secure' => 'ssl', 'user' => '', 'pass' => '', 'verify_cert' => true],
         'contact_to' => '',
         'mail_from' => '',
         'contact_keep_copy' => true,

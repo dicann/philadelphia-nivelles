@@ -1,7 +1,7 @@
 <?php
 /**
  * Formulaire de contact : validation, anti-spam (pot de miel + délai minimum + limite par IP),
- * envoi avec la fonction mail() de PHP, copie facultative dans philadelphia-private/data/.
+ * envoi par SMTP (si configuré dans config.php) ou avec mail() de PHP, copie facultative dans philadelphia-private/data/.
  */
 final class Contact
 {
@@ -116,8 +116,16 @@ final class Contact
             self::$error = "Adresse 'mail_from' manquante ou invalide dans config.php.";
             return false;
         }
+        if (Smtp::configured()) {
+            if (Smtp::send($from, 'Site Philadelphia', $to, $d['email'], $d['nom'], $subject, $body)) {
+                return true;
+            }
+            self::$error = Smtp::$error;
+            error_log('[contact] ' . self::$error);
+            return false;
+        }
         if (!function_exists('mail')) {
-            self::$error = "La fonction mail() de PHP est désactivée chez l'hébergeur.";
+            self::$error = "La fonction mail() de PHP est désactivée chez l'hébergeur : remplissez la partie 'smtp' de config.php.";
             return false;
         }
         // Protection contre l'injection d'en-têtes : aucune donnée du visiteur ne contient de retour à la ligne.
@@ -136,7 +144,7 @@ final class Contact
             return true;
         }
         $last = error_get_last();
-        self::$error = "mail() a échoué" . ($last ? ' : ' . $last['message'] : '') . ". Vérifiez que l'adresse '$from' existe dans cPanel (Comptes de messagerie).";
+        self::$error = "mail() a échoué" . ($last ? ' : ' . $last['message'] : '') . ". Vérifiez que l'adresse '$from' existe dans cPanel, ou remplissez la partie 'smtp' de config.php (plus fiable).";
         error_log('[contact] ' . self::$error);
         return false;
     }
