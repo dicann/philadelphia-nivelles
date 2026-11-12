@@ -209,6 +209,18 @@ function tel_href(string $n): string
     return 'tel:' . $d;
 }
 
+/** « : » à la française (espace insécable avant) ou à la roumaine (sans espace). */
+function colon(): string
+{
+    return lang() === 'fr' ? "\u{00A0}: " : ': ';
+}
+
+/** Pourcentage : « 56,7 % » (fr) / « 56,7% » (ro). */
+function percent(float $v): string
+{
+    return str_replace('.', ',', (string) $v) . (lang() === 'fr' ? "\u{00A0}%" : '%');
+}
+
 /** Rendu d'un gabarit avec variables. */
 function render(string $template, array $vars = []): string
 {

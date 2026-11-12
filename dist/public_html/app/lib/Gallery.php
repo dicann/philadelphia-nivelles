@@ -41,9 +41,29 @@ final class Gallery
         return $albums;
     }
 
+    /** Légendes facultatives : legendes.txt (« fichier | légende FR | legendă RO »). */
+    private static function captions(string $dir): array
+    {
+        $map = [];
+        if (is_file("$dir/legendes.txt")) {
+            foreach (file("$dir/legendes.txt") ?: [] as $line) {
+                $line = trim(preg_replace('/^\xEF\xBB\xBF/', '', $line));
+                if ($line === '' || $line[0] === '#') {
+                    continue;
+                }
+                $p = array_map('trim', explode('|', $line));
+                if (count($p) >= 2) {
+                    $map[$p[0]] = ['fr' => $p[1], 'ro' => $p[2] ?? $p[1]];
+                }
+            }
+        }
+        return $map;
+    }
+
     private static function images(string $dir, string $rel): array
     {
         $out = [];
+        $caps = self::captions($dir);
         foreach (scandir($dir) ?: [] as $f) {
             if ($f[0] === '.' || !is_file("$dir/$f")) {
                 continue;
@@ -56,7 +76,7 @@ final class Gallery
                 'src' => "$rel/$f",
                 'w' => $size[0] ?? 4,
                 'h' => $size[1] ?? 3,
-                'legende' => Media::humanize(pathinfo($f, PATHINFO_FILENAME)),
+                'legende' => isset($caps[$f]) ? t($caps[$f]) : Media::humanize(pathinfo($f, PATHINFO_FILENAME)),
             ];
         }
         usort($out, fn($a, $b) => strnatcasecmp($a['src'], $b['src']));

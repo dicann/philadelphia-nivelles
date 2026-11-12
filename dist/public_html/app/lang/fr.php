@@ -1,6 +1,7 @@
 <?php
 /** Textes de l'interface — FRANÇAIS (Belgique). Les contenus principaux sont dans content/site.json. */
 return [
+    'eglise_nom' => 'Église Philadelphia',
     'lang_nom' => 'Français',
     'aller_contenu' => 'Aller au contenu',
     'menu' => 'Menu',
@@ -35,6 +36,7 @@ return [
     'objectif' => 'Objectif',
     'objectif_a_definir' => '[À COMPLÉTER : objectif de la campagne dans content/site.json]',
     'nb_dons' => '%d dons en ligne',
+    'nb_dons_de' => '%d dons en ligne',
     'nb_don' => '%d don en ligne',
     'progression_label' => 'Avancement de la collecte',
 
@@ -49,7 +51,7 @@ return [
     'histoire_chapo' => 'Le bâtiment, ses époques, et la communauté qui l\'habite aujourd\'hui.',
 
     // Communauté
-    'communaute_titre' => 'Notre communauté',
+    'communaute_titre' => 'Communauté',
     'communaute_chapo' => 'Qui nous sommes, ce que nous croyons et quand nous nous retrouvons.',
     'qui_sommes_nous' => 'Qui sommes-nous ?',
     'foi_kicker' => 'Notre foi',
@@ -58,7 +60,7 @@ return [
     'activites' => 'Activités',
     'bienvenue_visite' => 'Vous souhaitez nous rendre visite ? Vous êtes le bienvenu à chaque culte.',
     'eglise_en_travaux' => 'L\'église est en travaux et fermée au public.',
-    'cultes_a' => 'Cultes pendant les travaux :',
+    'cultes_a' => 'Cultes pendant les travaux :',
     'nous_contacter' => 'Nous contacter',
     'adresse' => 'Adresse',
 
@@ -171,7 +173,8 @@ return [
     ],
     'message' => 'Message',
     'gsm_facultatif' => 'GSM (facultatif)',
-    'consentement' => 'J\'accepte que mes données soient utilisées pour répondre à ma demande (voir la politique de confidentialité).',
+    'consentement' => 'J\'accepte que mes données soient utilisées pour répondre à ma demande.',
+    'voir_politique' => 'Voir la politique de confidentialité.',
     'envoyer' => 'Envoyer',
     'champs_requis' => 'Les champs marqués * sont obligatoires.',
     'envoye' => 'Merci, votre message a bien été envoyé. Nous vous répondrons dès que possible.',

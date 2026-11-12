@@ -82,7 +82,7 @@ include APP . '/templates/partials/page-head.php';
       <?php endforeach; ?>
     </ol>
     <?php if ($allBudgets && $budgetTotal > 0): ?>
-      <p class="stages-total"><?= e(__('budget_total')) ?> : <strong><?= e(money($budgetTotal)) ?></strong></p>
+      <p class="stages-total"><?= e(__('budget_total') . colon()) ?><strong><?= e(money($budgetTotal)) ?></strong></p>
     <?php endif; ?>
   </div>
 </section>

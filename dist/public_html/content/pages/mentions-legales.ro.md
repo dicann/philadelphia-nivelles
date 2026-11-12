@@ -7,11 +7,11 @@ titre: Mențiuni legale
 Sediul social: Rue Stéphanie 107, 1020 Laeken (Bruxelles)
 Număr de întreprindere (BCE): 1024.526.965
 E-mail: info@philadelphia-nivelles.be
-Responsabil de publicare: Petre Bodan, responsabilul bisericii
+Responsabil editorial: Petre Bodan, responsabilul bisericii
 
 # Proprietate intelectuală
 
-Textele, fotografiile, video-urile și logo-ul de pe acest site aparțin asociației sau sunt folosite cu acordul autorilor. Orice reproducere necesită acord prealabil.
+Textele, fotografiile, videoclipurile și logoul de pe acest site aparțin asociației sau sunt folosite cu acordul autorilor. Orice reproducere necesită acordul nostru prealabil.
 
 # Donații online
 

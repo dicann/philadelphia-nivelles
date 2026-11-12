@@ -1,0 +1,7 @@
+# fichier | légende en français | legendă în română
+1-la-façade-et-le-clocher.jpg | La façade et le clocher | Fațada și turnul
+2-la-flèche-du-clocher.jpg | La flèche du clocher | Turla
+3-le-chevet-et-la-grande-rosace.jpg | Le chevet et la grande rosace | Absida și rozeta cea mare
+4-les-toitures.jpg | Les toitures | Acoperișurile
+5-vue-depuis-la-nacelle.jpg | Vue depuis la nacelle | Vedere din nacelă
+6-la-rosace-au-coucher-du-soleil.jpg | La rosace au coucher du soleil | Rozeta la apus

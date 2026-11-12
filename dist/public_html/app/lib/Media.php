@@ -167,7 +167,7 @@ final class Media
     /** « 2025-03_travaux-toiture » => « Travaux toiture » */
     public static function humanize(string $name): string
     {
-        $name = preg_replace('/^\d{4}([-_.]\d{2}){0,2}[-_ ]*/', '', $name) ?: $name;
+        $name = preg_replace('/^(\d{4}([-_.]\d{2}){0,2}|\d{1,3})[-_ ]+/', '', $name) ?: $name;
         $name = trim(str_replace(['-', '_'], ' ', $name));
         return mb_strtoupper(mb_substr($name, 0, 1)) . mb_substr($name, 1);
     }

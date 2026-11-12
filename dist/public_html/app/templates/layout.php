@@ -4,7 +4,7 @@
  * Variables attendues : $content (HTML), $title, $pageKey ; facultatives : $description, $alternates, $ogImage, $noindex
  */
 $lang = lang();
-$siteName = Content::get('site.nom');
+$siteName = t(Content::get('site.nom'));
 $description = $description ?? t(Content::get('site.description'));
 $fullTitle = ($pageKey ?? '') === 'accueil' ? $siteName . ' — ' . $title : $title . ' — ' . $siteName;
 $alternates = $alternates ?? (isset($pageKey) && isset(Content::ROUTES[$pageKey])
@@ -125,7 +125,7 @@ $testMode = Payments::enabled() && !Config::isLive();
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <svg class="footer-mark" viewBox="0 0 200 210" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
-      <p class="footer-name">Église Philadelphia<br><span>Nivelles</span></p>
+      <p class="footer-name"><?= e(__('eglise_nom')) ?><br><span>Nivelles</span></p>
     </div>
     <div>
       <h2 class="footer-title"><?= e(__('pied_adresse')) ?></h2>
@@ -136,7 +136,7 @@ $testMode = Payments::enabled() && !Config::isLive();
           <small><?= e(__('cultes_a')) ?> <?= e($wp['adresse'] . ', ' . $wp['code_postal'] . ' ' . $wp['ville']) ?></small><br>
         <?php endif; ?>
         <?php foreach (phones() as $p): ?>
-          <?= e(__('gsm')) ?> : <a href="<?= e(tel_href($p['numero'])) ?>"><?= e($p['numero']) ?></a> <small>(<?= e($p['nom']) ?>)</small><br>
+          <?= e(__('gsm') . colon()) ?><a href="<?= e(tel_href($p['numero'])) ?>"><?= e($p['numero']) ?></a> <small>(<?= e($p['nom']) ?>)</small><br>
         <?php endforeach; ?>
         <?php if (!is_todo($c['email'])): ?>
           <a href="mailto:<?= e($c['email']) ?>"><?= e($c['email']) ?></a>

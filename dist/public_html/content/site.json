@@ -2,11 +2,11 @@
   "_LISEZ-MOI": "Fichier de contenu principal. Modifiez uniquement le texte ENTRE guillemets. Gardez les virgules et les accolades. Chaque texte existe en deux langues : \"fr\" (français) et \"ro\" (roumain). Après modification, rechargez le site : si une erreur de syntaxe apparaît, le site vous l'indiquera. Les mentions [À COMPLÉTER : ...] sont surlignées en jaune sur le site jusqu'à ce que vous les remplaciez.",
 
   "site": {
-    "nom": "Église Philadelphia Nivelles",
+    "nom": { "fr": "Église Philadelphia Nivelles", "ro": "Biserica Philadelphia Nivelles" },
     "nom_court": "Philadelphia",
     "description": {
       "fr": "Église évangélique pentecôtiste roumaine à Nivelles, dans l'ancienne église du Saint-Sépulcre (1891). Aidez-nous à restaurer le bâtiment : don en ligne, virement, Payconiq, bénévolat.",
-      "ro": "Biserică penticostală românească în Nivelles, în fosta biserică Saint-Sépulcre (1891). Ajută-ne să restaurăm clădirea: donație online, virament, Payconiq, voluntariat."
+      "ro": "Biserica penticostală română din Nivelles, care se adună în fosta biserică Saint-Sépulcre (1891). Ajută-ne să restaurăm clădirea: donație online, virament, Payconiq sau voluntariat."
     }
   },
 
@@ -68,19 +68,19 @@
     "hero_titre": { "fr": "Une vieille église, une communauté vivante", "ro": "O biserică veche, o comunitate vie" },
     "hero_texte": {
       "fr": "Depuis plus de 130 ans, l'église du Saint-Sépulcre fait partie de Nivelles. Fermée en 2019 et menacée de disparaître, elle a été rachetée par notre communauté pour rester une église. Aidez-nous à la restaurer.",
-      "ro": "De peste 130 de ani, biserica Saint-Sépulcre face parte din Nivelles. Închisă în 2019 și amenințată să dispară, a fost cumpărată de comunitatea noastră ca să rămână biserică. Ajută-ne să o restaurăm."
+      "ro": "De peste 130 de ani, biserica Saint-Sépulcre face parte din peisajul orașului Nivelles. Închisă în 2019 și amenințată să dispară, a fost cumpărată de comunitatea noastră ca să rămână biserică. Ajută-ne să o restaurăm."
     },
     "hero_image": "uploads/images/accueil.jpg",
     "hero_video": "",
     "blocs": {
       "histoire": {
         "titre": { "fr": "L'histoire", "ro": "Povestea" },
-        "texte": { "fr": "Une église de 1891, sauvée de la démolition, devenue la maison de notre communauté.", "ro": "O biserică din 1891, salvată de la demolare, devenită casa comunității noastre." },
+        "texte": { "fr": "Une église de 1891, sauvée de l'abandon, devenue la maison de notre communauté.", "ro": "O biserică din 1891, salvată de la abandon, care a devenit casa comunității noastre." },
         "image": "uploads/images/bloc-histoire.jpg"
       },
       "projet": {
         "titre": { "fr": "Le projet", "ro": "Proiectul" },
-        "texte": { "fr": "La toiture est terminée ; cave, murs, isolation et électricité avancent. Voici où ils en sont et ce qu'il reste à faire.", "ro": "Acoperișul e gata; beciul, pereții, izolația și electricitatea avansează. Iată unde am ajuns și ce mai rămâne de făcut." },
+        "texte": { "fr": "La toiture est terminée ; cave, murs, isolation et électricité avancent. Voici où ils en sont et ce qu'il reste à faire.", "ro": "Acoperișul este gata, iar lucrările la beci, pereți, izolație și electricitate avansează. Iată unde am ajuns și ce mai rămâne de făcut." },
         "image": "uploads/images/bloc-projet.jpg"
       },
       "aider": {
@@ -90,7 +90,7 @@
       }
     },
     "video_titre": { "fr": "En images", "ro": "În imagini" },
-    "video_texte": { "fr": "L'église vue depuis la nacelle du chantier : les toitures et la grande rosace.", "ro": "Biserica văzută din nacela de pe șantier: acoperișurile și rozeta mare." }
+    "video_texte": { "fr": "L'église vue depuis la nacelle du chantier : les toitures et la grande rosace.", "ro": "Biserica văzută din nacela șantierului: acoperișurile și rozeta cea mare." }
   },
 
   "histoire": {
@@ -102,48 +102,48 @@
       {
         "periode": { "fr": "Moyen Âge", "ro": "Evul Mediu" },
         "titre": { "fr": "L'hôpital du Saint-Sépulcre", "ro": "Spitalul Saint-Sépulcre" },
-        "texte": { "fr": "Dès la fondation de l'abbaye de Nivelles par sainte Gertrude et sa mère sainte Ide, la ville possède un hôpital. La paroisse Notre-Dame est alors la seule de Nivelles. Au Moyen Âge, l'hôpital du Saint-Sépulcre est fondé hors des remparts, au faubourg de Namur, dans la continuité de l'ancien hôpital de l'abbaye.", "ro": "Încă de la întemeierea abației din Nivelles de către sfânta Gertrude și mama ei, sfânta Ida, orașul are un spital. Parohia Notre-Dame este pe atunci singura din Nivelles. În Evul Mediu, spitalul Saint-Sépulcre este înființat în afara zidurilor orașului, în cartierul dinspre Namur, ca urmaș al vechiului spital al abației." },
+        "texte": { "fr": "Dès la fondation de l'abbaye de Nivelles par sainte Gertrude et sa mère sainte Ide, la ville possède un hôpital. La paroisse Notre-Dame est alors la seule de Nivelles. Au Moyen Âge, l'hôpital du Saint-Sépulcre est fondé hors des remparts, au faubourg de Namur, dans la continuité de l'ancien hôpital de l'abbaye.", "ro": "Încă de la întemeierea abației din Nivelles de către sfânta Gertrude și mama ei, sfânta Ida, orașul a avut un spital. Pe atunci, parohia Notre-Dame era singura din Nivelles. În Evul Mediu, în afara zidurilor orașului, în mahalaua dinspre Namur, a fost înființat spitalul Saint-Sépulcre, urmașul vechiului spital al abației." },
         "image": ""
       },
       {
         "periode": { "fr": "1231", "ro": "1231" },
         "titre": { "fr": "Naissance de la paroisse", "ro": "Nașterea parohiei" },
-        "texte": { "fr": "L'église de l'hôpital devient église paroissiale : c'est la naissance de la paroisse du Saint-Sépulcre. Au XIXe siècle, après le Concordat, les paroisses de Nivelles sont réorganisées, aux côtés de la collégiale Sainte-Gertrude et des églises Saint-Nicolas et Saint-Jean.", "ro": "Biserica spitalului devine biserică parohială: așa se naște parohia Saint-Sépulcre. În secolul al XIX-lea, după Concordat, parohiile din Nivelles sunt reorganizate, alături de biserica colegială Sainte-Gertrude și de bisericile Saint-Nicolas și Saint-Jean." },
+        "texte": { "fr": "L'église de l'hôpital devient église paroissiale : c'est la naissance de la paroisse du Saint-Sépulcre. Au XIXe siècle, après le Concordat, les paroisses de Nivelles sont réorganisées, aux côtés de la collégiale Sainte-Gertrude et des églises Saint-Nicolas et Saint-Jean.", "ro": "Biserica spitalului a devenit biserică parohială: așa s-a născut parohia Saint-Sépulcre. În secolul al XIX-lea, după Concordat, parohiile din Nivelles au fost reorganizate, iar parohia Saint-Sépulcre a continuat să existe alături de biserica colegială Sainte-Gertrude și de bisericile Saint-Nicolas și Saint-Jean." },
         "image": "uploads/images/histoire-2.jpg",
         "legende": { "fr": "L'ancienne église du Saint-Sépulcre (photo d'archive, Rif tout dju n° 357, 1993).", "ro": "Vechea biserică Saint-Sépulcre (fotografie de arhivă, Rif tout dju nr. 357, 1993)." }
       },
       {
         "periode": { "fr": "1885–1911", "ro": "1885–1911" },
         "titre": { "fr": "Une nouvelle église", "ro": "O biserică nouă" },
-        "texte": { "fr": "L'ancienne église est vétuste et devenue trop petite : le quartier grandit vite autour des gares de Nivelles-Nord (1854) et Nivelles-Est (1874). En 1885, la fabrique d'église décide de bâtir un nouveau sanctuaire, sur d'anciennes prairies marécageuses entre le Curat et Quartaimont, où les Aclots venaient patiner l'hiver. L'église du Saint-Sépulcre et Saint-Paul est construite entre 1887 et 1891, sur décret royal, d'après les plans de l'architecte local Charles Licot, connu aussi pour ses travaux à l'abbaye de Villers-la-Ville. Le porche est ajouté en 1909 et la tour en 1911.", "ro": "Vechea biserică este degradată și a devenit prea mică: cartierul crește repede în jurul gărilor Nivelles-Nord (1854) și Nivelles-Est (1874). În 1885, consiliul bisericii hotărăște construirea unui nou lăcaș, pe niște foste pajiști mlăștinoase dintre Curat și Quartaimont, unde localnicii veneau iarna la patinaj. Biserica Saint-Sépulcre și Saint-Paul se ridică între 1887 și 1891, în baza unui decret regal, după planurile arhitectului local Charles Licot, cunoscut și pentru lucrările de la abația Villers-la-Ville. Pridvorul este construit în 1909, iar turnul în 1911." },
+        "texte": { "fr": "L'ancienne église est vétuste et devenue trop petite : le quartier grandit vite autour des gares de Nivelles-Nord (1854) et Nivelles-Est (1874). En 1885, la fabrique d'église décide de bâtir un nouveau sanctuaire, sur d'anciennes prairies marécageuses entre le Curat et Quartaimont, où les Aclots venaient patiner l'hiver. L'église du Saint-Sépulcre et Saint-Paul est construite entre 1887 et 1891, sur décret royal, d'après les plans de l'architecte local Charles Licot, connu aussi pour ses travaux à l'abbaye de Villers-la-Ville. Le porche est ajouté en 1909 et la tour en 1911.", "ro": "Vechea biserică era degradată și devenise prea mică: cartierul creștea repede în jurul gărilor Nivelles-Nord (1854) și Nivelles-Est (1874). În 1885, consiliul parohial a hotărât construirea unui nou lăcaș de cult, pe niște foste pajiști mlăștinoase dintre Curat și Quartaimont, unde localnicii veneau iarna să patineze. Biserica Saint-Sépulcre și Saint-Paul a fost ridicată între 1887 și 1891, în baza unui decret regal, după planurile arhitectului local Charles Licot, cunoscut și pentru lucrările de restaurare de la abația Villers-la-Ville. Pridvorul a fost construit în 1909, iar turnul în 1911." },
         "image": "uploads/images/histoire-3.jpg",
         "legende": { "fr": "La nouvelle église au milieu des prairies, avant la construction de la tour (photo d'archive, Rif tout dju n° 357, 1993).", "ro": "Biserica nouă, în mijlocul pajiștilor, înainte de construirea turnului (fotografie de arhivă, Rif tout dju nr. 357, 1993)." }
       },
       {
         "periode": { "fr": "2019–2022", "ro": "2019–2022" },
         "titre": { "fr": "Fermeture et désacralisation", "ro": "Închiderea și desacralizarea" },
-        "texte": { "fr": "La stabilité du bâtiment inquiète depuis les années 1970-1980. En juillet 2019, un rapport des pompiers relève de graves problèmes : stabilité du clocher, chutes de pierres, installation électrique non conforme, risque de propagation d'incendie. La Ville ordonne la fermeture de l'église. Une étude d'architecte estime les travaux à plus de deux millions d'euros, un budget que ni la fabrique d'église ni la commune ne peuvent assumer. En mai 2021, l'archevêque de Malines-Bruxelles décide la désaffectation, officialisée en 2022 : l'église peut être vendue, à condition de préserver son architecture, ses vitraux et un usage respectueux de son histoire.", "ro": "Stabilitatea clădirii îngrijora încă din anii 1970–1980. În iulie 2019, un raport al pompierilor semnalează probleme grave: stabilitatea clopotniței, căderi de pietre, instalație electrică neconformă, risc de propagare a incendiilor. Primăria dispune închiderea bisericii. Un studiu de arhitectură estimează lucrările la peste două milioane de euro, buget pe care nici consiliul bisericii, nici primăria nu și-l pot permite. În mai 2021, arhiepiscopul de Malines-Bruxelles hotărăște dezafectarea, oficializată în 2022: biserica poate fi vândută, cu condiția păstrării arhitecturii, a vitraliilor și a unei folosiri care respectă istoria locului." },
+        "texte": { "fr": "La stabilité du bâtiment inquiète depuis les années 1970-1980. En juillet 2019, un rapport des pompiers relève de graves problèmes : stabilité du clocher, chutes de pierres, installation électrique non conforme, risque de propagation d'incendie. La Ville ordonne la fermeture de l'église. Une étude d'architecte estime les travaux à plus de deux millions d'euros, un budget que ni la fabrique d'église ni la commune ne peuvent assumer. En mai 2021, l'archevêque de Malines-Bruxelles décide la désaffectation, officialisée en 2022 : l'église peut être vendue, à condition de préserver son architecture, ses vitraux et un usage respectueux de son histoire.", "ro": "Stabilitatea clădirii stârnea îngrijorare încă din anii 1970–1980. În iulie 2019, un raport al pompierilor a semnalat probleme grave: stabilitatea clopotniței, căderi de pietre, o instalație electrică neconformă și riscul de propagare a unui incendiu. Primăria a dispus închiderea bisericii. Un studiu de arhitectură a estimat lucrările la peste două milioane de euro, un buget pe care nici consiliul parohial, nici primăria nu și-l puteau permite. În mai 2021, arhiepiscopul de Mechelen-Bruxelles a hotărât dezafectarea bisericii, oficializată în 2022: clădirea putea fi vândută, cu condiția să-i fie păstrate arhitectura și vitraliile și să fie folosită cu respect față de istoria locului." },
         "image": "uploads/images/histoire-4.jpg",
         "legende": { "fr": "L'intérieur de l'église avant les travaux.", "ro": "Interiorul bisericii înainte de lucrări." }
       },
       {
         "periode": { "fr": "2024", "ro": "2024" },
         "titre": { "fr": "Une église qui reste une église", "ro": "O biserică ce rămâne biserică" },
-        "texte": { "fr": "D'autres acheteurs étaient intéressés, mais pour donner au bâtiment une tout autre fonction. Nous étions les seuls à vouloir qu'il reste une église. Alors que d'autres proposaient un prix plus élevé, l'Église catholique a choisi de nous le vendre. Avec la communauté roumaine, nous l'avons acheté pour lancer un projet de sauvetage et de restauration.", "ro": "Mai existau și alți cumpărători, dar ei voiau să schimbe destinația clădirii într-una cu totul diferită. Noi eram singurii care doream ca aici să fie în continuare o biserică. Deși ceilalți propuneau un preț mai mare, catolicii au hotărât să ne-o vândă nouă. Împreună cu comunitatea română am cumpărat-o și am pornit un proiect de salvare și restaurare." },
+        "texte": { "fr": "D'autres acheteurs étaient intéressés, mais pour donner au bâtiment une tout autre fonction. Nous étions les seuls à vouloir qu'il reste une église. Alors que d'autres proposaient un prix plus élevé, l'Église catholique a choisi de nous le vendre. Avec la communauté roumaine, nous l'avons acheté pour lancer un projet de sauvetage et de restauration.", "ro": "Mai existau și alți cumpărători interesați, dar aceștia voiau să dea clădirii o cu totul altă destinație. Noi eram singurii care doream ca aici să rămână o biserică. Deși ceilalți ofereau un preț mai mare, Biserica Catolică a hotărât să ne-o vândă nouă. Împreună cu comunitatea românească am cumpărat-o și am pornit un proiect de salvare și restaurare." },
         "image": "uploads/images/histoire-5.jpg",
         "legende": { "fr": "Le jour de la remise de l'église à notre communauté.", "ro": "Ziua predării bisericii către comunitatea noastră." }
       },
       {
         "periode": { "fr": "Aujourd'hui", "ro": "Astăzi" },
         "titre": { "fr": "Le chantier", "ro": "Șantierul" },
-        "texte": { "fr": "En février 2025, notre demande de permis pour transformer l'église et aménager ses abords (parvis et parkings) a été soumise à enquête publique ; le permis a ensuite été accordé. La toiture est terminée. La cave, les enduits intérieurs, l'isolation et les installations techniques sont en cours. L'essentiel du travail et des matériaux est offert par les membres de l'église et leurs proches.", "ro": "În februarie 2025, cererea noastră de permis pentru transformarea bisericii și amenajarea împrejurimilor (parvis și parcări) a fost supusă anchetei publice; permisul a fost apoi aprobat. Acoperișul este gata. Beciul, tencuielile interioare, izolația și instalațiile sunt în lucru. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică și ale apropiaților lor." },
+        "texte": { "fr": "En février 2025, notre demande de permis pour transformer l'église et aménager ses abords (parvis et parkings) a été soumise à enquête publique ; le permis a ensuite été accordé. La toiture est terminée. La cave, les enduits intérieurs, l'isolation et les installations techniques sont en cours. L'essentiel du travail et des matériaux est offert par les membres de l'église et leurs proches.", "ro": "În februarie 2025, cererea noastră de autorizație pentru transformarea bisericii și amenajarea împrejurimilor (piațeta din fața bisericii și parcările) a fost supusă anchetei publice, iar apoi autorizația a fost acordată. Acoperișul este gata. Lucrările la beci, tencuielile interioare, izolația și instalațiile sunt în curs. Cea mai mare parte a muncii și a materialelor provine din donațiile fraților din biserică și ale celor apropiați." },
         "image": "uploads/images/histoire-6.jpg"
       }
     ],
     "architecture_titre": { "fr": "Le bâtiment", "ro": "Clădirea" },
     "architecture_texte": {
       "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche, œuvre de l'architecte Govaerts, date de 1909 et la tour de 1911. De style de transition romano-ogival, bâtie en briques, rehaussée de bandeaux clairs, elle se distingue par ses grandes rosaces, ses arcs en plein cintre et la galerie d'arcades de sa façade. Ses vitraux et ses rosaces font partie du patrimoine que nous nous sommes engagés à préserver.",
-      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul, lucrare a arhitectului Govaerts, datează din 1909, iar turnul din 1911. În stil de tranziție romano-ogival, construită din cărămidă, cu brâuri de culoare deschisă, se remarcă prin rozetele mari, arcadele semicirculare și galeria de arcade de pe fațadă. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm."
+      "ro": "Biserica a fost construită între 1887 și 1891, după planurile lui Charles Licot. Pridvorul, realizat de arhitectul Govaerts, datează din 1909, iar turnul din 1911. Clădirea, în stil de tranziție romanic-gotic, este ridicată din cărămidă cu brâuri de culoare deschisă și se remarcă prin rozetele mari, arcadele semicirculare și galeria de arcade de pe fațadă. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm."
     },
     "architecture_image": "uploads/images/batiment.jpg",
     "architecture_legende": { "fr": "Carte postale ancienne : « Nivelles. L'Église Notre-Dame », avec la tour ajoutée en 1911.", "ro": "Carte poștală veche: „Nivelles. L'Église Notre-Dame”, cu turnul adăugat în 1911." }
@@ -152,9 +152,9 @@
   "communaute": {
     "intro": {
       "fr": "L'Église Philadelphia est une église chrétienne évangélique de tradition pentecôtiste, membre du Culte chrétien pentecôtiste roumain. Elle est née vers 2011 : environ sept familles se réunissaient alors pour prier dans la maison d'un frère. Aujourd'hui, l'église compte 120 membres et environ 200 personnes participent aux cultes.",
-      "ro": "Biserica Philadelphia este o biserică creștină penticostală, parte din Cultul Creștin Penticostal. A luat naștere în jurul anului 2011, când un grup restrâns de credincioși, aproximativ 7 familii, se aduna la rugăciune în casa unui frate. Astăzi suntem 120 de membri, iar la slujbe participă în jur de 200 de persoane."
+      "ro": "Biserica Philadelphia este o biserică creștină penticostală, membră a Cultului Creștin Penticostal. A luat naștere în jurul anului 2011, când un grup restrâns de credincioși, aproximativ șapte familii, se aduna la rugăciune în casa unui frate. Astăzi suntem 120 de membri, iar la slujbe participă în jur de 200 de persoane."
     },
-    "langues_cultes": { "fr": "Pour l'instant, les cultes ont lieu en roumain. Nous prévoyons d'ajouter le français. Chacun est le bienvenu.", "ro": "Deocamdată slujbele se țin doar în limba română, dar avem în plan să adăugăm și limba franceză. Oricine este binevenit." },
+    "langues_cultes": { "fr": "Pour l'instant, les cultes ont lieu en roumain. Nous prévoyons d'ajouter le français. Chacun est le bienvenu.", "ro": "Deocamdată slujbele se țin doar în limba română, dar ne-am propus să le ținem și în limba franceză. Toți sunt bineveniți." },
     "image": "uploads/images/communaute.jpg",
     "mission_titre": { "fr": "Notre mission", "ro": "Misiunea noastră" },
     "mission": { "fr": "Que l'Évangile soit à nouveau annoncé dans cette ville de Belgique, et que, à travers nous, des personnes reviennent au Christ.", "ro": "Ca Evanghelia să ajungă din nou în acest oraș al Belgiei, iar oamenii să se întoarcă, prin noi, la Hristos." },
@@ -169,11 +169,11 @@
       { "fr": "La Sainte-Cène, en souvenir du Seigneur, et l'attente de son retour.", "ro": "Cina Domnului, în amintirea Lui, și așteptarea revenirii Sale." }
     ],
     "horaires": [
-      { "jour": { "fr": "Dimanche", "ro": "Duminică" }, "heure": "10h00 – 12h30 · 18h00 – 20h00", "libelle": { "fr": "Culte", "ro": "Serviciu divin" } },
-      { "jour": { "fr": "Mercredi", "ro": "Miercuri" }, "heure": "19h30 – 21h00", "libelle": { "fr": "Rencontre des jeunes", "ro": "Întâlnirea tinerilor" } },
+      { "jour": { "fr": "Dimanche", "ro": "Duminică" }, "heure": { "fr": "10h00 – 12h30 · 18h00 – 20h00", "ro": "10:00 – 12:30 · 18:00 – 20:00" }, "libelle": { "fr": "Culte", "ro": "Serviciu divin" } },
+      { "jour": { "fr": "Mercredi", "ro": "Miercuri" }, "heure": { "fr": "19h30 – 21h00", "ro": "19:30 – 21:00" }, "libelle": { "fr": "Rencontre des jeunes", "ro": "Întâlnirea tinerilor" } },
       { "jour": { "fr": "Jeudi", "ro": "Joi" }, "heure": { "fr": "En soirée", "ro": "Seara" }, "libelle": { "fr": "Prière et évangélisation", "ro": "Slujbă de rugăciune și evanghelizare" } },
-      { "jour": { "fr": "Vendredi", "ro": "Vineri" }, "heure": { "fr": "En soirée", "ro": "Seara" }, "libelle": { "fr": "Répétition de la chorale", "ro": "Repetiții pentru cor" } },
-      { "jour": { "fr": "2e dimanche du mois", "ro": "A doua duminică din lună" }, "heure": { "fr": "Le matin", "ro": "Dimineața" }, "libelle": { "fr": "Sainte-Cène (la veille, samedi à 19h30 : prière)", "ro": "Cina Domnului (cu o zi înainte, sâmbătă de la 19:30: rugăciune)" } }
+      { "jour": { "fr": "Vendredi", "ro": "Vineri" }, "heure": { "fr": "En soirée", "ro": "Seara" }, "libelle": { "fr": "Répétition de la chorale", "ro": "Repetiția corului" } },
+      { "jour": { "fr": "2e dimanche du mois", "ro": "A doua duminică din lună" }, "heure": { "fr": "Le matin", "ro": "Dimineața" }, "libelle": { "fr": "Sainte-Cène (la veille, samedi à 19h30 : prière)", "ro": "Cina Domnului (în ajun, sâmbătă de la ora 19:30, seară de rugăciune)" } }
     ],
     "activites": [
       {
@@ -183,12 +183,12 @@
       },
       {
         "titre": { "fr": "Jeunes", "ro": "Tineret" },
-        "texte": { "fr": "Les jeunes se retrouvent chaque mercredi de 19h30 à 21h00. Nous voulons faire de l'église un lieu de rencontre pour les jeunes de la région.", "ro": "Tinerii se întâlnesc în fiecare miercuri, între 19:30 și 21:00. Vrem ca biserica să devină un loc de întâlnire (hub) pentru tinerii din zonă." },
+        "texte": { "fr": "Les jeunes se retrouvent chaque mercredi de 19h30 à 21h00. Nous voulons faire de l'église un lieu de rencontre pour les jeunes de la région.", "ro": "Tinerii se întâlnesc în fiecare miercuri, între orele 19:30 și 21:00. Vrem ca biserica să devină un loc de întâlnire pentru tinerii din zonă." },
         "image": "uploads/images/activite-jeunes.jpg"
       },
       {
         "titre": { "fr": "Familles", "ro": "Familii" },
-        "texte": { "fr": "Nous voulons investir davantage dans les familles et les relations familiales. Une retraite pour les familles, avec une conférence, est prévue au printemps 2027. La chorale répète le vendredi soir.", "ro": "Vrem să investim tot mai mult în familii și în relațiile din cadrul familiilor. În primăvara anului 2027 pregătim un retreat cu familiile, cu o conferință de familie. Corul repetă vineri seara." },
+        "texte": { "fr": "Nous voulons investir davantage dans les familles et les relations familiales. Une retraite pour les familles, avec une conférence, est prévue au printemps 2027. La chorale répète le vendredi soir.", "ro": "Vrem să investim tot mai mult în familii și în relațiile dintre membrii familiei. În primăvara anului 2027 pregătim o tabără pentru familii, cu o conferință pe tema familiei. Corul repetă vineri seara." },
         "image": "uploads/images/activite-familles.jpg"
       }
     ],
@@ -205,11 +205,11 @@
   "projet": {
     "intro": {
       "fr": "Nous estimons le coût total de la restauration à environ 1,5 million d'euros. Environ 850 000 € ont déjà été investis : achat, frais de notaire, remboursements de crédit et travaux réalisés. Les plans de l'architecte sont approuvés et le permis d'urbanisme est accordé : les travaux peuvent continuer. L'essentiel du travail et des matériaux est offert par les membres de l'église. Nous travaillons avec la Ville de Nivelles pour la restauration et préparons avec nos voisins un plan de circulation pour le quartier. Le chiffrage détaillé des prochaines étapes est en cours.",
-      "ro": "Estimăm suma totală necesară pentru restaurare la aproximativ 1,5 milioane de euro. Până acum s-au investit aproximativ 850.000 €: cumpărarea, taxele notariale, ratele creditului și lucrările deja făcute. Planurile arhitecturale sunt aprobate, iar permisul de urbanism a fost acordat: lucrările pot continua. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică. Colaborăm cu primăria pentru restaurare și lucrăm împreună cu vecinii la un plan de circulație în zonă. Calculul detaliat al etapelor următoare este în curs."
+      "ro": "Estimăm suma totală necesară pentru restaurare la aproximativ 1,5 milioane de euro. Până acum s-au investit aproximativ 850.000 €: prețul de cumpărare, taxele notariale, ratele creditului și lucrările deja făcute. Planurile arhitecturale sunt aprobate, iar autorizația de construire a fost acordată, așa că lucrările pot continua. Cea mai mare parte a muncii și a materialelor provine din donațiile fraților din biserică. Colaborăm cu primăria pentru restaurare și lucrăm împreună cu vecinii la un plan de circulație pentru cartier. Calculul detaliat al etapelor următoare este în curs."
     },
     "plan_image": "uploads/images/plan.jpg",
     "plan_titre": { "fr": "Les plans approuvés", "ro": "Planurile aprobate" },
-    "plan_texte": { "fr": "Les plans réalisés avec l'architecte ont été approuvés par la Ville. Ils prévoient la transformation de l'intérieur et l'aménagement des abords (parvis et parkings).", "ro": "Planurile realizate împreună cu arhitectul au fost aprobate de primărie. Ele prevăd transformarea interiorului și amenajarea împrejurimilor (parvis și parcări)." },
+    "plan_texte": { "fr": "Les plans réalisés avec l'architecte ont été approuvés par la Ville. Ils prévoient la transformation de l'intérieur et l'aménagement des abords (parvis et parkings).", "ro": "Planurile realizate împreună cu arhitectul au fost aprobate de primărie. Ele prevăd transformarea interiorului și amenajarea împrejurimilor (piațeta din fața bisericii și parcările)." },
     "_aide_etapes": "curseur : false = photos avant/après côte à côte (si elles ne sont pas prises du même endroit). statut : \"a_venir\", \"en_cours\" ou \"termine\". budget : nombre en euros sans guillemets (ou null = « à préciser »). id : code court sans espace, ne pas le changer après le lancement (il sert à relier les dons à l'étape). Images avant/après : déposez les photos aux chemins indiqués.",
     "etapes": [
       {
@@ -225,7 +225,7 @@
       {
         "id": "cave",
         "titre": { "fr": "Cave et sous-sol", "ro": "Beciul" },
-        "description": { "fr": "La cave a été creusée pour qu'on puisse s'y tenir debout. L'eau qui venait de l'extérieur et causait l'humidité est maintenant drainée. Tout a été vidé et une dalle de béton étanche a été coulée sur toute la surface. Le local technique est en place.", "ro": "Beciul a fost adâncit, astfel încât o persoană să poată sta în picioare. S-a făcut drenajul apelor care veneau din exterior și provocau umezeală, s-a evacuat toată mizeria și s-a turnat o dală de beton etanșă pe toată suprafața. Partea tehnică din beci este deja realizată." },
+        "description": { "fr": "La cave a été creusée pour qu'on puisse s'y tenir debout. L'eau qui venait de l'extérieur et causait l'humidité est maintenant drainée. Tout a été vidé et une dalle de béton étanche a été coulée sur toute la surface. Le local technique est en place.", "ro": "Beciul a fost adâncit, astfel încât un om să poată sta în picioare. S-a făcut drenajul apelor care veneau din exterior și provocau umezeală, s-a evacuat tot molozul și s-a turnat o placă de beton etanșă pe toată suprafața. Partea tehnică din beci este deja realizată." },
         "budget": null,
         "statut": "en_cours",
         "image_avant": "uploads/images/cave-avant.jpg",
@@ -235,7 +235,7 @@
         "id": "interieur",
         "curseur": false,
         "titre": { "fr": "Murs et sols intérieurs", "ro": "Pereții și pardoseala" },
-        "description": { "fr": "Les murs et le sol ont été décapés sur toute la surface et tous les murs ont été enduits.", "ro": "S-au decapat pereții și solul pe toată suprafața și s-au tencuit toți pereții." },
+        "description": { "fr": "Les murs et le sol ont été décapés sur toute la surface et tous les murs ont été enduits.", "ro": "Pereții și pardoseala au fost decapate pe toată suprafața, iar toți pereții au fost tencuiți." },
         "budget": null,
         "statut": "en_cours",
         "image_avant": "uploads/images/interieur-avant.jpg",
@@ -245,7 +245,7 @@
         "id": "isolation",
         "curseur": false,
         "titre": { "fr": "Isolation de la toiture et plafonds", "ro": "Izolarea acoperișului și tavanele" },
-        "description": { "fr": "La toiture est isolée par l'intérieur presque entièrement (il reste la partie haute). La membrane pare-vapeur est posée et la pose des plaques de plâtre aux plafonds est préparée.", "ro": "Acoperișul este izolat pe interior aproape în întregime (mai rămâne partea de sus), s-a aplicat membrana antivapori și s-a pregătit montarea rigipsului pe tavane." },
+        "description": { "fr": "La toiture est isolée par l'intérieur presque entièrement (il reste la partie haute). La membrane pare-vapeur est posée et la pose des plaques de plâtre aux plafonds est préparée.", "ro": "Acoperișul este izolat pe interior aproape în întregime (mai rămâne partea de sus), s-a montat bariera de vapori și s-a pregătit montarea plăcilor de gips-carton pe tavane." },
         "budget": null,
         "statut": "en_cours",
         "image_avant": "uploads/images/isolation-avant.jpg",
@@ -254,7 +254,7 @@
       {
         "id": "electricite",
         "titre": { "fr": "Électricité et égouts", "ro": "Electricitate și canalizare" },
-        "description": { "fr": "Une partie de l'installation électrique est faite : le compteur a été renforcé et l'église est passée au triphasé 80 A. Deux nouveaux raccordements à l'égout ont été réalisés et la canalisation souterraine à l'intérieur de l'église est terminée.", "ro": "O parte din instalația electrică este făcută; contorul a fost întărit și s-a introdus curent trifazat de 80 A. S-au realizat două puncte noi de racordare la canalizare, iar canalizarea subterană din interiorul bisericii este gata." },
+        "description": { "fr": "Une partie de l'installation électrique est faite : le compteur a été renforcé et l'église est passée au triphasé 80 A. Deux nouveaux raccordements à l'égout ont été réalisés et la canalisation souterraine à l'intérieur de l'église est terminée.", "ro": "O parte din instalația electrică este gata: puterea branșamentului a fost mărită și s-a trecut la curent trifazat de 80 A. S-au realizat două racorduri noi la canalizare, iar canalizarea subterană din interiorul bisericii este finalizată." },
         "budget": null,
         "statut": "en_cours",
         "image_avant": "uploads/images/electricite-avant.jpg",
@@ -263,7 +263,7 @@
       {
         "id": "suite",
         "titre": { "fr": "Prochaines étapes", "ro": "Etapele următoare" },
-        "description": { "fr": "Le chiffrage détaillé des prochaines étapes est en cours. Nous publierons ici chaque étape et son budget dès qu'ils seront prêts.", "ro": "Calculul detaliat al etapelor următoare este în curs. Vom publica aici fiecare etapă și bugetul ei imediat ce sunt gata." },
+        "description": { "fr": "Le chiffrage détaillé des prochaines étapes est en cours. Nous publierons ici chaque étape et son budget dès qu'ils seront prêts.", "ro": "Calculul detaliat al etapelor următoare este în curs. Vom publica aici fiecare etapă și bugetul ei imediat ce vor fi gata." },
         "budget": null,
         "statut": "a_venir",
         "image_avant": "uploads/images/suite-avant.jpg",
@@ -275,7 +275,7 @@
   "don": {
     "intro": {
       "fr": "Chaque don, quel que soit son montant, aide à financer les travaux. Vous pouvez donner en ligne (Bancontact, carte, domiciliation), par virement, avec Payconiq ou lors des cultes.",
-      "ro": "Fiecare donație, indiferent de sumă, ajută la finanțarea lucrărilor. Poți dona online (Bancontact, card, debit direct SEPA), prin virament, cu Payconiq sau la slujbele din biserică."
+      "ro": "Fiecare donație, indiferent de sumă, ajută la finanțarea lucrărilor. Poți dona online (Bancontact, card, debit direct SEPA), prin virament bancar, cu Payconiq sau la slujbe."
     },
     "montants": [25, 50, 100, 250],
     "virement": {
@@ -288,14 +288,14 @@
       "_aide": "Déposez l'image du code QR Payconiq de l'église sous le nom uploads/images/payconiq.png (ou .jpg) : elle s'affichera ici. afficher : false pour masquer ce bloc.",
       "afficher": true,
       "image": "uploads/images/payconiq.png",
-      "texte": { "fr": "Scannez le code QR Payconiq imprimé sur nos signets, disponibles à l'église. L'argent arrive directement sur le compte de l'église.", "ro": "Scanează codul QR Payconiq tipărit pe semnele de carte pe care le găsești în biserică. Banii ajung direct în contul bisericii." }
+      "texte": { "fr": "Scannez le code QR Payconiq imprimé sur nos signets, disponibles lors des cultes. L'argent arrive directement sur le compte de l'église.", "ro": "Scanează codul QR Payconiq tipărit pe semnele de carte pe care le găsești la slujbe. Banii ajung direct în contul bisericii." }
     },
     "fiscalite": {
       "_aide": "Mettez afficher à false pour masquer ce bloc. Modifiez le texte si l'ASBL obtient l'agrément pour les attestations fiscales.",
       "afficher": true,
       "texte": {
         "fr": "L'ASBL n'est pas (encore) agréée pour délivrer des attestations fiscales : pour le moment, les dons ne donnent pas droit à une réduction d'impôt.",
-        "ro": "Asociația nu este (încă) agreată pentru eliberarea de atestate fiscale: deocamdată, donațiile nu dau dreptul la reducere de impozit."
+        "ro": "Asociația nu este (încă) autorizată să elibereze atestate fiscale: deocamdată, donațiile nu dau dreptul la reducere de impozit."
       }
     },
     "autres_aides": [
@@ -312,7 +312,7 @@
       {
         "icone": "materiaux",
         "titre": { "fr": "Offrir des matériaux", "ro": "Materiale" },
-        "texte": { "fr": "Une grande partie des matériaux est offerte par des membres de l'église et des amis. Contactez-nous avant toute livraison pour vérifier les besoins.", "ro": "Mare parte din materiale sunt donate de frați din biserică și de prieteni. Contactează-ne înainte de orice livrare, ca să verificăm ce e nevoie." }
+        "texte": { "fr": "Une grande partie des matériaux est offerte par des membres de l'église et des amis. Contactez-nous avant toute livraison pour vérifier les besoins.", "ro": "O mare parte din materiale este donată de frați din biserică și de prieteni. Contactează-ne înainte de orice livrare, ca să verificăm de ce este nevoie." }
       },
       {
         "icone": "entreprise",

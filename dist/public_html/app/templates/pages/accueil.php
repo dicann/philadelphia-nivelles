@@ -21,7 +21,7 @@ ob_start();
   </div>
   <div class="wrap hero-inner">
     <div class="hero-text">
-      <p class="kicker">Église Philadelphia · Nivelles</p>
+      <p class="kicker"><?= e(__('eglise_nom')) ?> · Nivelles</p>
       <h1><?= tx(t($a['hero_titre'])) ?></h1>
       <p class="lead"><?= tx(t($a['hero_texte'])) ?></p>
       <div class="hero-actions">

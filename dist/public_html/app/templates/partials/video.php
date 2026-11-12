@@ -16,7 +16,7 @@ $titre = t($v['titre']) ?: __('videos');
   <button class="video-facade" type="button" data-embed="<?= e($src) ?>" data-title="<?= e($titre) ?>">
     <svg class="video-arch" viewBox="0 0 200 210" aria-hidden="true" focusable="false"><use href="#logo"/></svg>
     <span class="video-play"><?= icon('play') ?></span>
-    <span class="video-label"><?= e(__('lire_video')) ?> : <?= e($titre) ?></span>
+    <span class="video-label"><?= e(__('lire_video') . colon() . $titre) ?></span>
     <span class="video-note"><?= e(sprintf(__('video_consentement'), $provider)) ?></span>
   </button>
 <?php endif; ?>

@@ -131,7 +131,7 @@ include APP . '/templates/partials/page-head.php';
         </div>
         <div class="field field-check">
           <input id="c-consent" name="consentement" type="checkbox" value="1"<?= !empty($old['consentement']) ? ' checked' : '' ?><?= $aria('consentement') ?>>
-          <label for="c-consent"><?= e(__('consentement')) ?> <a href="<?= url('confidentialite') ?>"><?= e(__('nav_confidentialite')) ?></a></label>
+          <label for="c-consent"><?= e(__('consentement')) ?> <a href="<?= url('confidentialite') ?>"><?= e(__('voir_politique')) ?></a></label>
           <?= $fieldErr('consentement') ?>
         </div>
         <div class="hp" aria-hidden="true">

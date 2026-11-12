@@ -8,3 +8,5 @@ Facultatif : un fichier album.txt dans le dossier
   ligne 2 = titre en roumain
 Le nom du fichier photo sert de légende (ex. « facade-nord.jpg » -> « Facade nord »).
 Supprimez le dossier « 2026-11 Exemple (à supprimer) » quand vous avez vos vraies photos.
+Facultatif : un fichier legendes.txt dans le dossier, une ligne par photo :
+  nom-du-fichier.jpg | légende en français | legendă în română

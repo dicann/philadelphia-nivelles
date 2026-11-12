@@ -37,9 +37,12 @@
     var lang = summary ? summary.getAttribute('data-lang') : 'fr';
     var fmt = function (v) {
       var dec = v % 1 !== 0 ? 2 : 0;
+      // Montant + « € » à la belge / roumaine (Intl affiche parfois « EUR » en roumain).
+      var n;
       try {
-        return new Intl.NumberFormat(lang === 'ro' ? 'ro-RO' : 'fr-BE', { style: 'currency', currency: 'EUR', minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v);
-      } catch (e) { return v + ' €'; }
+        n = new Intl.NumberFormat(lang === 'ro' ? 'ro-RO' : 'fr-BE', { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v);
+      } catch (e) { n = String(v); }
+      return n + '\u00a0€';
     };
     var amount = function () {
       var r = $('input[name=montant]:checked', form);

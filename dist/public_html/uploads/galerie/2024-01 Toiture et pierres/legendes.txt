@@ -1,0 +1,16 @@
+# fichier | légende en français | legendă în română
+2024-01-ardoises-cassées.jpg | Ardoises cassées | Plăci de ardezie sparte
+2024-01-ardoises-à-remplacer.jpg | Ardoises à remplacer | Plăci de ardezie de înlocuit
+2024-01-toiture-couverte-de-mousse.jpg | Toiture couverte de mousse | Acoperiș plin de mușchi
+2024-01-zinc-abîmé.jpg | Zinc abîmé | Tablă de zinc deteriorată
+2024-07-fissure-dans-une-pierre-de-rive.jpg | Fissure dans une pierre de rive | Fisură într-o piatră de pe marginea frontonului
+2024-07-pierres-fissurées.jpg | Pierres fissurées | Pietre fisurate
+2024-07-sécurisés-sur-le-toit.jpg | Travail sécurisé sur le toit | Lucru asigurat pe acoperiș
+2024-07-travail-en-hauteur.jpg | Travail en hauteur | Lucru la înălțime
+2024-08-depuis-la-nacelle.jpg | Depuis la nacelle | Din nacelă
+2024-08-les-toitures-et-le-clocher.jpg | Les toitures et le clocher | Acoperișurile și turnul
+2024-08-pierre-de-pignon-abîmée.jpg | Pierre de pignon abîmée | Piatră de fronton deteriorată
+2024-08-toiture-en-cours.jpg | La toiture pendant les travaux | Acoperișul în timpul lucrărilor
+2024-08-un-pignon.jpg | Un pignon | Un fronton
+2024-09-le-chevet-vu-d'en-haut.jpg | Le chevet vu d'en haut | Absida văzută de sus
+2024-09-nouvelles-ardoises.jpg | Nouvelles ardoises | Plăci noi de ardezie

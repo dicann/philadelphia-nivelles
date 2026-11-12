@@ -1,0 +1,5 @@
+# fichier | légende en français | legendă în română
+1-plan-de-l'aménagement-prévu.jpg | Plan de l'aménagement prévu | Planul amenajării prevăzute
+2-plan-du-rez-de-chaussée.jpg | Plan du rez-de-chaussée | Planul parterului
+3-façades-et-coupes.jpg | Façades et coupes | Fațade și secțiuni
+4-plans-et-coupes.jpg | Plans et coupes | Planuri și secțiuni

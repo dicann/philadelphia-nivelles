@@ -1,0 +1,11 @@
+# fichier | légende en français | legendă în română
+2024-01-la-flèche-et-le-coq.jpg | La flèche et le coq | Turla și cocoșul
+2024-02-descente-des-cloches.jpg | Descente des cloches | Coborârea clopotelor
+2024-02-démontage-du-beffroi.jpg | Démontage du beffroi | Demontarea structurii clopotelor
+2024-02-les-cloches-au-sol.jpg | Les cloches au sol | Clopotele pe pământ
+2024-02-les-trois-cloches.jpg | Les trois cloches | Cele trei clopote
+2024-02-travail-sur-le-beffroi.jpg | Travail sur le beffroi | Lucru la structura clopotelor
+2024-02-une-cloche-dans-la-tour.jpg | Une cloche dans la tour | Un clopot în turn
+2024-02-une-cloche-dans-le-clocher.jpg | Une cloche dans le clocher | Un clopot în clopotniță
+2024-06-le-coq-avant-restauration.jpg | Le coq avant restauration | Cocoșul înainte de restaurare
+2024-06-le-coq-restauré.jpg | Le coq restauré | Cocoșul restaurat
