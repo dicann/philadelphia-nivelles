@@ -12,7 +12,14 @@ $alternates = $alternates ?? (isset($pageKey) && isset(Content::ROUTES[$pageKey]
 $canonical = $alternates[$lang] ?? site_url() . ($_SERVER['REQUEST_URI'] ?? '/');
 $other = $lang === 'fr' ? 'ro' : 'fr';
 $switchUrl = isset($alternates[$other]) ? substr($alternates[$other], strlen(site_url())) ?: '/' : url('accueil', $other);
-$ogImage = $ogImage ?? site_url() . '/assets/img/og-image.jpg';
+$ogImage = $ogImage ?? site_url() . '/assets/img/og-image-' . $lang . '.jpg?v=' . substr((string) @filemtime(ROOT . '/assets/img/og-image-' . $lang . '.jpg'), -6);
+if (($pageKey ?? '') === 'accueil') {
+    $ogTitle = $siteName . ' — ' . t(Content::get('accueil.hero_titre'));
+    $ogDescription = t(Content::get('accueil.hero_texte'));
+} else {
+    $ogTitle = $fullTitle;
+    $ogDescription = strip_tags($description);
+}
 $nav = array_values(array_filter((array) Content::get('menu', ['accueil', 'histoire', 'communaute', 'projet', 'galerie', 'contact']), fn($k) => isset(Content::ROUTES[$k])));
 $c = Content::get('contact');
 $testMode = Payments::enabled() && !Config::isLive();
@@ -31,10 +38,16 @@ $testMode = Payments::enabled() && !Config::isLive();
 <?php if (isset($alternates['fr'])): ?><link rel="alternate" hreflang="x-default" href="<?= e($alternates['fr']) ?>"><?php endif; ?>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?= e($siteName) ?>">
-<meta property="og:title" content="<?= e($title) ?>">
-<meta property="og:description" content="<?= e(strip_tags($description)) ?>">
+<meta property="og:title" content="<?= e($ogTitle) ?>">
+<meta property="og:description" content="<?= e($ogDescription) ?>">
 <meta property="og:url" content="<?= e($canonical) ?>">
 <meta property="og:image" content="<?= e($ogImage) ?>">
+<?php if (str_contains($ogImage, '/assets/img/og-image-')): ?>
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<?php endif; ?>
+<meta property="og:image:alt" content="<?= e($siteName) ?>">
 <meta property="og:locale" content="<?= $lang === 'fr' ? 'fr_BE' : 'ro_RO' ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#23514A">
