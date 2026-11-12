@@ -354,6 +354,16 @@ legend, .field label { display: block; font-weight: 600; margin-bottom: .45rem; 
 .qr-missing { padding: 1.2rem; font-size: .95rem; }
 .fiscal { margin-top: 1.5rem; }
 .grid-4 + .center { margin-top: 2rem; }
+.mission { gap: 2rem 4rem; }
+.mission-item { border-left: 3px solid var(--gold); padding-left: 1.4rem; }
+.mission-text { font-family: var(--font-display); font-size: clamp(1.45rem, 2.6vw, 1.9rem); line-height: 1.3; color: var(--cream); margin: 0; }
+.people { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); }
+.people li { background: var(--white); border: 1px solid var(--stone-dark); border-top: 3px solid var(--gold); border-radius: var(--r); padding: 1.1rem 1.25rem; display: flex; flex-direction: column; gap: .2rem; }
+.people strong { font-family: var(--font-display); font-size: 1.35rem; color: var(--green-dark); line-height: 1.2; }
+.people span { color: var(--muted); font-size: .95rem; }
+.payconiq { margin-top: 1.5rem; padding: 1.2rem; background: var(--white); border: 1px solid var(--stone-dark); border-radius: var(--r); text-align: center; }
+.payconiq-img { margin: .5rem auto 1rem; width: 200px; height: auto; }
+.payconiq p { margin: 0; font-size: .95rem; }
 .help-card { background: var(--white); border-radius: var(--r); padding: 1.5rem; border: 1px solid var(--stone-dark); text-align: center; }
 .help-icon { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; background: var(--green-light); color: var(--green); margin-bottom: .8rem; }
 .help-icon .icon { width: 30px; height: 30px; }

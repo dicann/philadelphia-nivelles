@@ -346,7 +346,7 @@ Pași în File Manager: **+ Folder** (cu numele de mai sus) → în folder **+ F
 
 - Data e luată din numele folderului; adresa paginii din restul numelui (`/fr/actualites/debut-toiture`).
 - Pentru a ascunde temporar o noutate: adăugați linia `publie: non` în antet (între `---`).
-- **Ștergeți** folderul exemplu `2026-11-03-lancement-du-site`.
+- Exemple reale: `2026-11-12-concert-de-noel` și `2026-11-10-ou-en-sont-les-travaux`.
 
 ---
 

@@ -60,7 +60,7 @@ $testMode = Payments::enabled() && !Config::isLive();
         'addressCountry' => 'BE',
     ],
     'email' => is_todo($c['email']) ? null : $c['email'],
-    'telephone' => is_todo($c['gsm']) ? null : $c['gsm'],
+    'telephone' => phones() ? str_replace('tel:', '', tel_href(phones()[0]['numero'])) : null,
 ]), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 </head>
 <body class="page-<?= e($pageKey ?? 'autre') ?>">
@@ -119,11 +119,9 @@ $testMode = Payments::enabled() && !Config::isLive();
       <address>
         <?= tx($c['adresse']) ?><br>
         <?= e($c['code_postal']) ?> <?= e($c['ville']) ?>, <?= e(t($c['pays'])) ?><br>
-        <?php if (!is_todo($c['gsm'])): ?>
-          <?= e(__('gsm')) ?> : <a href="tel:<?= e(preg_replace('/[^\d+]/', '', $c['gsm'])) ?>"><?= e($c['gsm']) ?></a><br>
-        <?php else: ?>
-          <?= e(__('gsm')) ?> : <?= tx($c['gsm']) ?><br>
-        <?php endif; ?>
+        <?php foreach (phones() as $p): ?>
+          <?= e(__('gsm')) ?> : <a href="<?= e(tel_href($p['numero'])) ?>"><?= e($p['numero']) ?></a> <small>(<?= e($p['nom']) ?>)</small><br>
+        <?php endforeach; ?>
         <?php if (!is_todo($c['email'])): ?>
           <a href="mailto:<?= e($c['email']) ?>"><?= e($c['email']) ?></a>
         <?php else: ?>

@@ -5,7 +5,7 @@ Această pagină explică ce date personale prelucrăm, de ce și ce drepturi ai
 
 # Operatorul de date
 
-[À COMPLÉTER : nom exact de l'ASBL], [À COMPLÉTER : adresse du siège social], număr de întreprindere [À COMPLÉTER : numéro BCE].
+ASBL CERP – Centrul Evanghelic Român Philadelphia, [À COMPLÉTER : adresse du siège social], număr de întreprindere [À COMPLÉTER : numéro BCE].
 Pentru orice întrebare despre datele tale: [À COMPLÉTER : adresse e-mail].
 
 # Ce date și de ce?

@@ -65,6 +65,7 @@ return [
     'comparer' => 'Trage pentru a compara înainte și după',
     'soutenir_etape' => 'Susține această etapă',
     'dons_etape' => 'Donații online pentru această etapă',
+    'montant_a_preciser' => 'De stabilit',
     'montant_a_completer' => '[À COMPLÉTER : suma]',
 
     'don_titre' => 'Donează',

@@ -144,6 +144,13 @@ include APP . '/templates/partials/page-head.php';
           <div class="qr-missing"><?= mark_todo(e('[À COMPLÉTER : ' . __('qr_indisponible') . ']')) ?></div>
         <?php endif; ?>
       </div>
+      <?php if (!empty($d['payconiq']['afficher'])): $pq = Media::find($d['payconiq']['image'] ?? null); ?>
+        <div class="payconiq">
+          <h3 class="h4">Payconiq</h3>
+          <?php if ($pq): ?><img class="payconiq-img" src="<?= e(Media::url($pq, 480)) ?>" alt="Payconiq — QR" width="200" height="200" loading="lazy"><?php endif; ?>
+          <p><?= tx(t($d['payconiq']['texte'])) ?></p>
+        </div>
+      <?php endif; ?>
       <?php if (!empty($d['fiscalite']['afficher'])): ?>
         <div class="fiscal">
           <h3 class="h4"><?= e(__('fiscalite_titre')) ?></h3>

@@ -44,10 +44,10 @@ include APP . '/templates/partials/page-head.php';
       <ul class="contact-list">
         <li><?= icon('pin') ?><div><strong><?= e(__('adresse')) ?></strong><br>
           <?= tx($c['adresse']) ?><br><?= e($c['code_postal'] . ' ' . $c['ville']) ?>, <?= e(t($c['pays'])) ?></div></li>
-        <li><?= icon('phone') ?><div><strong><?= e(__('gsm')) ?></strong><br>
-          <?php if (is_todo($c['gsm'])): ?><?= tx($c['gsm']) ?>
-          <?php else: ?><a href="tel:<?= e(preg_replace('/[^\d+]/', '', $c['gsm'])) ?>"><?= e($c['gsm']) ?></a><?php endif; ?>
-          <br><small><?= tx(t($c['gsm_nom'])) ?></small></div></li>
+        <li><?= icon('phone') ?><div><strong><?= e(__('gsm')) ?></strong>
+          <?php foreach (phones() as $p): ?>
+            <br><a href="<?= e(tel_href($p['numero'])) ?>"><?= e($p['numero']) ?></a> — <?= e($p['nom']) ?><?php if (!empty($p['role'])): ?>, <small><?= tx(t($p['role'])) ?></small><?php endif; ?>
+          <?php endforeach; ?></div></li>
         <li><?= icon('mail') ?><div><strong><?= e(__('email')) ?></strong><br>
           <?php if (is_todo($c['email'])): ?><?= tx($c['email']) ?>
           <?php else: ?><a href="mailto:<?= e($c['email']) ?>"><?= e($c['email']) ?></a><?php endif; ?></div></li>

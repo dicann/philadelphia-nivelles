@@ -72,6 +72,7 @@ return [
     'comparer' => 'Faites glisser pour comparer avant et après',
     'soutenir_etape' => 'Soutenir cette étape',
     'dons_etape' => 'Dons en ligne pour cette étape',
+    'montant_a_preciser' => 'À préciser',
     'montant_a_completer' => '[À COMPLÉTER : montant]',
 
     // Don

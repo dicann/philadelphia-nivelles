@@ -53,7 +53,7 @@ include APP . '/templates/partials/page-head.php';
           <h2 class="h3"><?= tx(t($e['titre'])) ?></h2>
           <p><?= tx(t($e['description'])) ?></p>
           <dl class="stage-figures">
-            <div><dt><?= e(__('budget')) ?></dt><dd><?= is_numeric($e['budget'] ?? null) ? e(money((float) $e['budget'])) : mark_todo(e(__('montant_a_completer'))) ?></dd></div>
+            <div><dt><?= e(__('budget')) ?></dt><dd><?= is_numeric($e['budget'] ?? null) ? e(money((float) $e['budget'])) : e(__('montant_a_preciser')) ?></dd></div>
             <?php if ($raisedStage > 0): ?>
             <div><dt><?= e(__('dons_etape')) ?></dt><dd><?= e(money($raisedStage)) ?></dd></div>
             <?php endif; ?>

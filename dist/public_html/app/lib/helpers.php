@@ -180,6 +180,22 @@ function stage_status_label(string $s): string
     return __('statut_' . (in_array($s, ['a_venir', 'en_cours', 'termine'], true) ? $s : 'a_venir'));
 }
 
+/** Numéros de téléphone de site.json (contact.telephones). */
+function phones(): array
+{
+    return array_values(array_filter(Content::get('contact.telephones', []), fn($p) => !empty($p['numero'])));
+}
+
+/** Lien tel: (format international belge). */
+function tel_href(string $n): string
+{
+    $d = preg_replace('/[^\d+]/', '', $n);
+    if (str_starts_with($d, '0') && !str_starts_with($d, '00')) {
+        $d = '+32' . substr($d, 1);
+    }
+    return 'tel:' . $d;
+}
+
 /** Rendu d'un gabarit avec variables. */
 function render(string $template, array $vars = []): string
 {

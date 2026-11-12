@@ -3,11 +3,11 @@ titre: Mentions légales
 ---
 # Éditeur du site
 
-**[À COMPLÉTER : nom exact de l'ASBL]**
+**ASBL CERP – Centrul Evanghelic Român Philadelphia**
 Siège social : [À COMPLÉTER : adresse du siège social]
 Numéro d'entreprise (BCE) : [À COMPLÉTER : numéro d'entreprise BCE]
 E-mail : [À COMPLÉTER : adresse e-mail]
-Responsable de la publication : [À COMPLÉTER : nom et fonction]
+Responsable de la publication : Petre Bodan, responsable de l'église
 
 # Hébergement
 

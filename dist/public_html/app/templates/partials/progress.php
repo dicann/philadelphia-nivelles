@@ -7,7 +7,7 @@ $showCount = (bool) Content::get('campagne.afficher_nombre_dons', true) && $tot[
 <div class="progress<?= !empty($large) ? ' progress-lg' : '' ?>">
   <p class="progress-figures">
     <strong class="progress-raised"><?= e(money($tot['collecte'])) ?></strong>
-    <span><?= e(__('collecte')) ?></span>
+    <span><?= e(t(Content::get('campagne.libelle_montant')) ?: __('collecte')) ?></span>
     <?php if ($tot['objectif']): ?>
       <span class="progress-goal"><?= e(__('objectif')) ?> : <?= e(money($tot['objectif'])) ?></span>
     <?php endif; ?>

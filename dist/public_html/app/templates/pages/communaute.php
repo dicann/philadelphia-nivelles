@@ -12,11 +12,23 @@ include APP . '/templates/partials/page-head.php';
       <h2><?= e(__('qui_sommes_nous')) ?></h2>
       <p class="lead"><?= tx(t($cm['intro'])) ?></p>
       <p><?= tx(t($cm['langues_cultes'])) ?></p>
-      <p><?= tx(t($cm['affiliation'])) ?></p>
     </div>
     <div class="split-media arch-frame"><?= picture($cm['image'], __('communaute_titre'), '(min-width: 900px) 45vw, 100vw') ?></div>
   </div>
 </section>
+
+<?php if (!empty($cm['mission']) || !empty($cm['vision'])): ?>
+<section class="section section-green" aria-label="<?= e(t($cm['mission_titre'] ?? '')) ?>">
+  <div class="wrap grid-2 mission">
+    <?php foreach (['mission', 'vision'] as $k): if (empty($cm[$k])) continue; ?>
+    <div class="mission-item">
+      <p class="kicker"><?= tx(t($cm[$k . '_titre'] ?? '')) ?></p>
+      <p class="mission-text"><?= tx(t($cm[$k])) ?></p>
+    </div>
+    <?php endforeach; ?>
+  </div>
+</section>
+<?php endif; ?>
 
 <section class="section section-stone">
   <div class="wrap grid-2">
@@ -59,6 +71,19 @@ include APP . '/templates/partials/page-head.php';
     </div>
   </div>
 </section>
+
+<?php if (!empty($cm['responsables'])): ?>
+<section class="section section-stone" aria-labelledby="t-resp">
+  <div class="wrap">
+    <h2 id="t-resp" class="center"><?= tx(t($cm['responsables_titre'] ?? '')) ?></h2>
+    <ul class="people">
+      <?php foreach ($cm['responsables'] as $r): ?>
+        <li><strong><?= tx($r['nom']) ?></strong><span><?= tx(t($r['role'])) ?></span></li>
+      <?php endforeach; ?>
+    </ul>
+  </div>
+</section>
+<?php endif; ?>
 
 <section class="section section-green">
   <div class="wrap narrow center">

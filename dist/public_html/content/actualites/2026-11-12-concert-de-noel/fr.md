@@ -1,0 +1,14 @@
+---
+titre: Concert de Noël les 5 et 6 décembre
+resume: Orchestre et chorale : une soirée en français le samedi 5 décembre, une soirée en roumain le dimanche 6 décembre.
+---
+Pour Noël, l'église organise un **concert avec orchestre et chorale**, sur deux soirées :
+
+- **samedi 5 décembre** : soirée en français, ouverte à tous les habitants de Nivelles et des environs ;
+- **dimanche 6 décembre** : soirée en roumain.
+
+Heure : [À COMPLÉTER : heure du concert]
+Entrée : [À COMPLÉTER : gratuite, libre participation… ?]
+Lieu : église Philadelphia (ancienne église du Saint-Sépulcre), Parvis Notre-Dame, 1400 Nivelles.
+
+Venez nombreux, et parlez-en autour de vous !
