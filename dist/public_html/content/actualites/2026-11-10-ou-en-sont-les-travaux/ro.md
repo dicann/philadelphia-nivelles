@@ -2,7 +2,7 @@
 titre: Unde am ajuns cu lucrările?
 resume: Acoperișul, beciul și tencuielile sunt gata; izolația, electricitatea și canalizarea sunt în lucru.
 ---
-De la cumpărarea bisericii, șantierul avansează datorită muncii fraților din biserică și materialelor donate de mulți dintre ei.
+Șantierul avansează datorită muncii fraților din biserică și materialelor donate de mulți dintre ei.
 
 ## Deja terminat
 

@@ -6,7 +6,7 @@ titre: Mentions légales
 **ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia)**
 Siège social : Rue Stéphanie 107, 1020 Laeken (Bruxelles)
 Numéro d'entreprise (BCE) : [À COMPLÉTER : numéro d'entreprise BCE]
-E-mail : [À COMPLÉTER : adresse e-mail]
+E-mail : info@philadelphia-nivelles.be
 Responsable de la publication : Petre Bodan, responsable de l'église
 
 # Hébergement

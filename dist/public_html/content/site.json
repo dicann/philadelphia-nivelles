@@ -27,14 +27,14 @@
       { "nom": "Petre Bodan", "role": { "fr": "responsable de l'église", "ro": "responsabilul bisericii" }, "numero": "0496 79 52 76" },
       { "nom": "Cristian Senatovici", "role": { "fr": "trésorier", "ro": "casier" }, "numero": "0474 57 49 10" }
     ],
-    "email": "[À COMPLÉTER : adresse e-mail (en cours de création)]",
+    "email": "info@philadelphia-nivelles.be",
     "carte": {
       "_aide": "Coordonnées GPS de l'église (clic droit sur la carte dans openstreetmap.org > « Afficher l'adresse »). Laissez null tant que ce n'est pas rempli.",
       "latitude": null,
       "longitude": null
     },
     "_aide_reseaux": "Collez ici l'adresse complète des pages (ex. https://www.facebook.com/...). Laissez vide pour ne pas afficher l'icône.",
-    "facebook": "",
+    "facebook": "https://www.facebook.com/profile.php?id=100072177499967",
     "youtube": "",
     "instagram": ""
   },
@@ -108,7 +108,7 @@
         "image": "uploads/images/histoire-4.jpg"
       },
       {
-        "periode": { "fr": "[À COMPLÉTER : année de l'achat]", "ro": "[À COMPLÉTER : anul cumpărării]" },
+        "periode": { "fr": "2026", "ro": "2026" },
         "titre": { "fr": "Une église qui reste une église", "ro": "O biserică ce rămâne biserică" },
         "texte": { "fr": "D'autres acheteurs étaient intéressés, mais pour donner au bâtiment une tout autre fonction. Nous étions les seuls à vouloir qu'il reste une église. Alors que d'autres proposaient un prix plus élevé, l'Église catholique a choisi de nous le vendre. Avec la communauté roumaine, nous l'avons acheté pour lancer un projet de sauvetage et de restauration.", "ro": "Mai existau și alți cumpărători, dar ei voiau să schimbe destinația clădirii într-una cu totul diferită. Noi eram singurii care doream ca aici să fie în continuare o biserică. Deși ceilalți propuneau un preț mai mare, catolicii au hotărât să ne-o vândă nouă. Împreună cu comunitatea română am cumpărat-o și am pornit un proiect de salvare și restaurare." },
         "image": "uploads/images/histoire-5.jpg"
@@ -141,9 +141,11 @@
     "vision": { "fr": "Une oasis pour tous ceux qui ont soif spirituellement, et un lieu où les jeunes se retrouvent pour louer le Seigneur.", "ro": "O oază pentru toți cei însetați spiritual și un loc în care tinerii să se întâlnească pentru a-L lăuda pe Domnul." },
     "croyances_titre": { "fr": "Ce que nous croyons", "ro": "Ce credem" },
     "croyances": [
-      { "fr": "[À COMPLÉTER : point 1 de la confession de foi — à faire valider par les responsables]", "ro": "[À COMPLÉTER : punctul 1 din mărturisirea de credință — de validat de conducerea bisericii]" },
-      { "fr": "[À COMPLÉTER : point 2]", "ro": "[À COMPLÉTER : punctul 2]" },
-      { "fr": "[À COMPLÉTER : point 3]", "ro": "[À COMPLÉTER : punctul 3]" }
+      { "fr": "La Bible est la Parole de Dieu, notre référence pour la foi et pour la vie.", "ro": "Biblia este Cuvântul lui Dumnezeu, temelia credinței și a vieții noastre." },
+      { "fr": "Un seul Dieu, Père, Fils et Saint-Esprit.", "ro": "Un singur Dumnezeu: Tatăl, Fiul și Duhul Sfânt." },
+      { "fr": "Le salut par la grâce, par la foi en Jésus-Christ, mort et ressuscité pour nous.", "ro": "Mântuirea prin har, prin credința în Isus Hristos, care a murit și a înviat pentru noi." },
+      { "fr": "Le baptême par immersion de ceux qui croient, et le baptême du Saint-Esprit.", "ro": "Botezul în apă, prin scufundare, al celor care cred, și botezul cu Duhul Sfânt." },
+      { "fr": "La Sainte-Cène, en souvenir du Seigneur, et l'attente de son retour.", "ro": "Cina Domnului, în amintirea Lui, și așteptarea revenirii Sale." }
     ],
     "horaires": [
       { "jour": { "fr": "Dimanche", "ro": "Duminică" }, "heure": "10h00 – 12h30 · 18h00 – 20h00", "libelle": { "fr": "Culte", "ro": "Serviciu divin" } },
@@ -234,7 +236,7 @@
       {
         "id": "suite",
         "titre": { "fr": "Prochaines étapes", "ro": "Etapele următoare" },
-        "description": { "fr": "[À COMPLÉTER : prochaines étapes (finitions, chauffage, sanitaires, salle…) et leur budget — chiffrage en cours]", "ro": "[À COMPLÉTER : etapele următoare (finisaje, încălzire, grupuri sanitare, sală…) și bugetul lor — calcul în curs]" },
+        "description": { "fr": "Le chiffrage détaillé des prochaines étapes est en cours. Nous publierons ici chaque étape et son budget dès qu'ils seront prêts.", "ro": "Calculul detaliat al etapelor următoare este în curs. Vom publica aici fiecare etapă și bugetul ei imediat ce sunt gata." },
         "budget": null,
         "statut": "a_venir",
         "image_avant": "uploads/images/suite-avant.jpg",

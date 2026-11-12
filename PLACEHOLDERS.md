@@ -4,25 +4,23 @@ Răspunsurile din chestionarul „Întrebări pentru site-ul Philadelphia Nivell
 Ce a rămas apare pe site **surlignat cu galben** (`[À COMPLÉTER : ...]`). Listă tehnică, cu numerele liniilor: `php tools/lister-placeholders.php`.
 
 ## Date administrative
-- [ ] Numărul de întreprindere (BCE) al ASBL — `content/site.json` și paginile legale
+- [ ] Numărul de întreprindere (BCE) al ASBL — de confirmat (posibil 1024.526.965, vezi kbopub.economie.fgov.be)
 - [ ] Confirmare: sediul ASBL e Rue Stéphanie 107, 1020 Laeken? (preluat din anunțul primăriei, unde apare ca „bureaux”)
 - [ ] Coordonatele GPS ale bisericii (pentru hartă)
-- [ ] Adresa de e-mail (în curs de creare) — pe site și în `config.php` (`contact_to`)
-- [ ] Linkurile paginilor Facebook și Instagram (`contact.facebook`, `contact.instagram`)
+- [ ] Instagram, când va exista (`contact.instagram`)
 
 ## Istorie
-- [ ] Anul în care biserica a fost cumpărată
 - [ ] Arhitectura: stil și materiale (vitraliile și rozetele sunt deja menționate)
 
 ## Comunitate
-- [ ] Mărturisirea de credință: 3–5 puncte scurte, validate de conducere
+- [ ] Validarea de către conducere a celor 5 puncte din „Ce credem” (scrise pe baza tradiției penticostale)
 - [ ] Copii: școala duminicală (vârste, program), dacă există
 
 ## Proiect
 - [ ] Etapele următoare și bugetul fiecăreia (ați spus că reveniți cu calculele). Bugetele etapelor deja făcute apar ca „À préciser” până le completați.
 
 ## Noutăți
-- [ ] Concertul de Crăciun (5 și 6 decembrie): ora și condițiile de intrare — `content/actualites/2026-11-12-concert-de-noel/`
+- [ ] Concertul de Crăciun: ora și intrarea, când se știu (acum scrie „communiquée prochainement”)
 
 ## Pagini legale
 - [ ] Firma de hosting (nume, adresă, site)

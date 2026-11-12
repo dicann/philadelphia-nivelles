@@ -6,7 +6,7 @@ Această pagină explică ce date personale prelucrăm, de ce și ce drepturi ai
 # Operatorul de date
 
 ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia), Rue Stéphanie 107, 1020 Laeken (Bruxelles), număr de întreprindere [À COMPLÉTER : numéro BCE].
-Pentru orice întrebare despre datele tale: [À COMPLÉTER : adresse e-mail].
+Pentru orice întrebare despre datele tale: info@philadelphia-nivelles.be.
 
 # Ce date și de ce?
 
@@ -30,7 +30,7 @@ Video-urile YouTube sau Vimeo și harta OpenStreetMap se încarcă doar dacă da
 
 # Drepturile tale
 
-Poți cere accesul la datele tale, rectificarea, ștergerea, restricționarea prelucrării sau te poți opune prelucrării și îți poți retrage oricând consimțământul. Scrie-ne la [À COMPLÉTER : adresse e-mail].
+Poți cere accesul la datele tale, rectificarea, ștergerea, restricționarea prelucrării sau te poți opune prelucrării și îți poți retrage oricând consimțământul. Scrie-ne la info@philadelphia-nivelles.be.
 
 Dacă consideri că drepturile tale nu sunt respectate, poți depune o plângere la Autoritatea belgiană pentru protecția datelor (www.autoriteprotectiondonnees.be).
 

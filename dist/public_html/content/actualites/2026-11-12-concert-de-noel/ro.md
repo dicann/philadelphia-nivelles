@@ -7,8 +7,8 @@ De Crăciun, biserica organizează un **concert cu orchestră și cor**, în dou
 - **sâmbătă, 5 decembrie**: seară în limba franceză, pentru belgieni și pentru toți locuitorii din Nivelles și împrejurimi;
 - **duminică, 6 decembrie**: seară pentru români.
 
-Ora: [À COMPLÉTER : ora concertului]
-Intrarea: [À COMPLÉTER : liberă, contribuție voluntară… ?]
+Ora: va fi anunțată în curând
+Intrarea: detalii în curând
 Locul: biserica Philadelphia (fosta biserică Saint-Sépulcre), Parvis Notre-Dame, 1400 Nivelles.
 
 Vă așteptăm cu drag. Invitați-vă și prietenii!

@@ -2,7 +2,7 @@
 titre: Où en sont les travaux ?
 resume: Toiture, cave et enduits terminés ; isolation, électricité et égouts en cours. Le point sur le chantier.
 ---
-Depuis l'achat de l'église, le chantier avance grâce au travail des membres de l'église et aux matériaux offerts par beaucoup d'entre eux.
+Le chantier avance grâce au travail des membres de l'église et aux matériaux offerts par beaucoup d'entre eux.
 
 ## Déjà terminé
 

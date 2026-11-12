@@ -70,7 +70,7 @@ return [
     // ---------------------------------------------------------------
 
     // Adresse qui REÇOIT les messages du formulaire.
-    'contact_to' => 'REMPLACER@philadelphia-nivelles.be',
+    'contact_to' => 'info@philadelphia-nivelles.be',
     // Adresse d'EXPÉDITION : doit être une adresse de VOTRE domaine (ex. site@philadelphia-nivelles.be),
     // sinon les messages risquent d'arriver en spam. Créez-la dans cPanel > Comptes de messagerie.
     'mail_from'  => 'site@philadelphia-nivelles.be', // à créer dans cPanel > Comptes de messagerie
