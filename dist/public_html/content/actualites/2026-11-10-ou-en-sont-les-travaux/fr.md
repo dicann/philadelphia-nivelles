@@ -1,12 +1,15 @@
 ---
 titre: Où en sont les travaux ?
-resume: Toiture, cave et enduits terminés ; isolation, électricité et égouts en cours. Le point sur le chantier.
+resume: La toiture est terminée ; cave, enduits, isolation et électricité avancent. Le point sur le chantier.
 ---
 Le chantier avance grâce au travail des membres de l'église et aux matériaux offerts par beaucoup d'entre eux.
 
-## Déjà terminé
+## Terminé
 
 - **Toiture** : trous réparés, pierres des murs hauts sécurisées, toiture repeinte, étanchéité refaite, gouttières révisées.
+
+## Bien avancé
+
 - **Cave** : creusée pour qu'on puisse s'y tenir debout, drainage contre l'humidité, dalle de béton étanche, local technique en place.
 - **Intérieur** : murs et sols décapés, tous les murs enduits.
 

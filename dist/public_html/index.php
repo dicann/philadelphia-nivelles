@@ -173,6 +173,6 @@ function send_security_headers(): void
     header('X-Frame-Options: SAMEORIGIN');
     header('Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()');
     header("Content-Security-Policy: default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; "
-        . "frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://www.openstreetmap.org; "
+        . "frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://www.openstreetmap.org https://www.google.com https://maps.google.com; "
         . "form-action 'self' https://checkout.stripe.com https://www.mollie.com; base-uri 'self'; frame-ancestors 'self'");
 }

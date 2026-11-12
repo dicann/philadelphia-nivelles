@@ -13,7 +13,7 @@ $canonical = $alternates[$lang] ?? site_url() . ($_SERVER['REQUEST_URI'] ?? '/')
 $other = $lang === 'fr' ? 'ro' : 'fr';
 $switchUrl = isset($alternates[$other]) ? substr($alternates[$other], strlen(site_url())) ?: '/' : url('accueil', $other);
 $ogImage = $ogImage ?? site_url() . '/assets/img/og-image.jpg';
-$nav = ['accueil', 'histoire', 'communaute', 'projet', 'galerie', 'actualites', 'contact'];
+$nav = array_values(array_filter((array) Content::get('menu', ['accueil', 'histoire', 'communaute', 'projet', 'galerie', 'contact']), fn($k) => isset(Content::ROUTES[$k])));
 $c = Content::get('contact');
 $testMode = Payments::enabled() && !Config::isLive();
 ?><!doctype html>
@@ -135,7 +135,7 @@ $testMode = Payments::enabled() && !Config::isLive();
     <div>
       <h2 class="footer-title"><?= e(__('pied_liens')) ?></h2>
       <ul class="footer-links">
-        <?php foreach (['projet', 'don', 'galerie', 'actualites', 'contact'] as $k): ?>
+        <?php foreach (array_merge(array_intersect(['histoire', 'projet'], $nav), ['don'], array_values(array_diff(array_intersect(['galerie', 'actualites', 'contact'], $nav), []))) as $k): ?>
           <li><a href="<?= url($k) ?>"><?= e(__('nav_' . $k)) ?></a></li>
         <?php endforeach; ?>
       </ul>

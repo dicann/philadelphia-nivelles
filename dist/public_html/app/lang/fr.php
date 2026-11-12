@@ -10,8 +10,8 @@ return [
 
     // Navigation
     'nav_accueil' => 'Accueil',
-    'nav_histoire' => 'Notre histoire',
-    'nav_communaute' => 'Notre communauté',
+    'nav_histoire' => 'Histoire',
+    'nav_communaute' => 'Communauté',
     'nav_projet' => 'Le projet',
     'nav_don' => 'Faire un don',
     'nav_galerie' => 'Galerie',
@@ -45,7 +45,7 @@ return [
     'aucune_video' => 'Les vidéos apparaîtront ici dès qu\'elles seront ajoutées.',
 
     // Histoire
-    'histoire_titre' => 'Notre histoire',
+    'histoire_titre' => 'Histoire',
     'histoire_chapo' => 'Le bâtiment, ses époques, et la communauté qui l\'habite aujourd\'hui.',
 
     // Communauté
@@ -71,6 +71,7 @@ return [
     'statut_termine' => 'Terminé',
     'avant' => 'Avant',
     'pendant' => 'Pendant les travaux',
+    'en_cours_photo' => 'En cours',
     'apres' => 'Après',
     'comparer' => 'Faites glisser pour comparer avant et après',
     'soutenir_etape' => 'Soutenir cette étape',
@@ -176,7 +177,8 @@ return [
     'trop_messages' => 'Trop de messages envoyés depuis votre connexion. Merci de réessayer plus tard.',
     'carte' => 'Plan d\'accès',
     'afficher_carte' => 'Afficher la carte',
-    'carte_info' => 'La carte est fournie par OpenStreetMap. Elle ne se charge que si vous cliquez.',
+    'carte_info' => 'La carte est fournie par Google Maps. Elle ne se charge que si vous cliquez (Google peut alors déposer des cookies).',
+    'ouvrir_google' => 'Ouvrir dans Google Maps',
     'carte_indisponible' => '[À COMPLÉTER : coordonnées GPS dans content/site.json pour afficher la carte]',
     'itineraire' => 'Itinéraire',
     'formulaire_erreurs' => 'Le formulaire contient des erreurs. Merci de les corriger.',

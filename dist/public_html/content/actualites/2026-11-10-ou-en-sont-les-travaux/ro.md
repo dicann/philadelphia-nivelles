@@ -1,12 +1,15 @@
 ---
 titre: Unde am ajuns cu lucrările?
-resume: Acoperișul, beciul și tencuielile sunt gata; izolația, electricitatea și canalizarea sunt în lucru.
+resume: Acoperișul e gata; beciul, tencuielile, izolația și electricitatea avansează.
 ---
 Șantierul avansează datorită muncii fraților din biserică și materialelor donate de mulți dintre ei.
 
-## Deja terminat
+## Terminat
 
 - **Acoperișul**: găurile reparate, pietrele de pe zidurile înalte securizate, acoperișul revopsit, etanșeitatea refăcută, jgheaburile revizuite.
+
+## Lucrări avansate
+
 - **Beciul**: adâncit cât să se poată sta în picioare, drenaj împotriva umezelii, dală de beton etanșă, partea tehnică realizată.
 - **Interiorul**: pereții și solul decapate, toți pereții tencuiți.
 

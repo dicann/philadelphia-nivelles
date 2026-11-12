@@ -51,14 +51,14 @@ include APP . '/templates/partials/page-head.php';
           <?php if ($before && $after && ($e['curseur'] ?? true) !== false): ?>
             <div class="compare" data-compare>
               <div class="compare-img compare-before"><?= picture($before, __('avant') . ' — ' . t($e['titre']), '(min-width: 900px) 50vw, 100vw') ?><span class="compare-tag"><?= e(__('avant')) ?></span></div>
-              <div class="compare-img compare-after"><?= picture($after, __('apres') . ' — ' . t($e['titre']), '(min-width: 900px) 50vw, 100vw') ?><span class="compare-tag"><?= e(__('apres')) ?></span></div>
+              <div class="compare-img compare-after"><?= picture($after, __('apres') . ' — ' . t($e['titre']), '(min-width: 900px) 50vw, 100vw') ?><span class="compare-tag"><?= e(__($st !== 'termine' ? 'en_cours_photo' : 'apres')) ?></span></div>
               <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="<?= e(__('comparer')) ?>" hidden>
             </div>
           <?php else: ?>
             <?php $figs = array_filter(['avant' => $before, 'apres' => $after]); ?>
             <div class="compare-pair<?= count($figs) === 1 ? ' compare-single' : '' ?>">
               <?php foreach ($figs as $k => $img): ?>
-              <figure><?= picture($img, __($k) . ' — ' . t($e['titre']), '(min-width: 900px) 25vw, 50vw') ?><figcaption><?= e(__($k === 'avant' && $st !== 'termine' ? 'pendant' : $k)) ?></figcaption></figure>
+              <figure><?= picture($img, __($k) . ' — ' . t($e['titre']), '(min-width: 900px) 25vw, 50vw') ?><figcaption><?= e(__($k === 'apres' && $st !== 'termine' ? 'en_cours_photo' : $k)) ?></figcaption></figure>
               <?php endforeach; ?>
             </div>
           <?php endif; ?>

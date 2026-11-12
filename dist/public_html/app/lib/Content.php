@@ -10,8 +10,8 @@ final class Content
     /** Pages du site : clé => [slug FR, slug RO]. */
     public const ROUTES = [
         'accueil'         => ['', ''],
-        'histoire'        => ['notre-histoire', 'istoria-noastra'],
-        'communaute'      => ['notre-communaute', 'comunitatea-noastra'],
+        'histoire'        => ['histoire', 'istorie'],
+        'communaute'      => ['communaute', 'comunitate'],
         'projet'          => ['le-projet', 'proiectul'],
         'don'             => ['faire-un-don', 'doneaza'],
         'don_paiement'    => ['faire-un-don/paiement', 'doneaza/plata'],

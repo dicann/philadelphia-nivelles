@@ -10,9 +10,12 @@
     }
   },
 
+  "_aide_menu": "Pages affichées dans le menu du haut, dans l'ordre. Pages possibles : accueil, histoire, communaute, projet, galerie, actualites, contact.",
+  "menu": ["accueil", "histoire", "communaute", "projet", "galerie", "contact"],
+
   "association": {
     "nom_legal": "ASBL Centre Évangélique Roumain (CERP – Centrul Evanghelic Român Philadelphia)",
-    "numero_entreprise": "[À COMPLÉTER : numéro d'entreprise BCE]",
+    "numero_entreprise": "",
     "siege_social": "Rue Stéphanie 107, 1020 Laeken (Bruxelles)",
     "responsable_publication": "Petre Bodan"
   },
@@ -39,7 +42,10 @@
     "carte": {
       "_aide": "Coordonnées GPS de l'église (clic droit sur la carte dans openstreetmap.org > « Afficher l'adresse »). Laissez null tant que ce n'est pas rempli.",
       "latitude": null,
-      "longitude": null
+      "longitude": null,
+      "_aide_google": "google_recherche : adresse ou nom du lieu affiché sur la carte Google. google_lien : lien « Partager » de Google Maps (bouton « Ouvrir dans Google Maps »).",
+      "google_recherche": "Église du Saint-Sépulcre, Parvis Notre-Dame, 1400 Nivelles, Belgique",
+      "google_lien": "https://maps.app.goo.gl/GayQSXwL4MJG7nL88"
     },
     "_aide_reseaux": "Collez ici l'adresse complète des pages (ex. https://www.facebook.com/...). Laissez vide pour ne pas afficher l'icône.",
     "facebook": "https://www.facebook.com/profile.php?id=100072177499967",
@@ -63,7 +69,7 @@
       "ro": "De peste 130 de ani, biserica Saint-Sépulcre face parte din Nivelles. Închisă în 2019 și amenințată să dispară, a fost cumpărată de comunitatea noastră ca să rămână biserică. Ajută-ne să o restaurăm."
     },
     "hero_image": "uploads/images/accueil.jpg",
-    "hero_video": "uploads/images/accueil.mp4",
+    "hero_video": "",
     "blocs": {
       "histoire": {
         "titre": { "fr": "L'histoire", "ro": "Povestea" },
@@ -72,7 +78,7 @@
       },
       "projet": {
         "titre": { "fr": "Le projet", "ro": "Proiectul" },
-        "texte": { "fr": "Toiture, cave, enduits : beaucoup est déjà fait. Voici où en sont les travaux et ce qu'il reste à faire.", "ro": "Acoperiș, beci, tencuieli: multe sunt deja făcute. Iată stadiul lucrărilor și ce mai rămâne de făcut." },
+        "texte": { "fr": "La toiture est terminée ; cave, murs, isolation et électricité avancent. Voici où ils en sont et ce qu'il reste à faire.", "ro": "Acoperișul e gata; beciul, pereții, izolația și electricitatea avansează. Iată unde am ajuns și ce mai rămâne de făcut." },
         "image": "uploads/images/bloc-projet.jpg"
       },
       "aider": {
@@ -82,7 +88,7 @@
       }
     },
     "video_titre": { "fr": "En images", "ro": "În imagini" },
-    "video_texte": { "fr": "L'église vue depuis la nacelle du chantier : les toitures restaurées et la grande rosace.", "ro": "Biserica văzută din nacela de pe șantier: acoperișurile restaurate și rozeta mare." }
+    "video_texte": { "fr": "L'église vue depuis la nacelle du chantier : les toitures et la grande rosace.", "ro": "Biserica văzută din nacela de pe șantier: acoperișurile și rozeta mare." }
   },
 
   "histoire": {
@@ -128,7 +134,7 @@
       {
         "periode": { "fr": "Aujourd'hui", "ro": "Astăzi" },
         "titre": { "fr": "Le chantier", "ro": "Șantierul" },
-        "texte": { "fr": "En février 2025, notre demande de permis pour transformer l'église et aménager ses abords (parvis et parkings) a été soumise à enquête publique ; le permis a ensuite été accordé. La toiture, la cave et les enduits intérieurs sont terminés ; l'isolation et les installations techniques sont en cours. L'essentiel du travail et des matériaux est offert par les membres de l'église et leurs proches.", "ro": "În februarie 2025, cererea noastră de permis pentru transformarea bisericii și amenajarea împrejurimilor (parvis și parcări) a fost supusă anchetei publice; permisul a fost apoi aprobat. Acoperișul, beciul și tencuielile interioare sunt gata; izolația și instalațiile sunt în lucru. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică și ale apropiaților lor." },
+        "texte": { "fr": "En février 2025, notre demande de permis pour transformer l'église et aménager ses abords (parvis et parkings) a été soumise à enquête publique ; le permis a ensuite été accordé. La toiture est terminée. La cave, les enduits intérieurs, l'isolation et les installations techniques sont en cours. L'essentiel du travail et des matériaux est offert par les membres de l'église et leurs proches.", "ro": "În februarie 2025, cererea noastră de permis pentru transformarea bisericii și amenajarea împrejurimilor (parvis și parcări) a fost supusă anchetei publice; permisul a fost apoi aprobat. Acoperișul este gata. Beciul, tencuielile interioare, izolația și instalațiile sunt în lucru. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică și ale apropiaților lor." },
         "image": "uploads/images/histoire-6.jpg"
       }
     ],
@@ -170,7 +176,7 @@
     "activites": [
       {
         "titre": { "fr": "Enfants", "ro": "Copii" },
-        "texte": { "fr": "La formation des enfants est au cœur de notre projet. À l'avenir, nous voulons ouvrir une école de musique pour les enfants. [À COMPLÉTER : école du dimanche, âges, horaires]", "ro": "Creșterea și formarea copiilor sunt pe primul loc. Pe viitor ne dorim o școală de muzică pentru copii. [À COMPLÉTER : școala duminicală, vârste, program]" },
+        "texte": { "fr": "La formation des enfants est au cœur de notre projet. À l'avenir, nous voulons ouvrir une école de musique pour les enfants.", "ro": "Creșterea și formarea copiilor sunt pe primul loc. Pe viitor ne dorim o școală de muzică pentru copii." },
         "image": "uploads/images/activite-enfants.jpg"
       },
       {
@@ -219,7 +225,7 @@
         "titre": { "fr": "Cave et sous-sol", "ro": "Beciul" },
         "description": { "fr": "La cave a été creusée pour qu'on puisse s'y tenir debout. L'eau qui venait de l'extérieur et causait l'humidité est maintenant drainée. Tout a été vidé et une dalle de béton étanche a été coulée sur toute la surface. Le local technique est en place.", "ro": "Beciul a fost adâncit, astfel încât o persoană să poată sta în picioare. S-a făcut drenajul apelor care veneau din exterior și provocau umezeală, s-a evacuat toată mizeria și s-a turnat o dală de beton etanșă pe toată suprafața. Partea tehnică din beci este deja realizată." },
         "budget": null,
-        "statut": "termine",
+        "statut": "en_cours",
         "image_avant": "uploads/images/cave-avant.jpg",
         "image_apres": "uploads/images/cave-apres.jpg"
       },
@@ -229,7 +235,7 @@
         "titre": { "fr": "Murs et sols intérieurs", "ro": "Pereții și pardoseala" },
         "description": { "fr": "Les murs et le sol ont été décapés sur toute la surface et tous les murs ont été enduits.", "ro": "S-au decapat pereții și solul pe toată suprafața și s-au tencuit toți pereții." },
         "budget": null,
-        "statut": "termine",
+        "statut": "en_cours",
         "image_avant": "uploads/images/interieur-avant.jpg",
         "image_apres": "uploads/images/interieur-apres.jpg"
       },

@@ -24,6 +24,8 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
         }
     }
 }
+$gq = trim((string) ($c['carte']['google_recherche'] ?? ''));
+$glink = trim((string) ($c['carte']['google_lien'] ?? ''));
 $lat = $c['carte']['latitude'] ?? null;
 $lon = $c['carte']['longitude'] ?? null;
 $hasMap = is_numeric($lat) && is_numeric($lon);
@@ -60,7 +62,16 @@ include APP . '/templates/partials/page-head.php';
       </ul>
 
       <h2 class="h3"><?= e(__('carte')) ?></h2>
-      <?php if ($hasMap):
+      <?php if ($gq !== ''):
+        $embed = 'https://www.google.com/maps?q=' . rawurlencode($gq) . '&z=16&hl=' . ($lang === 'ro' ? 'ro' : 'fr') . '&output=embed';
+        $open = preg_match('~^https://(maps\.app\.goo\.gl|www\.google\.[a-z.]+/maps|maps\.google\.[a-z.]+)/~', $glink) ? $glink : 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($gq);
+      ?>
+        <div class="map" data-map="<?= e($embed) ?>" data-title="<?= e(__('carte')) ?>">
+          <button class="btn btn-green" type="button" data-map-load><?= icon('pin') ?><?= e(__('afficher_carte')) ?></button>
+          <p class="field-help"><?= e(__('carte_info')) ?></p>
+        </div>
+        <p><a href="<?= e($open) ?>" rel="noopener" target="_blank"><?= e(__('ouvrir_google')) ?> ↗</a></p>
+      <?php elseif ($hasMap):
         $d = 0.004;
         $bbox = implode(',', [$lon - $d * 1.6, $lat - $d, $lon + $d * 1.6, $lat + $d]);
         $embed = 'https://www.openstreetmap.org/export/embed.html?bbox=' . rawurlencode($bbox) . '&layer=mapnik&marker=' . rawurlencode($lat . ',' . $lon);

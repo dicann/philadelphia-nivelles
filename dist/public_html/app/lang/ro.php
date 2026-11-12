@@ -9,8 +9,8 @@ return [
     'changer_langue' => 'Schimbă limba',
 
     'nav_accueil' => 'Acasă',
-    'nav_histoire' => 'Istoria noastră',
-    'nav_communaute' => 'Comunitatea noastră',
+    'nav_histoire' => 'Istorie',
+    'nav_communaute' => 'Comunitate',
     'nav_projet' => 'Proiectul',
     'nav_don' => 'Donează',
     'nav_galerie' => 'Galerie',
@@ -40,7 +40,7 @@ return [
     'aucune_actu' => 'Deocamdată nu există noutăți.',
     'aucune_video' => 'Video-urile vor apărea aici imediat ce sunt adăugate.',
 
-    'histoire_titre' => 'Istoria noastră',
+    'histoire_titre' => 'Istorie',
     'histoire_chapo' => 'Clădirea, perioadele prin care a trecut și comunitatea care o folosește astăzi.',
 
     'communaute_titre' => 'Comunitatea noastră',
@@ -64,6 +64,7 @@ return [
     'statut_termine' => 'Finalizat',
     'avant' => 'Înainte',
     'pendant' => 'În timpul lucrărilor',
+    'en_cours_photo' => 'În lucru',
     'apres' => 'După',
     'comparer' => 'Trage pentru a compara înainte și după',
     'soutenir_etape' => 'Susține această etapă',
@@ -165,7 +166,8 @@ return [
     'trop_messages' => 'Prea multe mesaje trimise de pe conexiunea ta. Te rugăm să încerci mai târziu.',
     'carte' => 'Cum ajungi',
     'afficher_carte' => 'Afișează harta',
-    'carte_info' => 'Harta este oferită de OpenStreetMap. Se încarcă doar dacă dai clic.',
+    'carte_info' => 'Harta este oferită de Google Maps. Se încarcă doar dacă dai clic (Google poate plasa atunci cookie-uri).',
+    'ouvrir_google' => 'Deschide în Google Maps',
     'carte_indisponible' => '[À COMPLÉTER : coordonatele GPS în content/site.json pentru afișarea hărții]',
     'itineraire' => 'Traseu',
     'formulaire_erreurs' => 'Formularul conține erori. Te rugăm să le corectezi.',
