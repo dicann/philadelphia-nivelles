@@ -22,6 +22,14 @@
     "code_postal": "1400",
     "ville": "Nivelles",
     "pays": { "fr": "Belgique", "ro": "Belgia" },
+    "_aide_cultes": "Lieu des cultes pendant les travaux. Quand les cultes reviendront dans l'église, mettez afficher à false.",
+    "lieu_cultes": {
+      "afficher": true,
+      "titre": { "fr": "Pendant les travaux, les cultes ont lieu à Genappe", "ro": "Pe durata lucrărilor, slujbele se țin la Genappe" },
+      "adresse": "Chaussée de Nivelles 26",
+      "code_postal": "1472",
+      "ville": "Genappe"
+    },
     "_aide_telephones": "Liste des numéros affichés sur le site. Pour en ajouter un, copiez un bloc { ... } et séparez les blocs par une virgule.",
     "telephones": [
       { "nom": "Petre Bodan", "role": { "fr": "responsable de l'église", "ro": "responsabilul bisericii" }, "numero": "0496 79 52 76" },

@@ -50,7 +50,14 @@ include APP . '/templates/partials/page-head.php';
         </div>
         <?php endforeach; ?>
       </dl>
-      <p class="schedule-address"><?= icon('pin') ?><span><?= tx($c['adresse']) ?>, <?= e($c['code_postal'] . ' ' . $c['ville']) ?></span></p>
+      <?php if ($wp = worship_place()): $wpa = $wp['adresse'] . ', ' . $wp['code_postal'] . ' ' . $wp['ville']; ?>
+        <div class="notice notice-place">
+          <p><strong><?= tx(t($wp['titre'])) ?></strong></p>
+          <p class="schedule-address"><?= icon('pin') ?><span><?= e($wpa) ?> — <a href="<?= e(osm_search($wpa)) ?>" rel="noopener" target="_blank"><?= e(__('itineraire')) ?> ↗</a></span></p>
+        </div>
+      <?php else: ?>
+        <p class="schedule-address"><?= icon('pin') ?><span><?= tx($c['adresse']) ?>, <?= e($c['code_postal'] . ' ' . $c['ville']) ?></span></p>
+      <?php endif; ?>
     </div>
   </div>
 </section>

@@ -43,7 +43,13 @@ include APP . '/templates/partials/page-head.php';
     <div class="contact-info">
       <ul class="contact-list">
         <li><?= icon('pin') ?><div><strong><?= e(__('adresse')) ?></strong><br>
-          <?= tx($c['adresse']) ?><br><?= e($c['code_postal'] . ' ' . $c['ville']) ?>, <?= e(t($c['pays'])) ?></div></li>
+          <?= tx($c['adresse']) ?><br><?= e($c['code_postal'] . ' ' . $c['ville']) ?>, <?= e(t($c['pays'])) ?>
+          <br><small><?= e(__('eglise_en_travaux')) ?></small></div></li>
+        <?php if ($wp = worship_place()): $wpa = $wp['adresse'] . ', ' . $wp['code_postal'] . ' ' . $wp['ville']; ?>
+        <li><?= icon('clock') ?><div><strong><?= tx(t($wp['titre'])) ?></strong><br>
+          <?= e($wp['adresse']) ?><br><?= e($wp['code_postal'] . ' ' . $wp['ville']) ?>, <?= e(t($c['pays'])) ?>
+          <br><a href="<?= e(osm_search($wpa)) ?>" rel="noopener" target="_blank"><?= e(__('itineraire')) ?> ↗</a> · <a href="<?= url('communaute') ?>"><?= e(__('horaires')) ?></a></div></li>
+        <?php endif; ?>
         <li><?= icon('phone') ?><div><strong><?= e(__('gsm')) ?></strong>
           <?php foreach (phones() as $p): ?>
             <br><a href="<?= e(tel_href($p['numero'])) ?>"><?= e($p['numero']) ?></a> — <?= e($p['nom']) ?><?php if (!empty($p['role'])): ?>, <small><?= tx(t($p['role'])) ?></small><?php endif; ?>

@@ -119,6 +119,9 @@ $testMode = Payments::enabled() && !Config::isLive();
       <address>
         <?= tx($c['adresse']) ?><br>
         <?= e($c['code_postal']) ?> <?= e($c['ville']) ?>, <?= e(t($c['pays'])) ?><br>
+        <?php if ($wp = worship_place()): ?>
+          <small><?= e(__('cultes_a')) ?> <?= e($wp['adresse'] . ', ' . $wp['code_postal'] . ' ' . $wp['ville']) ?></small><br>
+        <?php endif; ?>
         <?php foreach (phones() as $p): ?>
           <?= e(__('gsm')) ?> : <a href="<?= e(tel_href($p['numero'])) ?>"><?= e($p['numero']) ?></a> <small>(<?= e($p['nom']) ?>)</small><br>
         <?php endforeach; ?>

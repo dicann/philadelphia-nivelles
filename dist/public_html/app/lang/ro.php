@@ -49,6 +49,8 @@ return [
     'horaires' => 'Program',
     'activites' => 'Activități',
     'bienvenue_visite' => 'Vrei să ne vizitezi? Ești binevenit la orice slujbă.',
+    'eglise_en_travaux' => 'Biserica este în renovare și închisă publicului.',
+    'cultes_a' => 'Slujbe pe durata lucrărilor:',
     'nous_contacter' => 'Contactează-ne',
     'adresse' => 'Adresă',
 

@@ -180,6 +180,19 @@ function stage_status_label(string $s): string
     return __('statut_' . (in_array($s, ['a_venir', 'en_cours', 'termine'], true) ? $s : 'a_venir'));
 }
 
+/** Lieu des cultes pendant les travaux (ou null). */
+function worship_place(): ?array
+{
+    $l = Content::get('contact.lieu_cultes');
+    return (is_array($l) && !empty($l['afficher']) && !empty($l['adresse'])) ? $l : null;
+}
+
+/** Lien OpenStreetMap vers une adresse (sans coordonnées GPS). */
+function osm_search(string $address): string
+{
+    return 'https://www.openstreetmap.org/search?query=' . rawurlencode($address . ', Belgique');
+}
+
 /** Numéros de téléphone de site.json (contact.telephones). */
 function phones(): array
 {

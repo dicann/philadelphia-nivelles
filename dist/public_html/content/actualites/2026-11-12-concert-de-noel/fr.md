@@ -9,6 +9,6 @@ Pour Noël, l'église organise un **concert avec orchestre et chorale**, sur deu
 
 Heure : communiquée prochainement
 Entrée : informations à venir
-Lieu : église Philadelphia (ancienne église du Saint-Sépulcre), Parvis Notre-Dame, 1400 Nivelles.
+Lieu : communiqué prochainement.
 
 Venez nombreux, et parlez-en autour de vous !

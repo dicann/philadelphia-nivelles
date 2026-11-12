@@ -9,6 +9,6 @@ De Crăciun, biserica organizează un **concert cu orchestră și cor**, în dou
 
 Ora: va fi anunțată în curând
 Intrarea: detalii în curând
-Locul: biserica Philadelphia (fosta biserică Saint-Sépulcre), Parvis Notre-Dame, 1400 Nivelles.
+Locul: va fi anunțat în curând.
 
 Vă așteptăm cu drag. Invitați-vă și prietenii!
