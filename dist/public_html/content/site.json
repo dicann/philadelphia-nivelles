@@ -32,8 +32,8 @@
     },
     "_aide_telephones": "Liste des numéros affichés sur le site. Pour en ajouter un, copiez un bloc { ... } et séparez les blocs par une virgule.",
     "telephones": [
-      { "nom": "Petre Bodan", "role": { "fr": "responsable de l'église", "ro": "responsabilul bisericii" }, "numero": "0496 79 52 76" },
-      { "nom": "Cristian Senatovici", "role": { "fr": "trésorier", "ro": "casier" }, "numero": "0474 57 49 10" }
+      { "nom": "Petre Bodan", "numero": "0496 79 52 76" },
+      { "nom": "Cristian Senatovici", "numero": "0474 57 49 10" }
     ],
     "email": "info@philadelphia-nivelles.be",
     "carte": {
