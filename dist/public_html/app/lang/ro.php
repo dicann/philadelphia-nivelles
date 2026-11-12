@@ -171,6 +171,7 @@ return [
     'champs_requis' => 'Câmpurile marcate cu * sunt obligatorii.',
     'envoye' => 'Mulțumim, mesajul tău a fost trimis. Îți vom răspunde cât mai curând.',
     'envoi_echec' => 'Mesajul nu a putut fi trimis. Te rugăm să ne scrii direct pe e-mail sau să ne suni.',
+    'form_expire' => 'Formularul a expirat. Te rugăm să verifici mesajul și să-l trimiți din nou.',
     'trop_messages' => 'Prea multe mesaje trimise de pe conexiunea ta. Te rugăm să încerci mai târziu.',
     'carte' => 'Cum ajungi',
     'afficher_carte' => 'Afișează harta',

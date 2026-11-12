@@ -5,15 +5,25 @@ $errors = [];
 $old = [];
 $status = isset($_GET['envoye']) ? 'ok' : null;
 
+// La page contient un jeton horodaté : elle ne doit jamais être servie depuis un cache.
+header('Cache-Control: no-store, no-cache, must-revalidate, private');
+header('Pragma: no-cache');
 if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
     [$data, $errors, $robot] = Contact::validate($_POST, $lang);
     $old = $data;
-    if ($robot) {
-        // Robot détecté : on fait semblant que tout va bien, sans rien envoyer.
-        header('Location: ' . url('contact') . '?envoye=1#formulaire', true, 303);
-        exit;
+    if ($robot === 'jeton invalide' || $robot === 'jeton expiré') {
+        // Page restée ouverte trop longtemps ou servie depuis un cache : on demande simplement de renvoyer.
+        $status = 'expire';
+    } elseif ($robot !== '') {
+        if (Config::get('debug')) {
+            $status = 'robot';
+        } else {
+            // Robot détecté : on fait semblant que tout va bien, sans rien envoyer.
+            header('Location: ' . url('contact') . '?envoye=1#formulaire', true, 303);
+            exit;
+        }
     }
-    if (!$errors) {
+    if (!$errors && $status === null) {
         if (Contact::rateLimited()) {
             $status = 'limite';
         } elseif (Contact::send($data, $lang)) {
@@ -95,6 +105,10 @@ include APP . '/templates/partials/page-head.php';
           <?php if (Config::get('debug') && Contact::$error !== ''): ?><br><small>Diagnostic : <?= e(Contact::$error) ?></small><?php endif; ?></div>
       <?php elseif ($status === 'limite'): ?>
         <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus><?= e(__('trop_messages')) ?></div>
+      <?php elseif ($status === 'expire'): ?>
+        <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus><?= e(__('form_expire')) ?></div>
+      <?php elseif ($status === 'robot'): ?>
+        <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus>Diagnostic : message bloqué par l'anti-spam (<?= e($robot) ?>).</div>
       <?php elseif ($errors): ?>
         <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus><?= e(__('formulaire_erreurs')) ?></div>
       <?php endif; ?>
@@ -135,8 +149,8 @@ include APP . '/templates/partials/page-head.php';
           <?= $fieldErr('consentement') ?>
         </div>
         <div class="hp" aria-hidden="true">
-          <label for="c-site">Site web</label>
-          <input id="c-site" name="site_web" type="text" tabindex="-1" autocomplete="off">
+          <label for="c-zx">Ne pas remplir</label>
+          <input id="c-zx" name="zx_note" type="text" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore>
         </div>
         <input type="hidden" name="jeton" value="<?= e(Contact::token()) ?>">
         <button class="btn btn-green btn-lg" type="submit"><?= e(__('envoyer')) ?></button>

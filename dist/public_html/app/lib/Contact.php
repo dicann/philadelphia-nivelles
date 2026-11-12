@@ -31,7 +31,7 @@ final class Contact
         return time() - (int) $m[1];
     }
 
-    /** @return array{0: array, 1: array<string,string>, 2: bool} [données, erreurs, robot ?] */
+    /** @return array{0: array, 1: array<string,string>, 2: string} [données, erreurs, raison du rejet anti-robot ('' si OK)] */
     public static function validate(array $in, string $lang): array
     {
         $d = [
@@ -55,11 +55,24 @@ final class Contact
         if (!$d['consentement']) {
             $err['consentement'] = __('err_consentement', $lang);
         }
-        // Anti-spam silencieux : le robot croit que c'est envoyé.
+        // Anti-spam : pot de miel, délai minimum, jeton signé, trop de liens.
         $age = self::tokenAge((string) ($in['jeton'] ?? ''));
-        $robot = !empty($in['site_web']) || $age === null || $age < 3 || $age > 86400
-            || preg_match_all('~https?://~i', $d['message']) > 3;
-        return [$d, $err, (bool) $robot];
+        $robot = '';
+        if (!empty($in['zx_note'])) {
+            $robot = 'pot de miel rempli';
+        } elseif ($age === null) {
+            $robot = 'jeton invalide';
+        } elseif ($age > 86400) {
+            $robot = 'jeton expiré';
+        } elseif ($age < 2) {
+            $robot = 'envoi trop rapide';
+        } elseif (preg_match_all('~https?://~i', $d['message']) > 3) {
+            $robot = 'trop de liens';
+        }
+        if ($robot !== '' && ($dir = Config::dataDir())) {
+            @file_put_contents($dir . '/contact-rejets.log', date('c') . " | $robot\n", FILE_APPEND | LOCK_EX);
+        }
+        return [$d, $err, $robot];
     }
 
     /** Limite : 5 messages par heure et par adresse IP. */
@@ -129,6 +142,7 @@ final class Contact
         $smtpError = '';
         if (Smtp::configured()) {
             if (Smtp::send($from, 'Site Philadelphia', $to, $d['email'], $d['nom'], $subject, $body)) {
+                self::logResult('envoyé par SMTP (' . Smtp::$via . ')');
                 return true;
             }
             $smtpError = Smtp::$error . ' | ';
@@ -141,11 +155,21 @@ final class Contact
         $subj = mb_encode_mimeheader($subject, 'UTF-8');
         // 1er essai avec l'adresse d'enveloppe (-f) ; certains hébergeurs la refusent : 2e essai sans.
         if (@mail($to, $subj, $body, $headers, '-f' . $from) || @mail($to, $subj, $body, $headers)) {
+            self::logResult('envoyé par mail()');
             return true;
         }
         $last = error_get_last();
+        self::logResult('ÉCHEC');
         self::$error = $smtpError . "mail() a échoué" . ($last ? ' : ' . $last['message'] : '') . ". Vérifiez que l'adresse '$from' existe dans cPanel, ou remplissez la partie 'smtp' de config.php (plus fiable).";
         error_log('[contact] ' . self::$error);
         return false;
+    }
+
+    /** Ajoute le résultat de l'envoi à la copie des messages (diagnostic). */
+    private static function logResult(string $what): void
+    {
+        if (Config::get('contact_keep_copy') && ($dir = Config::dataDir())) {
+            @file_put_contents($dir . '/messages-contact.log', "---- résultat : $what\n\n", FILE_APPEND | LOCK_EX);
+        }
     }
 }

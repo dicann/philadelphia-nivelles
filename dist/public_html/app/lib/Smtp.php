@@ -7,6 +7,8 @@
 final class Smtp
 {
     public static string $error = '';
+    /** Serveur utilisé pour le dernier envoi réussi. */
+    public static string $via = '';
 
     /** @var resource|null */
     private static $sock = null;
@@ -39,6 +41,7 @@ final class Smtp
             $err = self::attempt($h, $port, $secure, $h === 'localhost' ? false : $verify, $c, $from, $fromName, $to, $replyTo, $replyName, $subject, $body);
             if ($err === null) {
                 self::$error = '';
+                self::$via = "$h:$port" . ($secure ? "/$secure" : '');
                 return true;
             }
             $errors[] = "$h:$port" . ($secure ? "/$secure" : '') . " → $err";

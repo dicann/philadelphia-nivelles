@@ -182,6 +182,7 @@ return [
     'champs_requis' => 'Les champs marqués * sont obligatoires.',
     'envoye' => 'Merci, votre message a bien été envoyé. Nous vous répondrons dès que possible.',
     'envoi_echec' => 'Le message n\'a pas pu être envoyé. Merci de nous écrire directement par e-mail ou de nous appeler.',
+    'form_expire' => 'Le formulaire a expiré. Merci de vérifier votre message et de l\'envoyer à nouveau.',
     'trop_messages' => 'Trop de messages envoyés depuis votre connexion. Merci de réessayer plus tard.',
     'carte' => 'Plan d\'accès',
     'afficher_carte' => 'Afficher la carte',
