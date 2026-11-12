@@ -29,10 +29,9 @@ Ce a rămas apare pe site **surlignat cu galben** (`[À COMPLÉTER : ...]`). Lis
 
 ## Imagini și video
 Am pus deja pe site: cele 3 poze vechi, 6 video-uri, pozele de pe Drive (pe pagini și în 6 albume). Mai lipsesc:
-- [ ] Poze cu comunitatea (slujbe la Genappe, cor, tineri, copii, familii) — cu acordul celor din poze
+- [ ] Poze cu comunitatea (slujbe la Genappe, cor, tineri, copii, familii) — pentru pagina „Comunitatea noastră”
 - [ ] Poze „după” pentru beci și electricitate, când sunt gata
 - [ ] Codul QR Payconiq: `uploads/images/payconiq.png`
-- [ ] Acordul pentru poza de grup din biserică (#373 din arhiva Drive): dacă e ziua predării bisericii, o punem la istorie
 
 ## Conturi
 - [ ] Cont Stripe (sau Mollie) pe numele asociației, cu cheile puse în `config.php`
