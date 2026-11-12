@@ -91,7 +91,8 @@ include APP . '/templates/partials/page-head.php';
       <?php if ($status === 'ok'): ?>
         <div class="alert alert-ok" role="status" tabindex="-1" data-autofocus><?= e(__('envoye')) ?></div>
       <?php elseif ($status === 'echec'): ?>
-        <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus><?= e(__('envoi_echec')) ?></div>
+        <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus><?= e(__('envoi_echec')) ?>
+          <?php if (Config::get('debug') && Contact::$error !== ''): ?><br><small>Diagnostic : <?= e(Contact::$error) ?></small><?php endif; ?></div>
       <?php elseif ($status === 'limite'): ?>
         <div class="alert alert-error" role="alert" tabindex="-1" data-autofocus><?= e(__('trop_messages')) ?></div>
       <?php elseif ($errors): ?>

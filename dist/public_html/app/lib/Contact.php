@@ -87,6 +87,9 @@ final class Contact
         return $limited;
     }
 
+    /** Raison du dernier échec d'envoi (affichée seulement si 'debug' => true dans config.php). */
+    public static string $error = '';
+
     public static function send(array $d, string $lang): bool
     {
         $to = (string) Config::get('contact_to');
@@ -101,7 +104,20 @@ final class Contact
         if (Config::get('contact_keep_copy') && ($dir = Config::dataDir())) {
             @file_put_contents($dir . '/messages-contact.log', "==== " . date('c') . "\n" . $body . "\n", FILE_APPEND | LOCK_EX);
         }
-        if (Config::isPlaceholder($to) || Config::isPlaceholder($from)) {
+        if (!Config::found()) {
+            self::$error = "config.php introuvable : il doit être dans le dossier philadelphia-private, à côté du dossier du site.";
+            return false;
+        }
+        if (Config::isPlaceholder($to) || !filter_var($to, FILTER_VALIDATE_EMAIL)) {
+            self::$error = "Adresse 'contact_to' manquante ou invalide dans config.php.";
+            return false;
+        }
+        if (Config::isPlaceholder($from) || !filter_var($from, FILTER_VALIDATE_EMAIL)) {
+            self::$error = "Adresse 'mail_from' manquante ou invalide dans config.php.";
+            return false;
+        }
+        if (!function_exists('mail')) {
+            self::$error = "La fonction mail() de PHP est désactivée chez l'hébergeur.";
             return false;
         }
         // Protection contre l'injection d'en-têtes : aucune donnée du visiteur ne contient de retour à la ligne.
@@ -114,6 +130,14 @@ final class Contact
             'Content-Transfer-Encoding' => '8bit',
             'X-Mailer' => 'PHP',
         ];
-        return mail($to, mb_encode_mimeheader($subject, 'UTF-8'), $body, $headers, '-f' . $from);
+        $subj = mb_encode_mimeheader($subject, 'UTF-8');
+        // 1er essai avec l'adresse d'enveloppe (-f) ; certains hébergeurs la refusent : 2e essai sans.
+        if (@mail($to, $subj, $body, $headers, '-f' . $from) || @mail($to, $subj, $body, $headers)) {
+            return true;
+        }
+        $last = error_get_last();
+        self::$error = "mail() a échoué" . ($last ? ' : ' . $last['message'] : '') . ". Vérifiez que l'adresse '$from' existe dans cPanel (Comptes de messagerie).";
+        error_log('[contact] ' . self::$error);
+        return false;
     }
 }
