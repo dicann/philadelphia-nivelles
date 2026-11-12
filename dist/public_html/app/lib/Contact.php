@@ -116,18 +116,6 @@ final class Contact
             self::$error = "Adresse 'mail_from' manquante ou invalide dans config.php.";
             return false;
         }
-        if (Smtp::configured()) {
-            if (Smtp::send($from, 'Site Philadelphia', $to, $d['email'], $d['nom'], $subject, $body)) {
-                return true;
-            }
-            self::$error = Smtp::$error;
-            error_log('[contact] ' . self::$error);
-            return false;
-        }
-        if (!function_exists('mail')) {
-            self::$error = "La fonction mail() de PHP est désactivée chez l'hébergeur : remplissez la partie 'smtp' de config.php.";
-            return false;
-        }
         // Protection contre l'injection d'en-têtes : aucune donnée du visiteur ne contient de retour à la ligne.
         $replyName = preg_replace('/[\r\n"<>]+/', ' ', $d['nom']);
         $headers = [
@@ -138,13 +126,25 @@ final class Contact
             'Content-Transfer-Encoding' => '8bit',
             'X-Mailer' => 'PHP',
         ];
+        $smtpError = '';
+        if (Smtp::configured()) {
+            if (Smtp::send($from, 'Site Philadelphia', $to, $d['email'], $d['nom'], $subject, $body)) {
+                return true;
+            }
+            $smtpError = Smtp::$error . ' | ';
+        }
+        if (!function_exists('mail')) {
+            self::$error = $smtpError . "La fonction mail() de PHP est désactivée chez l'hébergeur.";
+            error_log('[contact] ' . self::$error);
+            return false;
+        }
         $subj = mb_encode_mimeheader($subject, 'UTF-8');
         // 1er essai avec l'adresse d'enveloppe (-f) ; certains hébergeurs la refusent : 2e essai sans.
         if (@mail($to, $subj, $body, $headers, '-f' . $from) || @mail($to, $subj, $body, $headers)) {
             return true;
         }
         $last = error_get_last();
-        self::$error = "mail() a échoué" . ($last ? ' : ' . $last['message'] : '') . ". Vérifiez que l'adresse '$from' existe dans cPanel, ou remplissez la partie 'smtp' de config.php (plus fiable).";
+        self::$error = $smtpError . "mail() a échoué" . ($last ? ' : ' . $last['message'] : '') . ". Vérifiez que l'adresse '$from' existe dans cPanel, ou remplissez la partie 'smtp' de config.php (plus fiable).";
         error_log('[contact] ' . self::$error);
         return false;
     }

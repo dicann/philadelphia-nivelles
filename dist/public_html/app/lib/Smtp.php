@@ -18,38 +18,69 @@ final class Smtp
             && !Config::isPlaceholder((string) $c['pass']);
     }
 
+    /**
+     * Envoie le message. Essaie d'abord les réglages de config.php, puis les variantes
+     * habituelles chez cPanel (587/STARTTLS, 465/SSL, serveur local port 25).
+     */
     public static function send(string $from, string $fromName, string $to, string $replyTo, string $replyName, string $subject, string $body): bool
     {
         $c = Config::get('smtp');
         $host = (string) $c['host'];
-        $port = (int) ($c['port'] ?? 465);
-        $secure = strtolower((string) ($c['secure'] ?? 'ssl')); // ssl (465) | tls (587) | '' (aucun)
         $verify = ($c['verify_cert'] ?? true) !== false;
-        self::$error = '';
+        $tries = [[$host, (int) ($c['port'] ?? 465), strtolower((string) ($c['secure'] ?? 'ssl'))]];
+        foreach ([[$host, 587, 'tls'], [$host, 465, 'ssl'], ['localhost', 587, 'tls'], ['localhost', 25, '']] as $t) {
+            if (!in_array($t, $tries, true)) {
+                $tries[] = $t;
+            }
+        }
+        $errors = [];
+        foreach ($tries as [$h, $port, $secure]) {
+            // Sur le serveur local, le certificat porte le nom du serveur, pas « localhost ».
+            $err = self::attempt($h, $port, $secure, $h === 'localhost' ? false : $verify, $c, $from, $fromName, $to, $replyTo, $replyName, $subject, $body);
+            if ($err === null) {
+                self::$error = '';
+                return true;
+            }
+            $errors[] = "$h:$port" . ($secure ? "/$secure" : '') . " → $err";
+            if (str_contains($err, 'mot de passe')) {
+                break; // inutile d'insister si les identifiants sont refusés
+            }
+        }
+        self::$error = 'SMTP : ' . implode(' | ', $errors);
+        return false;
+    }
+
+    /** Une tentative d'envoi. Renvoie null si OK, sinon le message d'erreur. */
+    private static function attempt(string $host, int $port, string $secure, bool $verify, array $c, string $from, string $fromName, string $to, string $replyTo, string $replyName, string $subject, string $body): ?string
+    {
         try {
             $ctx = stream_context_create(['ssl' => [
-                'verify_peer' => $verify, 'verify_peer_name' => $verify, 'allow_self_signed' => !$verify, 'SNI_enabled' => true, 'peer_name' => $host,
+                'verify_peer' => $verify, 'verify_peer_name' => $verify, 'allow_self_signed' => !$verify, 'SNI_enabled' => true, 'peer_name' => $host === 'localhost' ? (string) $c['host'] : $host,
             ]]);
             $remote = ($secure === 'ssl' ? 'ssl://' : 'tcp://') . $host . ':' . $port;
-            $sock = @stream_socket_client($remote, $errno, $errstr, 15, STREAM_CLIENT_CONNECT, $ctx);
+            $sock = @stream_socket_client($remote, $errno, $errstr, 12, STREAM_CLIENT_CONNECT, $ctx);
             if (!$sock) {
-                throw new RuntimeException("connexion impossible à $host:$port ($errstr)");
+                return 'connexion impossible (' . ($errstr ?: 'refusée') . ')';
             }
             self::$sock = $sock;
-            stream_set_timeout($sock, 20);
-            self::expect(220);
+            stream_set_timeout($sock, 30);
+            self::expect(220, 'pas de message d\'accueil du serveur');
             $me = preg_replace('/[^A-Za-z0-9.\-]/', '', $_SERVER['SERVER_NAME'] ?? 'localhost') ?: 'localhost';
-            self::cmd("EHLO $me", 250);
+            $ehlo = self::cmd("EHLO $me", 250);
             if ($secure === 'tls') {
                 self::cmd('STARTTLS', 220);
                 if (!@stream_socket_enable_crypto($sock, true, STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT | STREAM_CRYPTO_METHOD_TLSv1_3_CLIENT)) {
                     throw new RuntimeException('échec du chiffrement TLS');
                 }
-                self::cmd("EHLO $me", 250);
+                $ehlo = self::cmd("EHLO $me", 250);
             }
-            self::cmd('AUTH LOGIN', 334);
-            self::cmd(base64_encode((string) $c['user']), 334);
-            self::cmd(base64_encode((string) $c['pass']), 235, 'identifiant ou mot de passe SMTP refusé');
+            if (stripos($ehlo, 'AUTH') !== false) {
+                self::cmd('AUTH LOGIN', 334);
+                self::cmd(base64_encode((string) $c['user']), 334);
+                self::cmd(base64_encode((string) $c['pass']), 235, 'identifiant ou mot de passe SMTP refusé');
+            } elseif ($host !== 'localhost') {
+                throw new RuntimeException('le serveur ne propose pas d\'authentification');
+            }
             self::cmd("MAIL FROM:<$from>", 250);
             self::cmd("RCPT TO:<$to>", [250, 251]);
             self::cmd('DATA', 354);
@@ -70,14 +101,13 @@ final class Smtp
             @fwrite($sock, "QUIT\r\n");
             fclose($sock);
             self::$sock = null;
-            return true;
+            return null;
         } catch (\Throwable $e) {
-            self::$error = 'SMTP : ' . $e->getMessage();
             if (self::$sock) {
                 @fclose(self::$sock);
                 self::$sock = null;
             }
-            return false;
+            return $e->getMessage();
         }
     }
 
