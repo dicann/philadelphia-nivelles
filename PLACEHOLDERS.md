@@ -27,18 +27,14 @@ Ce a rămas apare pe site **surlignat cu galben** (`[À COMPLÉTER : ...]`). Lis
 - [ ] Cât timp se păstrează mesajele de contact și datele donațiilor
 - [ ] Data actualizării politicii de confidențialitate
 
-## Imagini și video (fără ele apare „Photo à venir”)
-Folder: `uploads/images/` — numele exacte sunt în `content/site.json`
-- [ ] Imaginea principală (`accueil.jpg`) și cele 3 blocuri de pe prima pagină
-- [ ] Istorie: `histoire-1.jpg` … `histoire-6.jpg` (poze vechi, ziua intrării, acum) și `batiment.jpg`
-- [ ] Comunitate: `communaute.jpg`, `activite-enfants.jpg`, `activite-jeunes.jpg`, `activite-familles.jpg` — cu acordul celor din poze
-- [ ] Proiect, înainte/după: `toiture-avant.jpg` / `toiture-apres.jpg`, `cave-…`, `interieur-…`, `isolation-…`, `electricite-…`
-- [ ] Codul QR Payconiq: `payconiq.png`
-- [ ] Albume în `uploads/galerie/` (pozele de pe Facebook „Biserica Filadelfia Genappe”)
-- [ ] Linkuri video în `content/videos.json` (când există un canal YouTube sau Vimeo)
+## Imagini și video
+Am pus deja pe site: cele 3 poze vechi, 6 video-uri, pozele de pe Drive (pe pagini și în 6 albume). Mai lipsesc:
+- [ ] Poze cu comunitatea (slujbe la Genappe, cor, tineri, copii, familii) — cu acordul celor din poze
+- [ ] Poze „după” pentru beci și electricitate, când sunt gata
+- [ ] Codul QR Payconiq: `uploads/images/payconiq.png`
+- [ ] Acordul pentru poza de grup din biserică (#373 din arhiva Drive): dacă e ziua predării bisericii, o punem la istorie
 
 ## Conturi
 - [ ] Cont Stripe (sau Mollie) pe numele asociației, cu cheile puse în `config.php`
 
 ## De șters
-- [ ] Albumul exemplu: `uploads/galerie/2026-11 Exemple (à supprimer)/`

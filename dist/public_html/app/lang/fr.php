@@ -70,6 +70,7 @@ return [
     'statut_en_cours' => 'En cours',
     'statut_termine' => 'Terminé',
     'avant' => 'Avant',
+    'pendant' => 'Pendant les travaux',
     'apres' => 'Après',
     'comparer' => 'Faites glisser pour comparer avant et après',
     'soutenir_etape' => 'Soutenir cette étape',

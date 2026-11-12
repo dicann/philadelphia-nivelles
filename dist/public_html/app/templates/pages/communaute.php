@@ -68,7 +68,7 @@ include APP . '/templates/partials/page-head.php';
     <div class="grid-3">
       <?php foreach ($cm['activites'] as $act): ?>
       <article class="card card-arch">
-        <div class="card-media arch-frame"><?= picture($act['image'], t($act['titre']), '(min-width: 900px) 33vw, 100vw') ?></div>
+        <?php if (Media::find($act['image'] ?? null)): ?><div class="card-media arch-frame"><?= picture($act['image'], t($act['titre']), '(min-width: 900px) 33vw, 100vw') ?></div><?php endif; ?>
         <div class="card-body">
           <h3 class="card-title"><?= tx(t($act['titre'])) ?></h3>
           <p><?= tx(t($act['texte'])) ?></p>

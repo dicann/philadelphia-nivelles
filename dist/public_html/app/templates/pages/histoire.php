@@ -14,7 +14,7 @@ include APP . '/templates/partials/page-head.php';
       <?php foreach ($h['chronologie'] as $i => $step): ?>
       <li class="timeline-item">
         <div class="timeline-marker" aria-hidden="true"></div>
-        <div class="timeline-media arch-frame"><?= picture($step['image'], t($step['titre']), '(min-width: 900px) 40vw, 100vw') ?></div>
+        <?php if (!empty($step['image'])): ?><div class="timeline-media arch-frame"><?= picture($step['image'], t($step['titre']), '(min-width: 900px) 40vw, 100vw') ?></div><?php else: ?><div class="timeline-media timeline-media-empty" aria-hidden="true"></div><?php endif; ?>
         <div class="timeline-body">
           <p class="timeline-date"><?= tx(t($step['periode'])) ?></p>
           <h2 class="h3"><?= tx(t($step['titre'])) ?></h2>

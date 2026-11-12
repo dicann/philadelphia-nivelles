@@ -63,6 +63,7 @@ return [
     'statut_en_cours' => 'În lucru',
     'statut_termine' => 'Finalizat',
     'avant' => 'Înainte',
+    'pendant' => 'În timpul lucrărilor',
     'apres' => 'După',
     'comparer' => 'Trage pentru a compara înainte și după',
     'soutenir_etape' => 'Susține această etapă',

@@ -95,7 +95,7 @@
         "periode": { "fr": "Moyen Âge", "ro": "Evul Mediu" },
         "titre": { "fr": "L'hôpital du Saint-Sépulcre", "ro": "Spitalul Saint-Sépulcre" },
         "texte": { "fr": "Dès la fondation de l'abbaye de Nivelles par sainte Gertrude et sa mère sainte Ide, la ville possède un hôpital. La paroisse Notre-Dame est alors la seule de Nivelles. Au Moyen Âge, l'hôpital du Saint-Sépulcre est fondé hors des remparts, au faubourg de Namur, dans la continuité de l'ancien hôpital de l'abbaye.", "ro": "Încă de la întemeierea abației din Nivelles de către sfânta Gertrude și mama ei, sfânta Ida, orașul are un spital. Parohia Notre-Dame este pe atunci singura din Nivelles. În Evul Mediu, spitalul Saint-Sépulcre este înființat în afara zidurilor orașului, în cartierul dinspre Namur, ca urmaș al vechiului spital al abației." },
-        "image": "uploads/images/histoire-1.jpg"
+        "image": ""
       },
       {
         "periode": { "fr": "1231", "ro": "1231" },
@@ -115,13 +115,15 @@
         "periode": { "fr": "2019–2022", "ro": "2019–2022" },
         "titre": { "fr": "Fermeture et désacralisation", "ro": "Închiderea și desacralizarea" },
         "texte": { "fr": "La stabilité du bâtiment inquiète depuis les années 1970-1980. En juillet 2019, un rapport des pompiers relève de graves problèmes : stabilité du clocher, chutes de pierres, installation électrique non conforme, risque de propagation d'incendie. La Ville ordonne la fermeture de l'église. Une étude d'architecte estime les travaux à plus de deux millions d'euros, un budget que ni la fabrique d'église ni la commune ne peuvent assumer. En mai 2021, l'archevêque de Malines-Bruxelles décide la désaffectation, officialisée en 2022 : l'église peut être vendue, à condition de préserver son architecture, ses vitraux et un usage respectueux de son histoire.", "ro": "Stabilitatea clădirii îngrijora încă din anii 1970–1980. În iulie 2019, un raport al pompierilor semnalează probleme grave: stabilitatea clopotniței, căderi de pietre, instalație electrică neconformă, risc de propagare a incendiilor. Primăria dispune închiderea bisericii. Un studiu de arhitectură estimează lucrările la peste două milioane de euro, buget pe care nici consiliul bisericii, nici primăria nu și-l pot permite. În mai 2021, arhiepiscopul de Malines-Bruxelles hotărăște dezafectarea, oficializată în 2022: biserica poate fi vândută, cu condiția păstrării arhitecturii, a vitraliilor și a unei folosiri care respectă istoria locului." },
-        "image": "uploads/images/histoire-4.jpg"
+        "image": "uploads/images/histoire-4.jpg",
+        "legende": { "fr": "L'intérieur de l'église avant les travaux.", "ro": "Interiorul bisericii înainte de lucrări." }
       },
       {
         "periode": { "fr": "2026", "ro": "2026" },
         "titre": { "fr": "Une église qui reste une église", "ro": "O biserică ce rămâne biserică" },
         "texte": { "fr": "D'autres acheteurs étaient intéressés, mais pour donner au bâtiment une tout autre fonction. Nous étions les seuls à vouloir qu'il reste une église. Alors que d'autres proposaient un prix plus élevé, l'Église catholique a choisi de nous le vendre. Avec la communauté roumaine, nous l'avons acheté pour lancer un projet de sauvetage et de restauration.", "ro": "Mai existau și alți cumpărători, dar ei voiau să schimbe destinația clădirii într-una cu totul diferită. Noi eram singurii care doream ca aici să fie în continuare o biserică. Deși ceilalți propuneau un preț mai mare, catolicii au hotărât să ne-o vândă nouă. Împreună cu comunitatea română am cumpărat-o și am pornit un proiect de salvare și restaurare." },
-        "image": "uploads/images/histoire-5.jpg"
+        "image": "uploads/images/histoire-5.jpg",
+        "legende": { "fr": "L'église en juillet 2026.", "ro": "Biserica în iulie 2026." }
       },
       {
         "periode": { "fr": "Aujourd'hui", "ro": "Astăzi" },
@@ -132,8 +134,8 @@
     ],
     "architecture_titre": { "fr": "Le bâtiment", "ro": "Clădirea" },
     "architecture_texte": {
-      "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche date de 1909 et la tour de 1911. Bâtie en briques, rehaussée de bandeaux clairs, elle se distingue par ses grandes rosaces, ses arcs en plein cintre et la galerie d'arcades de sa façade. Ses vitraux et ses rosaces font partie du patrimoine que nous nous sommes engagés à préserver.",
-      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul datează din 1909, iar turnul din 1911. Construită din cărămidă, cu brâuri de culoare deschisă, se remarcă prin rozetele mari, arcadele semicirculare și galeria de arcade de pe fațadă. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm."
+      "fr": "L'église a été construite entre 1887 et 1891 d'après les plans de Charles Licot ; le porche, œuvre de l'architecte Govaerts, date de 1909 et la tour de 1911. De style de transition romano-ogival, bâtie en briques, rehaussée de bandeaux clairs, elle se distingue par ses grandes rosaces, ses arcs en plein cintre et la galerie d'arcades de sa façade. Ses vitraux et ses rosaces font partie du patrimoine que nous nous sommes engagés à préserver.",
+      "ro": "Biserica a fost construită între 1887 și 1891 după planurile lui Charles Licot; pridvorul, lucrare a arhitectului Govaerts, datează din 1909, iar turnul din 1911. În stil de tranziție romano-ogival, construită din cărămidă, cu brâuri de culoare deschisă, se remarcă prin rozetele mari, arcadele semicirculare și galeria de arcade de pe fațadă. Vitraliile și rozetele fac parte din patrimoniul pe care ne-am angajat să-l păstrăm."
     },
     "architecture_image": "uploads/images/batiment.jpg",
     "architecture_legende": { "fr": "Carte postale ancienne : « Nivelles. L'Église Notre-Dame », avec la tour ajoutée en 1911.", "ro": "Carte poștală veche: „Nivelles. L'Église Notre-Dame”, cu turnul adăugat în 1911." }
@@ -197,10 +199,14 @@
       "fr": "Nous estimons le coût total de la restauration à environ 1,5 million d'euros. Environ 850 000 € ont déjà été investis : achat, frais de notaire, remboursements de crédit et travaux réalisés. Les plans de l'architecte sont approuvés et le permis d'urbanisme est accordé : les travaux peuvent continuer. L'essentiel du travail et des matériaux est offert par les membres de l'église. Nous travaillons avec la Ville de Nivelles pour la restauration et préparons avec nos voisins un plan de circulation pour le quartier. Le chiffrage détaillé des prochaines étapes est en cours.",
       "ro": "Estimăm suma totală necesară pentru restaurare la aproximativ 1,5 milioane de euro. Până acum s-au investit aproximativ 850.000 €: cumpărarea, taxele notariale, ratele creditului și lucrările deja făcute. Planurile arhitecturale sunt aprobate, iar permisul de urbanism a fost acordat: lucrările pot continua. Cea mai mare parte a muncii și a materialelor vine din donațiile fraților din biserică. Colaborăm cu primăria pentru restaurare și lucrăm împreună cu vecinii la un plan de circulație în zonă. Calculul detaliat al etapelor următoare este în curs."
     },
-    "_aide_etapes": "statut : \"a_venir\", \"en_cours\" ou \"termine\". budget : nombre en euros sans guillemets (ou null = « à préciser »). id : code court sans espace, ne pas le changer après le lancement (il sert à relier les dons à l'étape). Images avant/après : déposez les photos aux chemins indiqués.",
+    "plan_image": "uploads/images/plan.jpg",
+    "plan_titre": { "fr": "Les plans approuvés", "ro": "Planurile aprobate" },
+    "plan_texte": { "fr": "Les plans réalisés avec l'architecte ont été approuvés par la Ville. Ils prévoient la transformation de l'intérieur et l'aménagement des abords (parvis et parkings).", "ro": "Planurile realizate împreună cu arhitectul au fost aprobate de primărie. Ele prevăd transformarea interiorului și amenajarea împrejurimilor (parvis și parcări)." },
+    "_aide_etapes": "curseur : false = photos avant/après côte à côte (si elles ne sont pas prises du même endroit). statut : \"a_venir\", \"en_cours\" ou \"termine\". budget : nombre en euros sans guillemets (ou null = « à préciser »). id : code court sans espace, ne pas le changer après le lancement (il sert à relier les dons à l'étape). Images avant/après : déposez les photos aux chemins indiqués.",
     "etapes": [
       {
         "id": "toiture",
+        "curseur": false,
         "titre": { "fr": "Toiture", "ro": "Acoperișul" },
         "description": { "fr": "Les trous ont été réparés, les pierres des murs hauts sécurisées et les pierres fissurées réparées. La toiture a été entièrement repeinte, l'étanchéité aux eaux de pluie refaite et toutes les gouttières révisées.", "ro": "S-au reparat toate găurile, s-au securizat pietrele de pe zidurile înalte și s-au reparat cele fisurate. Acoperișul a fost revopsit în întregime, s-a refăcut etanșeitatea la apele pluviale și au fost revizuite toate jgheaburile." },
         "budget": null,
@@ -219,6 +225,7 @@
       },
       {
         "id": "interieur",
+        "curseur": false,
         "titre": { "fr": "Murs et sols intérieurs", "ro": "Pereții și pardoseala" },
         "description": { "fr": "Les murs et le sol ont été décapés sur toute la surface et tous les murs ont été enduits.", "ro": "S-au decapat pereții și solul pe toată suprafața și s-au tencuit toți pereții." },
         "budget": null,
@@ -228,6 +235,7 @@
       },
       {
         "id": "isolation",
+        "curseur": false,
         "titre": { "fr": "Isolation de la toiture et plafonds", "ro": "Izolarea acoperișului și tavanele" },
         "description": { "fr": "La toiture est isolée par l'intérieur presque entièrement (il reste la partie haute). La membrane pare-vapeur est posée et la pose des plaques de plâtre aux plafonds est préparée.", "ro": "Acoperișul este izolat pe interior aproape în întregime (mai rămâne partea de sus), s-a aplicat membrana antivapori și s-a pregătit montarea rigipsului pe tavane." },
         "budget": null,

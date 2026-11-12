@@ -7,6 +7,11 @@
       "vertical": true
     },
     {
+      "titre": { "fr": "L'intérieur en chantier : les murs sont enduits", "ro": "Interiorul în lucru: pereții sunt tencuiți" },
+      "fichier": "uploads/video/6-interieur-en-chantier.mp4",
+      "vertical": true
+    },
+    {
       "titre": { "fr": "Travaux sur les murs hauts", "ro": "Lucrări pe zidurile înalte" },
       "fichier": "uploads/video/2-travaux-sur-les-murs-hauts.mp4",
       "vertical": true

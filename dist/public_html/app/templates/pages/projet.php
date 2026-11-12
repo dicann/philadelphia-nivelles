@@ -24,6 +24,18 @@ include APP . '/templates/partials/page-head.php';
   </div>
 </section>
 
+<?php if ($planImg = Media::find($p['plan_image'] ?? null)): ?>
+<section class="section section-stone">
+  <div class="wrap split">
+    <div>
+      <h2><?= tx(t($p['plan_titre'] ?? '')) ?></h2>
+      <p><?= tx(t($p['plan_texte'] ?? '')) ?></p>
+    </div>
+    <figure class="plan-figure"><a href="<?= e(Media::url($planImg, 1600)) ?>"><?= picture($planImg, t($p['plan_titre'] ?? ''), '(min-width: 860px) 45vw, 100vw') ?></a></figure>
+  </div>
+</section>
+<?php endif; ?>
+
 <section class="section section-paper">
   <div class="wrap">
     <ol class="stages">
@@ -33,21 +45,25 @@ include APP . '/templates/partials/page-head.php';
         $st = $e['statut'] ?? 'a_venir';
         $raisedStage = $tot['par_etape'][$e['id']] ?? 0;
       ?>
-      <li class="stage stage-<?= e($st) ?>" id="<?= e($e['id']) ?>">
+      <li class="stage stage-<?= e($st) ?><?= !$before && !$after ? ' stage-nomedia' : '' ?>" id="<?= e($e['id']) ?>">
+        <?php if ($before || $after): ?>
         <div class="stage-media">
-          <?php if ($before && $after): ?>
+          <?php if ($before && $after && ($e['curseur'] ?? true) !== false): ?>
             <div class="compare" data-compare>
               <div class="compare-img compare-before"><?= picture($before, __('avant') . ' — ' . t($e['titre']), '(min-width: 900px) 50vw, 100vw') ?><span class="compare-tag"><?= e(__('avant')) ?></span></div>
               <div class="compare-img compare-after"><?= picture($after, __('apres') . ' — ' . t($e['titre']), '(min-width: 900px) 50vw, 100vw') ?><span class="compare-tag"><?= e(__('apres')) ?></span></div>
               <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="<?= e(__('comparer')) ?>" hidden>
             </div>
           <?php else: ?>
-            <div class="compare-pair">
-              <figure><?= picture($e['image_avant'] ?? null, __('avant') . ' — ' . t($e['titre']), '(min-width: 900px) 25vw, 50vw') ?><figcaption><?= e(__('avant')) ?></figcaption></figure>
-              <figure><?= picture($e['image_apres'] ?? null, __('apres') . ' — ' . t($e['titre']), '(min-width: 900px) 25vw, 50vw') ?><figcaption><?= e(__('apres')) ?></figcaption></figure>
+            <?php $figs = array_filter(['avant' => $before, 'apres' => $after]); ?>
+            <div class="compare-pair<?= count($figs) === 1 ? ' compare-single' : '' ?>">
+              <?php foreach ($figs as $k => $img): ?>
+              <figure><?= picture($img, __($k) . ' — ' . t($e['titre']), '(min-width: 900px) 25vw, 50vw') ?><figcaption><?= e(__($k === 'avant' && $st !== 'termine' ? 'pendant' : $k)) ?></figcaption></figure>
+              <?php endforeach; ?>
             </div>
           <?php endif; ?>
         </div>
+        <?php endif; ?>
         <div class="stage-body">
           <p class="stage-num"><?= e(__('etape')) ?> <?= $i + 1 ?> <span class="badge badge-<?= e($st) ?>"><?= e(stage_status_label($st)) ?></span></p>
           <h2 class="h3"><?= tx(t($e['titre'])) ?></h2>
