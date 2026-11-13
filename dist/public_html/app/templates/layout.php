@@ -170,6 +170,7 @@ $testMode = Payments::enabled() && !Config::isLive();
   <div class="wrap footer-bottom">
     <p>© <?= date('Y') ?> <?= tx(Content::get('association.nom_legal')) ?><?php if ($bce = Content::get('association.numero_entreprise')): ?> · BCE <?= e($bce) ?><?php endif; ?> — <?= e(__('tous_droits')) ?></p>
     <p><a href="<?= url('mentions') ?>"><?= e(__('nav_mentions')) ?></a> · <a href="<?= url('confidentialite') ?>"><?= e(__('nav_confidentialite')) ?></a></p>
+    <p class="credit">Made with <span aria-label="love">🖤</span> by <a href="https://www.dican.ro" rel="noopener" target="_blank">dican.ro</a></p>
   </div>
 </footer>
 </body>
