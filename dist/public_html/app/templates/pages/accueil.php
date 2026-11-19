@@ -29,9 +29,11 @@ ob_start();
         <a class="btn btn-ghost-light" href="<?= url('projet') ?>"><?= e(__('nav_projet')) ?><?= icon('arrow') ?></a>
       </div>
     </div>
+    <?php if ($pb = progress_bar(true)): ?>
     <div class="hero-card">
-      <?= progress_bar(true) ?>
+      <?= $pb ?>
     </div>
+    <?php endif; ?>
   </div>
 </section>
 

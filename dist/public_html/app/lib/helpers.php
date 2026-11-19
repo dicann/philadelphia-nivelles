@@ -170,6 +170,9 @@ function placeholder_img(?string $rel, string $alt, string $class = ''): string
 /** Barre de progression de la campagne. */
 function progress_bar(bool $large = false): string
 {
+    if (!Content::get('campagne.afficher_progression', true)) {
+        return '';
+    }
     ob_start();
     include APP . '/templates/partials/progress.php';
     return (string) ob_get_clean();

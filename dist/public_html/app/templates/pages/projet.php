@@ -20,7 +20,7 @@ include APP . '/templates/partials/page-head.php';
     <p class="lead"><?= tx(t($p['intro'])) ?></p>
   </div>
   <div class="wrap narrow">
-    <div class="progress-panel"><?= progress_bar(true) ?></div>
+    <?php if ($pb = progress_bar(true)): ?><div class="progress-panel"><?= $pb ?></div><?php endif; ?>
   </div>
 </section>
 

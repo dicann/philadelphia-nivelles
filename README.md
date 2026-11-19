@@ -477,6 +477,7 @@ Toate se fac în `public_html/content/site.json` (sau în `content/videos.json` 
 | `contact.lieu_cultes` | adresa slujbelor pe durata lucrărilor (Genappe). `"afficher": false` când slujbele revin în biserică. |
 | `contact.telephones` | lista numerelor afișate (nume + număr) |
 | `contact.carte.google_recherche` / `google_lien` | harta Google de la „Plan d'accès” (se încarcă doar la clic) și linkul „Ouvrir dans Google Maps” |
+| `campagne.afficher_progression` | `false` = bara de progres și obiectivul sunt ascunse peste tot (prima pagină, Proiect, Donează, subsol). Pune `true` ca să le arăți din nou. |
 | `campagne.libelle_montant` | textul de lângă suma din bara de progres (acum „déjà investis”) |
 | `projet.etapes[].curseur` | `false` = pozele avant/après stau una lângă alta (când nu sunt făcute din același unghi); altfel apare cursorul de comparație |
 | `projet.plan_image` | planul arhitectului afișat pe pagina Proiect |
